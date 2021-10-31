@@ -52,19 +52,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0Nh-Ce-JsM">
                                 <rect key="frame" x="17.333333333333329" y="112.33333333333331" width="199.33333333333337" height="71"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-Pj-HlF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-Pj-HlF">
                                         <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="23"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아래 약관에 동의하시면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-bk-DC7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="아래 약관에 동의하시면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-bk-DC7">
                                         <rect key="frame" x="0.0" y="23.000000000000014" width="182" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛있는 여행이 시작됩니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUO-5g-8pG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="맛있는 여행이 시작됩니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUO-5g-8pG">
                                         <rect key="frame" x="0.0" y="47.000000000000014" width="199.33333333333334" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -225,16 +225,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지도에서 위치 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e20-5U-5cM">
-                                <rect key="frame" x="132" y="385" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-Nu-zcM">
-                                <rect key="frame" x="16" y="20" width="32" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-Nu-zcM">
+                                <rect key="frame" x="11.333333333333336" y="32" width="32" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
@@ -242,15 +234,67 @@
                                     <action selector="back:" destination="Eyu-hv-JxY" eventType="touchUpInside" id="Vwe-oX-URg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도에서 위치확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-vy-eYj">
+                                <rect key="frame" x="130" y="35.666666666666664" width="130" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경북 구미시 선산대로 1220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-zm-xK2">
+                                <rect key="frame" x="20" y="613" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-iG-TYo">
+                                <rect key="frame" x="10" y="698.33333333333337" width="370" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이 위치로 주소 설정">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="baseBackgroundColor" red="0.16078431369999999" green="0.73333333329999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW7-o2-jcD">
+                                <rect key="frame" x="19.666666666666671" y="643.33333333333337" width="78" height="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="지번위치로 보기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NvE-pB-fR9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hG3-vy-eYj" firstAttribute="width" secondItem="yw4-D6-IF2" secondAttribute="width" multiplier="0.333333" id="1DD-Mw-tx8"/>
+                            <constraint firstItem="hG3-vy-eYj" firstAttribute="centerY" secondItem="yw4-D6-IF2" secondAttribute="centerY" multiplier="0.118" id="3JZ-aB-gMr"/>
+                            <constraint firstItem="UW7-o2-jcD" firstAttribute="width" secondItem="yw4-D6-IF2" secondAttribute="width" multiplier="0.2" id="4Jy-BQ-oFB"/>
+                            <constraint firstItem="QuQ-Nu-zcM" firstAttribute="centerY" secondItem="yw4-D6-IF2" secondAttribute="centerY" multiplier="0.12" id="5Lh-BZ-uJ4"/>
+                            <constraint firstItem="ieQ-iG-TYo" firstAttribute="centerY" secondItem="yw4-D6-IF2" secondAttribute="centerY" multiplier="1.83" id="9nd-oT-4tZ"/>
+                            <constraint firstItem="QuQ-Nu-zcM" firstAttribute="height" secondItem="yw4-D6-IF2" secondAttribute="height" multiplier="0.0392405" id="AKu-qo-fAG"/>
+                            <constraint firstItem="rQ8-zm-xK2" firstAttribute="centerX" secondItem="yw4-D6-IF2" secondAttribute="centerX" id="Au1-cq-zVH"/>
+                            <constraint firstItem="rQ8-zm-xK2" firstAttribute="centerY" secondItem="yw4-D6-IF2" secondAttribute="centerY" multiplier="1.582" id="Df5-SN-7qB"/>
+                            <constraint firstItem="UW7-o2-jcD" firstAttribute="centerY" secondItem="yw4-D6-IF2" secondAttribute="centerY" multiplier="1.65" id="FZI-AX-88j"/>
+                            <constraint firstItem="hG3-vy-eYj" firstAttribute="centerX" secondItem="yw4-D6-IF2" secondAttribute="centerX" id="Kzm-1P-HwY"/>
+                            <constraint firstItem="rQ8-zm-xK2" firstAttribute="height" secondItem="yw4-D6-IF2" secondAttribute="height" multiplier="0.0303797" id="bvk-hQ-v7w"/>
+                            <constraint firstItem="hG3-vy-eYj" firstAttribute="height" secondItem="yw4-D6-IF2" secondAttribute="height" multiplier="0.0278481" id="cSy-9X-x5m"/>
+                            <constraint firstItem="QuQ-Nu-zcM" firstAttribute="width" secondItem="yw4-D6-IF2" secondAttribute="width" multiplier="0.0820513" id="g0y-8J-oIv"/>
+                            <constraint firstItem="UW7-o2-jcD" firstAttribute="centerX" secondItem="yw4-D6-IF2" secondAttribute="centerX" multiplier="0.3" id="iOO-V0-H9v"/>
+                            <constraint firstItem="ieQ-iG-TYo" firstAttribute="height" secondItem="yw4-D6-IF2" secondAttribute="height" multiplier="0.0620253" id="mHi-9W-eWw"/>
+                            <constraint firstItem="QuQ-Nu-zcM" firstAttribute="centerX" secondItem="yw4-D6-IF2" secondAttribute="centerX" multiplier="0.14" id="mwu-KP-EIQ"/>
+                            <constraint firstItem="UW7-o2-jcD" firstAttribute="height" secondItem="yw4-D6-IF2" secondAttribute="height" multiplier="0.021519" id="qk9-Li-ZuT"/>
+                            <constraint firstItem="ieQ-iG-TYo" firstAttribute="width" secondItem="yw4-D6-IF2" secondAttribute="width" multiplier="0.948718" id="rQz-cE-hv2"/>
+                            <constraint firstItem="ieQ-iG-TYo" firstAttribute="centerX" secondItem="yw4-D6-IF2" secondAttribute="centerX" id="xbX-vf-4Ys"/>
+                            <constraint firstItem="rQ8-zm-xK2" firstAttribute="width" secondItem="yw4-D6-IF2" secondAttribute="width" multiplier="0.897436" id="xoW-BE-Hv0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SnY-eq-89Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1at-ld-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563" y="581"/>
+            <point key="canvasLocation" x="1561.5384615384614" y="580.80568720379142"/>
         </scene>
         <!--Find Location View Controller-->
         <scene sceneID="1LW-bP-djD">
