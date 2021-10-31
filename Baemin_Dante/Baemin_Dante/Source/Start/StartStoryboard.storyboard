@@ -58,7 +58,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="아래 약관에 동의하시면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-bk-DC7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="아래 약관에 동의하시면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-bk-DC7">
                                         <rect key="frame" x="0.0" y="23.000000000000014" width="182" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -104,6 +104,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인바" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-vm-yFn">
+                                <rect key="frame" x="0.0" y="275.33333333333331" width="390" height="10"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,6 +123,7 @@
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.84" id="G5J-26-VpA"/>
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.953846" id="Hbs-NW-pYJ"/>
                             <constraint firstItem="hv6-iG-WtO" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.0615385" id="K7P-gd-dlE"/>
+                            <constraint firstItem="3HP-vm-yFn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.664" id="KbY-Ix-tBS"/>
                             <constraint firstItem="UiG-XN-CmK" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.0615385" id="MC7-4z-Mlh"/>
                             <constraint firstItem="Yqc-8P-mta" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.84" id="NLu-cz-idN"/>
                             <constraint firstItem="hv6-iG-WtO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" multiplier="0.14" id="NOB-Ee-NMr"/>
@@ -131,12 +135,15 @@
                             <constraint firstItem="5H8-zk-Jgy" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.857" id="aLe-bE-Vya"/>
                             <constraint firstItem="0Nh-Ce-JsM" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0841232" id="h3o-Da-d1m"/>
                             <constraint firstItem="QlP-gK-luU" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0201422" id="hLA-kh-atI"/>
+                            <constraint firstItem="3HP-vm-yFn" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0118483" id="hiF-6c-URD"/>
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0616114" id="iEk-ml-iGU"/>
                             <constraint firstItem="Yqc-8P-mta" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" multiplier="0.14" id="k1M-Lv-0vz"/>
                             <constraint firstItem="5H8-zk-Jgy" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0367299" id="kAD-Fc-7Fw"/>
                             <constraint firstItem="Yqc-8P-mta" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.0615385" id="kX9-ee-cGP"/>
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kgx-io-vw3"/>
+                            <constraint firstItem="3HP-vm-yFn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="led-Df-sNs"/>
                             <constraint firstItem="QlP-gK-luU" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.125641" id="m5I-6K-abq"/>
+                            <constraint firstItem="3HP-vm-yFn" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="ojB-yM-Wi2"/>
                             <constraint firstItem="0Nh-Ce-JsM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.511111" id="t07-HB-9YF"/>
                             <constraint firstItem="QlP-gK-luU" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.58" id="tn9-tI-SnJ"/>
                             <constraint firstItem="UiG-XN-CmK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.73" id="wUb-Sw-wmH"/>
@@ -151,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="138.46153846153845" y="138.6255924170616"/>
         </scene>
         <!--Local View Controller-->
         <scene sceneID="LYB-3P-Bbp">
@@ -253,6 +260,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.16078431369999999" green="0.73333333329999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ahU-2i-jLe" kind="show" id="cJT-Jn-Qsq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UW7-o2-jcD">
                                 <rect key="frame" x="19.666666666666671" y="643.33333333333337" width="78" height="17"/>
@@ -291,10 +301,133 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SnY-eq-89Y"/>
+                    <connections>
+                        <outlet property="userLocationLabel" destination="rQ8-zm-xK2" id="6hL-hP-3Sm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1at-ld-Dcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1561.5384615384614" y="580.80568720379142"/>
+        </scene>
+        <!--Detail Location View Controller-->
+        <scene sceneID="NKS-ID-8BK">
+            <objects>
+                <viewController id="ahU-2i-jLe" customClass="detailLocationViewController" customModule="Baemin_Dante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HSN-CD-WyU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFj-qa-4Bl">
+                                <rect key="frame" x="10" y="698.33333333333337" width="370" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이 위치로 주소 설정">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="baseBackgroundColor" red="0.16078431369999999" green="0.73333333329999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dTv-vl-QmO" kind="presentation" modalPresentationStyle="fullScreen" id="Nw1-j2-pga"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fd-fn-Fp0">
+                                <rect key="frame" x="11.333333333333336" y="28" width="32" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="back:" destination="Eyu-hv-JxY" eventType="touchUpInside" id="wWQ-jX-cyt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경북 구미시 고아읍 선산대로 1220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btX-PZ-qdJ">
+                                <rect key="frame" x="14.666666666666657" y="93.666666666666671" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="TbG-T7-TgQ">
+                                <rect key="frame" x="22.000000000000014" y="127.66666666666669" width="229.33333333333337" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도로명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qod-Ym-hhO">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="17"/>
+                                        <color key="backgroundColor" red="0.96078437569999997" green="0.96470600370000004" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.53333336109999996" green="0.53333336109999996" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="경북 구미시 고아읍 선산대로 1220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIn-ih-3EG">
+                                        <rect key="frame" x="37.000000000000014" y="0.0" width="192.33333333333337" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="상세 주소 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEl-rW-PJ2">
+                                <rect key="frame" x="16" y="162" width="358" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-Bn-CCJ">
+                                <rect key="frame" x="6.6666666666666714" y="230" width="221" height="38"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="지도에서 위치확인"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상세정보 입력" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrp-LY-6dc">
+                                <rect key="frame" x="143" y="31.333333333333329" width="104" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pUz-fV-OYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Fd-fn-Fp0" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.0820513" id="0Rr-NR-eEW"/>
+                            <constraint firstItem="pFj-qa-4Bl" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" id="1iX-2X-IZe"/>
+                            <constraint firstItem="TbG-T7-TgQ" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.345" id="7mG-4P-NX1"/>
+                            <constraint firstItem="hEl-rW-PJ2" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" id="9Cu-qf-b2Y"/>
+                            <constraint firstItem="Qrp-LY-6dc" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.266667" id="C59-QJ-4Uw"/>
+                            <constraint firstItem="Qrp-LY-6dc" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.11" id="CAs-y5-gL1"/>
+                            <constraint firstItem="D4d-Bn-CCJ" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.0481013" id="Dkh-Q8-Hmq"/>
+                            <constraint firstItem="pFj-qa-4Bl" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.948718" id="EA7-F7-bE6"/>
+                            <constraint firstItem="btX-PZ-qdJ" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.897436" id="FFl-Bp-Por"/>
+                            <constraint firstItem="hEl-rW-PJ2" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.47" id="JN7-LW-XJc"/>
+                            <constraint firstItem="btX-PZ-qdJ" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.043038" id="JVi-2x-pFA"/>
+                            <constraint firstItem="D4d-Bn-CCJ" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.566667" id="Jio-t5-ppj"/>
+                            <constraint firstItem="pFj-qa-4Bl" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="1.83" id="KDo-FS-M5r"/>
+                            <constraint firstItem="TbG-T7-TgQ" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" multiplier="0.7" id="Ogv-Tw-giJ"/>
+                            <constraint firstItem="hEl-rW-PJ2" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.917949" id="Vm4-aF-WfK"/>
+                            <constraint firstItem="1Fd-fn-Fp0" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" multiplier="0.14" id="Wkh-Gw-2On"/>
+                            <constraint firstItem="1Fd-fn-Fp0" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.0392405" id="ZO0-Kb-Gc4"/>
+                            <constraint firstItem="TbG-T7-TgQ" firstAttribute="width" secondItem="HSN-CD-WyU" secondAttribute="width" multiplier="0.588034" id="b2P-lL-DtL"/>
+                            <constraint firstItem="btX-PZ-qdJ" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" multiplier="0.973" id="bFV-eh-E7e"/>
+                            <constraint firstItem="hEl-rW-PJ2" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.0594937" id="bpC-Jz-OiC"/>
+                            <constraint firstItem="Qrp-LY-6dc" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.0303797" id="c5r-FG-uqv"/>
+                            <constraint firstItem="1Fd-fn-Fp0" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.11" id="qeU-hl-PHz"/>
+                            <constraint firstItem="Qrp-LY-6dc" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" id="r6a-Vq-bcK"/>
+                            <constraint firstItem="TbG-T7-TgQ" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.021519" id="rLB-O0-wgy"/>
+                            <constraint firstItem="btX-PZ-qdJ" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.28" id="sgN-e6-ufw"/>
+                            <constraint firstItem="D4d-Bn-CCJ" firstAttribute="centerX" secondItem="HSN-CD-WyU" secondAttribute="centerX" multiplier="0.6" id="tic-Di-L0C"/>
+                            <constraint firstItem="pFj-qa-4Bl" firstAttribute="height" secondItem="HSN-CD-WyU" secondAttribute="height" multiplier="0.0620253" id="yFE-ol-8vm"/>
+                            <constraint firstItem="D4d-Bn-CCJ" firstAttribute="centerY" secondItem="HSN-CD-WyU" secondAttribute="centerY" multiplier="0.63" id="yiL-8U-h2N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="631-CU-9Ga"/>
+                    <connections>
+                        <outlet property="LocationLabel" destination="btX-PZ-qdJ" id="wy1-S1-j1a"/>
+                        <outlet property="detalilLocationTextField" destination="hEl-rW-PJ2" id="vIl-oz-goE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2N1-nn-OlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2320" y="580.80568720379142"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bYc-ED-p73">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="dTv-vl-QmO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTg-hf-VOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="629"/>
         </scene>
         <!--Find Location View Controller-->
         <scene sceneID="1LW-bP-djD">
@@ -304,15 +437,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="주소검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-UV-vJc">
-                                <rect key="frame" x="166" y="385" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-LC-pwf">
-                                <rect key="frame" x="16" y="20" width="32" height="31"/>
+                                <rect key="frame" x="16" y="32" width="32" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -321,6 +447,17 @@
                                     <action selector="back:" destination="mRQ-bF-Iqm" eventType="touchUpInside" id="jaa-ge-xyd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="주소검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cen-Hi-SBv">
+                                <rect key="frame" x="162" y="36" width="66" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="주소검색-1" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-36-7Dm">
+                                <rect key="frame" x="0.0" y="50" width="390" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4JA-qc-ZEE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -334,10 +471,13 @@
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="로그인바" width="1169" height="23"/>
         <image name="시작하기 배민이" width="223" height="289"/>
         <image name="시작하기X" width="906" height="128"/>
         <image name="주소 배민이미지" width="144" height="192.66667175292969"/>
         <image name="주소검색" width="1106" height="147"/>
+        <image name="주소검색-1" width="1169" height="264"/>
+        <image name="지도에서 위치확인" width="631" height="112"/>
         <image name="체크X" width="56" height="56"/>
         <image name="현재위치" width="1170" height="106"/>
         <systemColor name="systemBackgroundColor">

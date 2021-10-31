@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5D0258610D3664EA6DFC2004 /* Pods_Baemin_Dante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */; };
+		9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2B272EA6F900A77C36 /* LoginViewController.swift */; };
+		9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */; };
+		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
+		9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */; };
 		999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D3272D5AB600D7B167 /* AppDelegate.swift */; };
 		999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D5272D5AB600D7B167 /* SceneDelegate.swift */; };
-		999858D8272D5AB600D7B167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D7272D5AB600D7B167 /* ViewController.swift */; };
+		999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D7272D5AB600D7B167 /* MainViewController.swift */; };
 		999858DB272D5AB600D7B167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999858D9272D5AB600D7B167 /* Main.storyboard */; };
 		999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999858DC272D5AB800D7B167 /* Assets.xcassets */; };
 		999858E0272D5AB800D7B167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999858DE272D5AB800D7B167 /* LaunchScreen.storyboard */; };
@@ -65,6 +69,14 @@
 		99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 99985D13272E308E00D7B167 /* daum_th_line.png */; };
 		99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 99985D14272E308E00D7B167 /* map_pin_shadow.png */; };
 		99985D31272E308E00D7B167 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99985D15272E308E00D7B167 /* DaumMap.framework */; };
+		99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D32272E4BB800D7B167 /* detailLocationViewController.swift */; };
+		99985D36272E50C500D7B167 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D35272E50C500D7B167 /* global.swift */; };
+		99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D3A272E80B700D7B167 /* TotalSearviceViewController.swift */; };
+		99985D3D272E80C800D7B167 /* TotalSearviceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99985D3C272E80C800D7B167 /* TotalSearviceStoryboard.storyboard */; };
+		99985D3F272E80DD00D7B167 /* MyBeaminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D3E272E80DD00D7B167 /* MyBeaminViewController.swift */; };
+		99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */; };
+		99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D42272E80F800D7B167 /* AlarmViewController.swift */; };
+		99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99985D44272E810000D7B167 /* AlarmStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,10 +95,14 @@
 /* Begin PBXFileReference section */
 		56A206DB1B2F0F9C72864841 /* Pods-Baemin_Dante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.release.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.release.xcconfig"; sourceTree = "<group>"; };
 		5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baemin_Dante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9979BC2B272EA6F900A77C36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
+		9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCertificationViewController.swift; sourceTree = "<group>"; };
 		999858D0272D5AB600D7B167 /* Baemin_Dante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin_Dante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999858D3272D5AB600D7B167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999858D5272D5AB600D7B167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		999858D7272D5AB600D7B167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		999858D7272D5AB600D7B167 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		999858DA272D5AB600D7B167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		999858DC272D5AB800D7B167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		999858DF272D5AB800D7B167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,6 +167,14 @@
 		99985D13272E308E00D7B167 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		99985D14272E308E00D7B167 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		99985D15272E308E00D7B167 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		99985D32272E4BB800D7B167 /* detailLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailLocationViewController.swift; sourceTree = "<group>"; };
+		99985D35272E50C500D7B167 /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		99985D3A272E80B700D7B167 /* TotalSearviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSearviceViewController.swift; sourceTree = "<group>"; };
+		99985D3C272E80C800D7B167 /* TotalSearviceStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TotalSearviceStoryboard.storyboard; sourceTree = "<group>"; };
+		99985D3E272E80DD00D7B167 /* MyBeaminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBeaminViewController.swift; sourceTree = "<group>"; };
+		99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBeaminStoryboard.storyboard; sourceTree = "<group>"; };
+		99985D42272E80F800D7B167 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		99985D44272E810000D7B167 /* AlarmStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlarmStoryboard.storyboard; sourceTree = "<group>"; };
 		CDB1F3588D76FA54F737561D /* Pods-Baemin_Dante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.debug.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,7 +225,6 @@
 				999858E8272D5B0E00D7B167 /* Source */,
 				999858D3272D5AB600D7B167 /* AppDelegate.swift */,
 				999858D5272D5AB600D7B167 /* SceneDelegate.swift */,
-				999858D7272D5AB600D7B167 /* ViewController.swift */,
 				999858DC272D5AB800D7B167 /* Assets.xcassets */,
 				999858DE272D5AB800D7B167 /* LaunchScreen.storyboard */,
 				999858E1272D5AB800D7B167 /* Info.plist */,
@@ -212,6 +235,7 @@
 		999858E8272D5B0E00D7B167 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				99985D34272E50B300D7B167 /* Global */,
 				99985916272D5BE000D7B167 /* Start */,
 				99985905272D5BCD00D7B167 /* Login */,
 				99985912272D5BCD00D7B167 /* Main */,
@@ -280,9 +304,13 @@
 		99985905272D5BCD00D7B167 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				9979BC2B272EA6F900A77C36 /* LoginViewController.swift */,
+				9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */,
+				9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */,
 				9998591D272D619E00D7B167 /* Local */,
 				9998591C272D619E00D7B167 /* Join */,
 				9998591B272D619D00D7B167 /* KaKao */,
+				9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -291,6 +319,10 @@
 			isa = PBXGroup;
 			children = (
 				999858D9272D5AB600D7B167 /* Main.storyboard */,
+				999858D7272D5AB600D7B167 /* MainViewController.swift */,
+				99985D39272E800600D7B167 /* TotalService */,
+				99985D38272E7FF400D7B167 /* MyBaemin */,
+				99985D37272E7FEA00D7B167 /* Alarm */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -303,6 +335,7 @@
 				99985924272D632C00D7B167 /* LocalViewController.swift */,
 				99985926272D71E600D7B167 /* findLocationViewController.swift */,
 				99985928272D71F200D7B167 /* nowLocationViewController.swift */,
+				99985D32272E4BB800D7B167 /* detailLocationViewController.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -435,6 +468,41 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		99985D34272E50B300D7B167 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				99985D35272E50C500D7B167 /* global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		99985D37272E7FEA00D7B167 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				99985D42272E80F800D7B167 /* AlarmViewController.swift */,
+				99985D44272E810000D7B167 /* AlarmStoryboard.storyboard */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		99985D38272E7FF400D7B167 /* MyBaemin */ = {
+			isa = PBXGroup;
+			children = (
+				99985D3E272E80DD00D7B167 /* MyBeaminViewController.swift */,
+				99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */,
+			);
+			path = MyBaemin;
+			sourceTree = "<group>";
+		};
+		99985D39272E800600D7B167 /* TotalService */ = {
+			isa = PBXGroup;
+			children = (
+				99985D3A272E80B700D7B167 /* TotalSearviceViewController.swift */,
+				99985D3C272E80C800D7B167 /* TotalSearviceStoryboard.storyboard */,
+			);
+			path = TotalService;
+			sourceTree = "<group>";
+		};
 		A9018F600684155E411AF3C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,13 +597,16 @@
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				99985D21272E308E00D7B167 /* daum_copyright.png in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
+				99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */,
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
+				9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */,
 				99985D22272E308E00D7B167 /* map_pin@3x.png in Resources */,
 				9998591A272D5C0B00D7B167 /* StartStoryboard.storyboard in Resources */,
 				99985D1A272E308E00D7B167 /* detail_button.png in Resources */,
 				99985D1F272E308E00D7B167 /* th_line.png in Resources */,
 				99985D2E272E308E00D7B167 /* map_present_background_update.png in Resources */,
 				99985D25272E308E00D7B167 /* info_box.png in Resources */,
+				99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */,
 				99985D27272E308E00D7B167 /* map_pinup_custom.png in Resources */,
 				99985D2D272E308E00D7B167 /* noimage.png in Resources */,
 				999858E0272D5AB800D7B167 /* LaunchScreen.storyboard in Resources */,
@@ -544,6 +615,7 @@
 				999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */,
 				999858DB272D5AB600D7B167 /* Main.storyboard in Resources */,
 				99985D2B272E308E00D7B167 /* map_pin.png in Resources */,
+				99985D3D272E80C800D7B167 /* TotalSearviceStoryboard.storyboard in Resources */,
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
 				99985D1D272E308E00D7B167 /* map_pin_shadow@3x.png in Resources */,
 				99985D1B272E308E00D7B167 /* map_pin_custom@3x.png in Resources */,
@@ -604,18 +676,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				99985902272D5BAA00D7B167 /* Device.swift in Sources */,
-				999858D8272D5AB600D7B167 /* ViewController.swift in Sources */,
+				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
+				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
+				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
+				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
+				99985D36272E50C500D7B167 /* global.swift in Sources */,
 				999858FC272D5B9900D7B167 /* String.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
+				99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */,
 				999858FD272D5B9900D7B167 /* UIViewController.swift in Sources */,
+				99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */,
+				9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */,
 				999858FB272D5B9900D7B167 /* UIButton.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
 				99985929272D71F200D7B167 /* nowLocationViewController.swift in Sources */,
 				999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */,
 				999858FA272D5B9900D7B167 /* UINavigationBar.swift in Sources */,
+				99985D3F272E80DD00D7B167 /* MyBeaminViewController.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
@@ -787,6 +867,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -827,6 +908,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

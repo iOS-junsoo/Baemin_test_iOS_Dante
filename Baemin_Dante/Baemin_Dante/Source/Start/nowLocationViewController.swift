@@ -13,6 +13,7 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
     var mapView: MTMapView?
     var mapPoint1: MTMapPoint?
     var poiItem1: MTMapPOIItem?
+    @IBOutlet var userLocationLabel: UILabel!
     
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -38,12 +39,13 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
                         poiItem1?.mapPoint = mapPoint1
                         poiItem1?.itemName = "움직여 위차를 설정하세요." //위치 마크 이름
                         mapView.add(poiItem1)
-                        
-            //            mapView.addPOIItems([poiItem1,poiItem2]
-            //            mapView.fitAreaToShowAllPOIItems()
-                        
                         self.view.addSubview(mapView)
                     }
+            //MARK: - 주소 입력(미구현)
+            Location.titleLocation = "경북 구미시 선산대로 1220"
+            userLocationLabel.text = Location.titleLocation
+            // 1. 현재 위치를 시스템상에서 알아내어 Location.titleLocation에 저장
+            // 2. userLocationLabel.text에 Location.titleLocation 저장
     
         }
     
@@ -52,6 +54,7 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
            let currentLocation = location?.mapPointGeo()
            if let latitude = currentLocation?.latitude, let longitude = currentLocation?.longitude{
                print("MTMapView updateCurrentLocation (\(latitude),\(longitude)) accuracy (\(accuracy))")
+            
            }
        }
        
