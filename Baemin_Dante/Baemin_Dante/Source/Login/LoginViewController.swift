@@ -19,6 +19,13 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if Check.dis == 1 {
+            Check.dis = 0
+            dismiss(animated: true, completion: nil)
+        }
+    }
    
     //MARK: - 카카오로그인 기능구현
     @IBAction func kakaoLoginBtn(_ sender: UIButton) {

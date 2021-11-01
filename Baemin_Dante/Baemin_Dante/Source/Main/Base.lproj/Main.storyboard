@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeC-d0-MiQ">
-                                        <rect key="frame" x="15" y="96.5" width="384" height="49"/>
+                                        <rect key="frame" x="15" y="99.5" width="384" height="43"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="홈서치버튼"/>
                                         <connections>
@@ -49,7 +49,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QPp-my-0oX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.18" id="4H3-ve-UBj"/>
-                            <constraint firstItem="xeC-d0-MiQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0546875" id="4MR-pv-Fdk"/>
+                            <constraint firstItem="xeC-d0-MiQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.048" id="4MR-pv-Fdk"/>
                             <constraint firstItem="xeC-d0-MiQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.927536" id="5nT-93-UQp"/>
                             <constraint firstItem="QPp-my-0oX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRu-Nh-7B1"/>
                             <constraint firstItem="QPp-my-0oX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hhq-eW-0W3"/>

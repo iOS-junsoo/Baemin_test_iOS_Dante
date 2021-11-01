@@ -325,6 +325,7 @@
                                     <color key="baseBackgroundColor" red="0.16078431369999999" green="0.73333333329999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="saveLocation:" destination="ahU-2i-jLe" eventType="touchUpInside" id="TgK-bd-sZF"/>
                                     <segue destination="dTv-vl-QmO" kind="presentation" modalPresentationStyle="fullScreen" id="Nw1-j2-pga"/>
                                 </connections>
                             </button>

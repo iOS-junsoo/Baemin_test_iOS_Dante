@@ -10,12 +10,28 @@ import UIKit
 class EmailViewController: UIViewController {
 
     @IBOutlet var jungbokBtn: UIButton!
+    @IBOutlet var pwTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var nicknameTextField: UITextField!
+    @IBOutlet var emailCheck: UIImageView!
+    @IBOutlet var nicknameCheck: UIImageView!
+    @IBOutlet var passwordCheck: UIImageView!
+    @IBOutlet var completeBtn: UIButton!
+    var pwCount = 0
+    var emailState = false
+    var nicknameState = false
+    var passwordState = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
         jungbokBtn.layer.cornerRadius = 2
         jungbokBtn.layer.borderWidth = 0.3
         jungbokBtn.layer.borderColor = UIColor.gray.cgColor
+        pwTextField.isSecureTextEntry = true //비밀번호 *로 표시하기
+        self.emailTextField.addTarget(self, action: #selector(self.emailTextFieldDidChange(_:)), for: .editingChanged)
+        self.nicknameTextField.addTarget(self, action: #selector(self.nicknameTextFieldDidChange(_:)), for: .editingChanged)
+        self.pwTextField.addTarget(self, action: #selector(self.passwordTextFieldDidChange(_:)), for: .editingChanged)
+//        completeBtn.isEnabled = false //완료버튼 비활성화
         
         
     }
@@ -30,18 +46,98 @@ class EmailViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
+    @IBAction func noSecureBtn(_ sender: UIButton) {
+        pwCount = pwCount + 1
+        if pwCount % 2 == 1{
+            pwTextField.isSecureTextEntry = false //비밀번호 *로 표시 해제하기
+        } else {
+            pwTextField.isSecureTextEntry = true //비밀번호 *로 표시하기
+        }
+    }
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func jungbokBtn(_ sender: UIButton) { //이후 이메일 중복 체크시 이미지가 변경되도록 조건문 추가해야함
+        emailCheck.image = UIImage(named: "초록체크")
     }
-    */
+    
+    //MARK: - 텍스트 필드 입력 감지
+    @objc func emailTextFieldDidChange(_ sender: Any?) {
+        UserInfo.email = emailTextField.text!
+        emailState = true
+    }
+    
+    @objc func nicknameTextFieldDidChange(_ sender: Any?) {
+        UserInfo.nickName = nicknameTextField.text!
+        if nicknameTextField.text?.count ?? 0 > 1 && nicknameTextField.text?.count ?? 0 < 11 {
+            nicknameCheck.image = UIImage(named: "초록체크")
+            nicknameState = true
+        } else {
+            nicknameCheck.image = UIImage(named: "회색체크")
+            nicknameState = false
+        }
+    }
+    
+    @objc func passwordTextFieldDidChange(_ sender: Any?) {
+        UserInfo.passWord = pwTextField.text!
+        if pwTextField.text?.count ?? 0 > 1  {
+            passwordCheck.image = UIImage(named: "초록체크")
+            passwordState = true//완료버튼 활성화 
+        } else {
+            passwordCheck.image = UIImage(named: "회색체크")
+            passwordState = false
+        }
+        
+        if emailState == true && nicknameState == true && passwordState == true {
+            completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
+            
+        } else {
+            completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#D7D7D7")
+        }
+        
+    }
+    
+    @IBAction func completeBtn(_ sender: UIButton) {
+        if emailState == true && nicknameState == true && passwordState == true {
+            completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
+            completeBtn.isEnabled = true
+            Check.dis = 1
+            dismiss(animated: true, completion: nil)
+                    }
+    }
+    
+    //MARK: - 텍스트 필드 글자수 제한 함수
+    func checkMaxLength(textField: UITextField!, maxLength: Int) {
+            if (textField.text?.count ?? 0 > maxLength) {
+                textField.deleteBackward()
+            }
+        }
+        
+    
+
+}
+
+extension EmailViewController {
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
 
 }
