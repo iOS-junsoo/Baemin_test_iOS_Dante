@@ -40,6 +40,17 @@ class CheckBoxViewController: UIViewController {
         self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
         self.nextBtn.adjustsImageWhenHighlighted = false
     }
+    //MARK: - 네비게이션 바 숨기기
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func allCheckTap(_ sender: UIButton) {
         allCheckBtnCount = allCheckBtnCount + 1
         if allCheckBtnCount % 2 == 1 {
@@ -146,12 +157,24 @@ class CheckBoxViewController: UIViewController {
     }
     @IBAction func nextBtnTap(_ sender: UIButton) {
         if must1 == true && must2 == true && must3 == true {
-            guard let SelfVC = self.storyboard?.instantiateViewController(withIdentifier: "SelfCertificationViewController") as? SelfCertificationViewController else{ return }
-            SelfVC.modalTransitionStyle = .coverVertical
-            SelfVC.modalPresentationStyle = .fullScreen
-            self.present(SelfVC, animated: true, completion: nil)
+//            guard let SelfVC = self.storyboard?.instantiateViewController(withIdentifier: "SelfCertificationViewController") as? SelfCertificationViewController else{ return }
+//            SelfVC.modalTransitionStyle = .coverVertical
+//            SelfVC.modalPresentationStyle = .fullScreen
+//            self.present(SelfVC, animated: true, completion: nil)
+            if let SelfVC = self.storyboard?.instantiateViewController(withIdentifier: "SelfCertificationViewController") as? SelfCertificationViewController {
+            self.navigationController?.pushViewController(SelfVC, animated: true)
+            }
+
         }
         
+    }
+    //로그인 화면으로 다시 돌아감
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+        dismiss(animated: true)
+    }
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
     
 

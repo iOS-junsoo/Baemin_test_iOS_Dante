@@ -1,25 +1,25 @@
 //
-//  SelfCertificationViewController.swift
+//  EmailViewController.swift
 //  Baemin_Dante
 //
-//  Created by 준수김 on 2021/10/31.
+//  Created by 준수김 on 2021/11/01.
 //
 
 import UIKit
 
-class SelfCertificationViewController: UIViewController {
+class EmailViewController: UIViewController {
 
-    @IBOutlet var phoneBtn: UIButton!
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var pheneCheckImage: UIImageView!
-    @IBOutlet var numberCheckImage: UIImageView!
+    @IBOutlet var jungbokBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        phoneBtn.layer.borderWidth = 0.3
-        phoneBtn.layer.borderColor = UIColor.gray.cgColor
-//        phoneBtn.tintColor = UIColor.black
+        
+        jungbokBtn.layer.cornerRadius = 2
+        jungbokBtn.layer.borderWidth = 0.3
+        jungbokBtn.layer.borderColor = UIColor.gray.cgColor
+        
+        
     }
-    //MARK: - 네비게이션 바 없애기
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -30,14 +30,8 @@ class SelfCertificationViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-
-    @IBAction func backBtn(_ sender: UIButton) {
+    @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
-    }
-    @IBAction func nextBtn(_ sender: UIButton) {
-        if let emailVC = self.storyboard?.instantiateViewController(withIdentifier: "EmailViewController") as? EmailViewController {
-        self.navigationController?.pushViewController(emailVC, animated: true)
-        }
     }
     
     /*
