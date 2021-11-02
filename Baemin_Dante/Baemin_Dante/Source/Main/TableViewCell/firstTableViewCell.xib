@@ -27,6 +27,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="홈서치버튼"/>
+                                <connections>
+                                    <action selector="searchBarTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oMl-HW-HHk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37254901960784315" green="0.74117647058823533" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

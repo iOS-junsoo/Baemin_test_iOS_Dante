@@ -10,6 +10,15 @@ import Gifu
 
 class secondTableViewCell: UITableViewCell {
     @IBOutlet var gifImageView: GIFImageView!
+    @IBOutlet var baedalBtn: UIButton!
+    @IBOutlet var pojangBtn: UIButton!
+    @IBOutlet var liveBtn: UIButton!
+    @IBOutlet var giftBtn: UIButton!
+    @IBOutlet var jeongukBtn: UIButton!
+    @IBOutlet var pointBtn: UIButton!
+    @IBOutlet var couponBtn: UIButton!
+    @IBOutlet var gifthamBtn: UIButton!
+    @IBOutlet var heartBtn: UIButton!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -25,7 +34,15 @@ class secondTableViewCell: UITableViewCell {
             print("GIF 실행중")
         }
         setUpCollectionView()
-
+        baedalBtn.adjustsImageWhenHighlighted = false
+        pojangBtn.adjustsImageWhenHighlighted = false
+        liveBtn.adjustsImageWhenHighlighted = false
+        giftBtn.adjustsImageWhenHighlighted = false
+        jeongukBtn.adjustsImageWhenHighlighted = false
+        pointBtn.adjustsImageWhenHighlighted = false
+        couponBtn.adjustsImageWhenHighlighted = false
+        gifthamBtn.adjustsImageWhenHighlighted = false
+        heartBtn.adjustsImageWhenHighlighted = false
     }
     
     func setUpCollectionView() {

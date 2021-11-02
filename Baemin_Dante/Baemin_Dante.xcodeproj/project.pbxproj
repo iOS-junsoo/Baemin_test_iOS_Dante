@@ -20,6 +20,10 @@
 		99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99506360273111D4002C43B8 /* firstCollectionViewCell.swift */; };
 		9950636727311221002C43B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636627311221002C43B8 /* Model.swift */; };
 		995063692731171F002C43B8 /* 배민1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 995063682731171F002C43B8 /* 배민1.gif */; };
+		9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636A2731388D002C43B8 /* fourthTableViewCell.swift */; };
+		9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950636B2731388D002C43B8 /* fourthTableViewCell.xib */; };
+		99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */; };
+		99506371273138B7002C43B8 /* fourthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950636F273138B7002C43B8 /* fourthCollectionViewCell.xib */; };
 		9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2B272EA6F900A77C36 /* LoginViewController.swift */; };
 		9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */; };
 		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
@@ -121,6 +125,10 @@
 		99506360273111D4002C43B8 /* firstCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstCollectionViewCell.swift; sourceTree = "<group>"; };
 		9950636627311221002C43B8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		995063682731171F002C43B8 /* 배민1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "배민1.gif"; sourceTree = "<group>"; };
+		9950636A2731388D002C43B8 /* fourthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthTableViewCell.swift; sourceTree = "<group>"; };
+		9950636B2731388D002C43B8 /* fourthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourthTableViewCell.xib; sourceTree = "<group>"; };
+		9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthCollectionViewCell.swift; sourceTree = "<group>"; };
+		9950636F273138B7002C43B8 /* fourthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourthCollectionViewCell.xib; sourceTree = "<group>"; };
 		9979BC2B272EA6F900A77C36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +241,8 @@
 				9950635F273111D4002C43B8 /* firstCollectionViewCell.xib */,
 				9950635E273111D4002C43B8 /* secondCollectionViewCell.swift */,
 				9950635D273111D4002C43B8 /* secondCollectionViewCell.xib */,
+				9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */,
+				9950636F273138B7002C43B8 /* fourthCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -246,6 +256,8 @@
 				995063552731118E002C43B8 /* secondTableViewCell.xib */,
 				995063512731118D002C43B8 /* thridTableViewCell.swift */,
 				995063542731118E002C43B8 /* thridTableViewCell.xib */,
+				9950636A2731388D002C43B8 /* fourthTableViewCell.swift */,
+				9950636B2731388D002C43B8 /* fourthTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -665,6 +677,7 @@
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				99985D21272E308E00D7B167 /* daum_copyright.png in Resources */,
+				9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
 				99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */,
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
@@ -678,6 +691,7 @@
 				99985D1F272E308E00D7B167 /* th_line.png in Resources */,
 				99985D2E272E308E00D7B167 /* map_present_background_update.png in Resources */,
 				99985D25272E308E00D7B167 /* info_box.png in Resources */,
+				99506371273138B7002C43B8 /* fourthCollectionViewCell.xib in Resources */,
 				99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */,
 				99985D27272E308E00D7B167 /* map_pinup_custom.png in Resources */,
 				99985D2D272E308E00D7B167 /* noimage.png in Resources */,
@@ -753,7 +767,9 @@
 				9979BC34272F7F0000A77C36 /* SearchViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
+				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
+				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,

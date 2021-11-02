@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fourthCollectionViewCell" id="gTV-IL-0wX" customClass="fourthCollectionViewCell" customModule="Baemin_Dante" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카페희다 송도센" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2Q-o5-xH6">
+                        <rect key="frame" x="2" y="154" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달팁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osi-Fa-c9u">
+                        <rect key="frame" x="1.6666666666666679" y="177.66666666666666" width="34" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.55686277149999996" green="0.55686277149999996" blue="0.55686277149999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0원~2,000원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-De-SN8">
+                        <rect key="frame" x="38" y="177.66666666666666" width="74" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="15-25분" translatesAutoresizingMaskIntoConstraints="NO" id="Pf8-gx-a7h">
+                        <rect key="frame" x="-0.6666666666666643" y="199.66666666666666" width="91.333333333333314" height="31"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-to-Fya">
+                        <rect key="frame" x="121.66666666666669" y="154" width="27" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kvH-Ys-X1B">
+                        <rect key="frame" x="110" y="156" width="14" height="16"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd7-lb-IBR">
+                        <rect key="frame" x="0.0" y="0.3333333333333286" width="150" height="150"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="빠른광고1"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hkc-to-Fya" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.8" id="0cq-BQ-tkG"/>
+                <constraint firstItem="Pf8-gx-a7h" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.131915" id="5VC-Eo-pIE"/>
+                <constraint firstItem="RS9-De-SN8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5sJ-nB-Whp"/>
+                <constraint firstItem="Pf8-gx-a7h" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.606667" id="6rW-wr-rWT"/>
+                <constraint firstItem="sd7-lb-IBR" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.64" id="8Ga-rR-wqJ"/>
+                <constraint firstItem="sd7-lb-IBR" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.638298" id="A4M-CV-kb0"/>
+                <constraint firstItem="Hkc-to-Fya" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.4" id="B4N-hu-bbY"/>
+                <constraint firstItem="W2Q-o5-xH6" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0893617" id="BFX-cS-l27"/>
+                <constraint firstItem="sd7-lb-IBR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CyP-K7-xXT"/>
+                <constraint firstItem="RS9-De-SN8" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0666667" id="FEG-2e-hY9"/>
+                <constraint firstItem="kvH-Ys-X1B" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="1.56" id="GCT-UT-YmY"/>
+                <constraint firstItem="RS9-De-SN8" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.493333" id="HXL-UL-hdB"/>
+                <constraint firstItem="osi-Fa-c9u" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.226667" id="Hhq-xL-7cu"/>
+                <constraint firstItem="W2Q-o5-xH6" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.653333" id="LCe-2M-j9z"/>
+                <constraint firstItem="Hkc-to-Fya" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0893617" id="QLK-jZ-hAP"/>
+                <constraint firstItem="kvH-Ys-X1B" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.4" id="Rx5-9F-Ttd"/>
+                <constraint firstItem="Pf8-gx-a7h" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="0.6" id="TFC-zN-96M"/>
+                <constraint firstItem="kvH-Ys-X1B" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.0933333" id="W4O-Dl-7Mt"/>
+                <constraint firstItem="osi-Fa-c9u" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0666667" id="a4c-h6-KkP"/>
+                <constraint firstItem="W2Q-o5-xH6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.4" id="a9K-Ty-uua"/>
+                <constraint firstItem="sd7-lb-IBR" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="aKo-az-KhH"/>
+                <constraint firstItem="osi-Fa-c9u" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.58" id="cd0-7V-NCb"/>
+                <constraint firstItem="osi-Fa-c9u" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="0.25" id="clz-ac-YAI"/>
+                <constraint firstItem="Hkc-to-Fya" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.18" id="ndN-BQ-csn"/>
+                <constraint firstItem="RS9-De-SN8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.58" id="oQh-Wc-Ttd"/>
+                <constraint firstItem="W2Q-o5-xH6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" multiplier="0.68" id="ob8-Un-MDB"/>
+                <constraint firstItem="kvH-Ys-X1B" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0695035" id="uck-LG-Ia3"/>
+                <constraint firstItem="Pf8-gx-a7h" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.83" id="wSM-WS-lrb"/>
+            </constraints>
+            <connections>
+                <outlet property="baeminName" destination="W2Q-o5-xH6" id="SVp-mh-99w"/>
+                <outlet property="baeminStar" destination="Hkc-to-Fya" id="XCb-r9-0SM"/>
+                <outlet property="baeminTip" destination="RS9-De-SN8" id="RuW-C7-cGF"/>
+                <outlet property="imageBtn" destination="sd7-lb-IBR" id="pTg-Pp-SjN"/>
+                <outlet property="imageTime" destination="Pf8-gx-a7h" id="F1Q-6m-oym"/>
+            </connections>
+            <point key="canvasLocation" x="147.69230769230768" y="13.86255924170616"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="15-25분" width="226" height="64"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="빠른광고1" width="370" height="369"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

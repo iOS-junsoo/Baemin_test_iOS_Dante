@@ -13,12 +13,21 @@ class MainViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    //MARK: pulltorefresh
+    var refreshControl: UIRefreshControl!
+    
     //MARK: - 데이터 모델
     var models = [Model]()
     var models2 = [Model2]()
+    var models3 = [Model3]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        refreshControl = UIRefreshControl()
+//        refreshControl.backgroundColor = hexStringToUIColor(hex: "5DBAB9")
+//        refreshControl.tintColor = UIColor.clear
+//        tableView.addSubview(refreshControl)
+        
         tableView.separatorStyle = .none
         setUpTableView()
         //MARK: - 바 버튼 아이템 간격조절
@@ -50,11 +59,16 @@ class MainViewController: UIViewController {
             models2.append(Model2(imageName: "오늘광고2"))
             models2.append(Model2(imageName: "오늘광고3"))
             
+            models3.append(Model3(imageName: "빠른광고1", baeminName: "천하원요리", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+            models3.append(Model3(imageName: "빠른광고2", baeminName: "메가MGC커피 송도퍼스트파크점", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+            models3.append(Model3(imageName: "빠른광고3", baeminName: "구구족 송도점", baeminStar: "4.9", baeminTip: "0원~3,000원", imageTime: "13-23분"))
+            
             tableView.delegate = self
             tableView.dataSource = self
             tableView.register(UINib(nibName: "firstTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTableViewCell") //nib 파일 등록
             tableView.register(UINib(nibName: "secondTableViewCell", bundle: nil), forCellReuseIdentifier: "secondTableViewCell") //nib 파일 등록
             tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
+            tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
         }
 
         
@@ -67,6 +81,9 @@ class MainViewController: UIViewController {
         button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .bold) //버튼 폰트
         button.setTitle(Location.titleLocation, for: .normal)
+        button.setImage(UIImage(systemName: "chevron.down"), for: .normal)
+        button.semanticContentAttribute = .forceRightToLeft
+        button.tintColor = .white
         button.addTarget(self, action: #selector(clickOnButton), for: .touchUpInside)
         navigationItem.titleView = button
         
@@ -118,7 +135,7 @@ extension MainViewController {
 }
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
@@ -134,13 +151,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as! secondTableViewCell
             cell.configure(with: models)
-            cell.selectionStyle = .none
+//            cell.selectionStyle = .none
             return cell
         case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as! fourthTableViewCell
+            cell.configure(with: models3)
+//            cell.selectionStyle = .none
+            return cell
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "thridTableViewCell", for: indexPath) as! thridTableViewCell
             cell.configure(with: models2)
             cell.selectionStyle = .none
             return cell
+        
         default:
             return UITableViewCell()
         }
@@ -154,6 +177,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 755
         case 2:
+            return 320
+        case 3:
             return 235
         default:
             return 100
