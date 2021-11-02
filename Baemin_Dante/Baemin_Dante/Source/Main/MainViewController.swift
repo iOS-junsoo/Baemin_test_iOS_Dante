@@ -11,10 +11,16 @@ class MainViewController: UIViewController {
 
     @IBOutlet var baeminView: UIView!
 
+    @IBOutlet var tableView: UITableView!
+    
+    //MARK: - 데이터 모델
+    var models = [Model]()
+    var models2 = [Model2]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.separatorStyle = .none
+        setUpTableView()
         //MARK: - 바 버튼 아이템 간격조절
         //이미지 생성
         var alarmImage = UIImage(named: "홈_오른쪽버튼1")
@@ -35,7 +41,21 @@ class MainViewController: UIViewController {
         //바 버튼 추가
        
         self.navigationItem.setRightBarButtonItems([barMyBaeminButton, barAlarmButton], animated: false)
-        
+        func setUpTableView() {
+            models.append(Model(imageName: "광고1"))
+            models.append(Model(imageName: "광고2"))
+            models.append(Model(imageName: "광고3"))
+            
+            models2.append(Model2(imageName: "오늘광고1"))
+            models2.append(Model2(imageName: "오늘광고2"))
+            models2.append(Model2(imageName: "오늘광고3"))
+            
+            tableView.delegate = self
+            tableView.dataSource = self
+            tableView.register(UINib(nibName: "firstTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTableViewCell") //nib 파일 등록
+            tableView.register(UINib(nibName: "secondTableViewCell", bundle: nil), forCellReuseIdentifier: "secondTableViewCell") //nib 파일 등록
+            tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
+        }
 
         
         //MARK: - 네이게이션바 색
@@ -95,4 +115,50 @@ extension MainViewController {
         )
     }
 
+}
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
+        //firstTableViewCell
+        
+        
+        switch indexPath.row {
+
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "firstTableViewCell", for: indexPath) as! firstTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as! secondTableViewCell
+            cell.configure(with: models)
+            cell.selectionStyle = .none
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "thridTableViewCell", for: indexPath) as! thridTableViewCell
+            cell.configure(with: models2)
+            cell.selectionStyle = .none
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { //cell의 높이 설정
+                
+        switch indexPath.row {
+        case 0:
+            return 55
+        case 1:
+            return 755
+        case 2:
+            return 235
+        default:
+            return 100
+        }
+    }
+   
+    
 }
