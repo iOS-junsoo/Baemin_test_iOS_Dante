@@ -10,8 +10,8 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var baeminView: UIView!
-    @IBOutlet var searchBtn: UIButton!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,16 +36,7 @@ class MainViewController: UIViewController {
        
         self.navigationItem.setRightBarButtonItems([barMyBaeminButton, barAlarmButton], animated: false)
         
-        //MARK: - 버튼 눌림 안보이게
-        searchBtn.adjustsImageWhenHighlighted = false
-        
-        //MARK: - View 둥글게 / 그림자
-        baeminView.layer.cornerRadius = 18
-        searchBtn.layer.shadowColor = UIColor.black.cgColor // 색깔
-        searchBtn.layer.masksToBounds = false  // 내부에 속한 요소들이 UIView 밖을 벗어날 때, 잘라낼 것인지. 그림자는 밖에 그려지는 것이므로 false 로 설정
-        searchBtn.layer.shadowOffset = CGSize(width: 0, height: 4) // 위치조정
-        searchBtn.layer.shadowRadius = 5 // 반경
-        searchBtn.layer.shadowOpacity = 0.1 // alpha값
+
         
         //MARK: - 네이게이션바 색
 //        self.navigationController?.navigationBar.backgroundColor = self.hexStringToUIColor(hex: "2DC0BD")
