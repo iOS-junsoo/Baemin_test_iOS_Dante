@@ -335,6 +335,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
+                                    <action selector="back:" destination="ahU-2i-jLe" eventType="touchUpInside" id="SXq-my-KxY"/>
                                     <action selector="back:" destination="Eyu-hv-JxY" eventType="touchUpInside" id="wWQ-jX-cyt"/>
                                 </connections>
                             </button>
