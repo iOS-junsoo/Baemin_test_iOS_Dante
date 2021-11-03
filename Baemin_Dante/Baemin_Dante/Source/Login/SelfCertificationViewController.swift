@@ -17,6 +17,7 @@ class SelfCertificationViewController: UIViewController {
     @IBOutlet var pheneCheckImage: UIImageView!
     @IBOutlet var numberCheckImage: UIImageView!
     @IBOutlet var nextBtn: UIButton!
+    @IBOutlet var reInjeingBtn: UIButton!
     var phoneCount = 0
     var numberCount = 0
     var phoneState = false
@@ -24,7 +25,12 @@ class SelfCertificationViewController: UIViewController {
     var limitTime = 300 //타이머 5분설정
     override func viewDidLoad() {
         super.viewDidLoad()
+        reInjeingBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#FFFFFF")
         timeLabel.isHidden = true //타임 레이블 숨기기
+        
+        //MARK: 텍스트필드 델리게이트
+        phoneTextField.delegate = self
+        numberTextField.delegate = self
         
         //MARK: - 인증번호 받기 버튼 커스텀
         phoneBtn.layer.borderWidth = 0.3
@@ -63,6 +69,7 @@ class SelfCertificationViewController: UIViewController {
         if phoneState == true {
             timeLabel.isHidden = false
             getSetTime()
+            
         }
     }
     
@@ -70,6 +77,8 @@ class SelfCertificationViewController: UIViewController {
         if phoneState == true {
             timeLabel.isHidden = false
             getSetTime()
+            reInjeingBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
+            
         }
     }
     
@@ -149,28 +158,29 @@ class SelfCertificationViewController: UIViewController {
 
 }
 
-extension SelfCertificationViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
-        guard let text = textField.text else {
-            return false
-        }
-        let characterSet = CharacterSet(charactersIn: string)
-        if CharacterSet.decimalDigits.isSuperset(of: characterSet) == false {
-            return false
-        }
-
-        let formatter = DefaultTextInputFormatter(textPattern: "###-####-####")
-        let result = formatter.formatInput(currentText: text, range: range, replacementString: string)
-        textField.text = result.formattedText
-        let position = textField.position(from: textField.beginningOfDocument, offset: result.caretBeginOffset)!
-        textField.selectedTextRange = textField.textRange(from: position, to: position)
-        return false
-    }
-    
-    
-    
-}
+//MARK: 자동하이픈
+//extension SelfCertificationViewController: UITextFieldDelegate {
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+//        guard let text = textField.text else {
+//            return false
+//        }
+//        let characterSet = CharacterSet(charactersIn: string)
+//        if CharacterSet.decimalDigits.isSuperset(of: characterSet) == false {
+//            return false
+//        }
+//
+//        let formatter = DefaultTextInputFormatter(textPattern: "###-####-####")
+//        let result = formatter.formatInput(currentText: text, range: range, replacementString: string)
+//        textField.text = result.formattedText
+//        let position = textField.position(from: textField.beginningOfDocument, offset: result.caretBeginOffset)!
+//        textField.selectedTextRange = textField.textRange(from: position, to: position)
+//        return false
+//    }
+//
+//
+//
+//}
 
 extension SelfCertificationViewController {
     func hexStringToUIColor (hex:String) -> UIColor {
@@ -193,6 +203,63 @@ extension SelfCertificationViewController {
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: CGFloat(1.0)
         )
+    }
+
+}
+
+//텍스트 필드 Extension
+extension SelfCertificationViewController: UITextFieldDelegate {
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        // return NO to disallow editing.
+        print("TextField should begin editing method called")
+        return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        // became first responder
+        print("TextField did begin editing method called")
+    }
+
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
+        print("TextField should snd editing method called")
+        return true
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+        print("TextField did end editing method called")
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        // if implemented, called in place of textFieldDidEndEditing:
+        print("TextField did end editing with reason method called")
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        // return NO to not change text
+        print("While entering the characters this method gets called")
+        return true
+    }
+
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        // called when clear button pressed. return NO to ignore (no notifications)
+        print("TextField should clear method called")
+        return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool { //리턴키 입력시 호출
+        // called when 'return' key pressed. return NO to ignore.
+        print("TextField should return method called")
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //다른 화면 터치시 호출
+        self.view.endEditing(true) //키보드 내림
+        
     }
 
 }

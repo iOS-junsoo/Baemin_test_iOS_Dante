@@ -30,6 +30,8 @@
 		9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */; };
 		9979BC34272F7F0000A77C36 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC33272F7F0000A77C36 /* SearchViewController.swift */; };
 		9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC35272FA16C00A77C36 /* EmailViewController.swift */; };
+		9984D61A273268A400387158 /* naviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D619273268A400387158 /* naviViewController.swift */; };
+		9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D63D2732939D00387158 /* UIViewExtension.swift */; };
 		999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D3272D5AB600D7B167 /* AppDelegate.swift */; };
 		999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D5272D5AB600D7B167 /* SceneDelegate.swift */; };
 		999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D7272D5AB600D7B167 /* MainViewController.swift */; };
@@ -135,6 +137,8 @@
 		9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCertificationViewController.swift; sourceTree = "<group>"; };
 		9979BC33272F7F0000A77C36 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9979BC35272FA16C00A77C36 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		9984D619273268A400387158 /* naviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviViewController.swift; sourceTree = "<group>"; };
+		9984D63D2732939D00387158 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		999858D0272D5AB600D7B167 /* Baemin_Dante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin_Dante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999858D3272D5AB600D7B167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999858D5272D5AB600D7B167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -414,6 +418,8 @@
 				99985926272D71E600D7B167 /* findLocationViewController.swift */,
 				99985928272D71F200D7B167 /* nowLocationViewController.swift */,
 				99985D32272E4BB800D7B167 /* detailLocationViewController.swift */,
+				9984D619273268A400387158 /* naviViewController.swift */,
+				9984D63D2732939D00387158 /* UIViewExtension.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -768,6 +774,7 @@
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
+				9984D61A273268A400387158 /* naviViewController.swift in Sources */,
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
@@ -792,6 +799,7 @@
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
+				9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,

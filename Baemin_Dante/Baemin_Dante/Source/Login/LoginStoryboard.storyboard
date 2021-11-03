@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -95,13 +96,25 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인바" translatesAutoresizingMaskIntoConstraints="NO" id="Ze2-7s-huM">
                                 <rect key="frame" x="0.0" y="268.33333333333331" width="390" height="12"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3J-5Y-Ckf">
-                                <rect key="frame" x="30" y="719" width="330" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="카카오로그인버튼"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KZ-IM-5U3">
+                                <rect key="frame" x="45" y="717" width="300" height="43"/>
+                                <color key="backgroundColor" red="0.99608188870000003" green="0.89803749320000004" blue="0.00017884813130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.09803964943" green="0.086274288589999998" blue="1.795210324e-06" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="-18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-132" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="카카오로 시작하기">
+                                    <color key="titleColor" red="0.09803964943" green="0.086274288589999998" blue="1.795210324e-06" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageReference key="image" image="message.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="kakaoLoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wie-WY-Ysa"/>
+                                    <action selector="kakaoLoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oBC-K3-kZ3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,6 +122,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.866667" id="2Co-yB-QxK"/>
+                            <constraint firstItem="2KZ-IM-5U3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5Ot-P3-t2W"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0402844" id="89o-2Z-S6w"/>
                             <constraint firstItem="BZr-78-Aor" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Az8-06-PYM"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DZ0-BD-dAN"/>
@@ -119,12 +133,15 @@
                             <constraint firstItem="Hxc-k8-eKk" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.492308" id="Ooj-XO-i6A"/>
                             <constraint firstItem="BZr-78-Aor" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.6" id="Psj-5X-ToJ"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.866667" id="Q0l-7N-Ntu"/>
+                            <constraint firstItem="2KZ-IM-5U3" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.75" id="QEC-vJ-XWu"/>
                             <constraint firstItem="Z2j-tu-Pg5" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.014218" id="SzO-4H-lfB"/>
                             <constraint firstItem="tgG-VY-qZ4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="T9j-uF-DxF"/>
                             <constraint firstItem="Ze2-7s-huM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YQX-zI-Etm"/>
+                            <constraint firstItem="2KZ-IM-5U3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.769231" id="cyc-9p-D9W"/>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0592417" id="dat-Kh-wQd"/>
                             <constraint firstItem="BZr-78-Aor" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0402844" id="ewb-Fe-faZ"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.43" id="fFp-NZ-Zbq"/>
+                            <constraint firstItem="2KZ-IM-5U3" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0509479" id="fUS-z8-N1n"/>
                             <constraint firstItem="Hxc-k8-eKk" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0379147" id="fV5-Gn-JgS"/>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.78" id="fdU-vs-mix"/>
                             <constraint firstItem="Ze2-7s-huM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="fdp-lb-mjH"/>
@@ -140,12 +157,13 @@
                     </view>
                     <connections>
                         <outlet property="idTextField" destination="QaQ-Fh-NdY" id="r5D-0S-Zeg"/>
+                        <outlet property="kakaoLoginBtn" destination="2KZ-IM-5U3" id="QEZ-tA-aXW"/>
                         <outlet property="pwTextField" destination="BZr-78-Aor" id="3hg-0I-9QD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1418" y="112"/>
+            <point key="canvasLocation" x="-1418.4615384615383" y="111.61137440758293"/>
         </scene>
         <!--Check Box View Controller-->
         <scene sceneID="UcL-Jf-zrU">
@@ -323,6 +341,17 @@
                                     <action selector="nextBtnTap:" destination="qiW-sq-qfY" eventType="touchUpInside" id="oId-uA-mGN"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인바" translatesAutoresizingMaskIntoConstraints="NO" id="PjK-zm-Y6a">
+                                <rect key="frame" x="0.0" y="532.33333333333337" width="390" height="10"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejD-FF-w2O">
+                                <rect key="frame" x="14" y="548.66666666666663" width="362" height="65"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="14세이하"/>
+                                <connections>
+                                    <action selector="fourteen:" destination="qiW-sq-qfY" eventType="touchUpInside" id="0cM-1R-Sjo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mjH-MP-PB5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -334,26 +363,34 @@
                             <constraint firstItem="HM4-aT-Ocx" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0118483" id="5o1-aT-gsr"/>
                             <constraint firstItem="apa-qB-r8H" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" multiplier="0.139" id="6xG-zj-9gy"/>
                             <constraint firstItem="Pz5-a6-gQU" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0236967" id="82g-Ym-Dj6"/>
+                            <constraint firstItem="PjK-zm-Y6a" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" id="9VV-sd-xrx"/>
                             <constraint firstItem="Pz5-a6-gQU" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.14359" id="ALl-Kl-vtz"/>
                             <constraint firstItem="apa-qB-r8H" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.0615385" id="D2r-SV-jSv"/>
                             <constraint firstItem="HM4-aT-Ocx" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="0.6" id="Fdz-5e-9GI"/>
                             <constraint firstItem="sTh-4P-VFG" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.279226" id="Ite-pd-PGK"/>
                             <constraint firstItem="sTh-4P-VFG" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="0.934" id="IwC-xS-SQv"/>
+                            <constraint firstItem="ejD-FF-w2O" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" id="JVe-c1-G2E"/>
                             <constraint firstItem="sTh-4P-VFG" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" multiplier="0.783" id="Jpm-iM-N8t"/>
                             <constraint firstItem="VlX-fJ-1Ij" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="1.86" id="Nwa-dw-1Fc"/>
                             <constraint firstItem="ghV-5s-4tl" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="0.34" id="OGN-Oy-7Xi"/>
                             <constraint firstItem="sTh-4P-VFG" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.565812" id="Ozd-Fp-Dp8"/>
                             <constraint firstItem="HM4-aT-Ocx" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" id="S1k-W7-3Ba"/>
+                            <constraint firstItem="ejD-FF-w2O" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0770142" id="S4i-ey-0Oh"/>
                             <constraint firstItem="NwR-Dy-6Lp" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" multiplier="0.14" id="TVb-ED-aHP"/>
                             <constraint firstItem="ghV-5s-4tl" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" multiplier="0.49" id="VLY-yF-wbN"/>
+                            <constraint firstItem="PjK-zm-Y6a" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="1.273" id="XAu-5g-4um"/>
                             <constraint firstItem="Pz5-a6-gQU" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="0.16" id="ZGV-0C-PLN"/>
                             <constraint firstItem="ghV-5s-4tl" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0556872" id="ZGb-Yp-zD3"/>
                             <constraint firstItem="NwR-Dy-6Lp" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0367299" id="ZHv-VS-mA3"/>
+                            <constraint firstItem="ejD-FF-w2O" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.928205" id="ad4-kH-aLg"/>
                             <constraint firstItem="NwR-Dy-6Lp" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.0794872" id="ajT-f9-suI"/>
                             <constraint firstItem="VlX-fJ-1Ij" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" id="dEO-P2-DC7"/>
+                            <constraint firstItem="PjK-zm-Y6a" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" id="hmo-lD-Mch"/>
                             <constraint firstItem="hBm-Kj-w65" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" multiplier="0.35" id="mX4-KT-cVA"/>
+                            <constraint firstItem="PjK-zm-Y6a" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0118483" id="o3I-WM-gNC"/>
                             <constraint firstItem="VlX-fJ-1Ij" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0592417" id="pDO-Sn-838"/>
                             <constraint firstItem="apa-qB-r8H" firstAttribute="height" secondItem="It9-NU-Tm3" secondAttribute="height" multiplier="0.0272512" id="q7H-Hz-oyM"/>
+                            <constraint firstItem="ejD-FF-w2O" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="1.377" id="rJa-DI-7vG"/>
                             <constraint firstItem="hBm-Kj-w65" firstAttribute="width" secondItem="It9-NU-Tm3" secondAttribute="width" multiplier="0.125641" id="sRg-FI-AwY"/>
                             <constraint firstItem="HM4-aT-Ocx" firstAttribute="centerX" secondItem="It9-NU-Tm3" secondAttribute="centerX" id="tXf-F1-9EP"/>
                             <constraint firstItem="hBm-Kj-w65" firstAttribute="centerY" secondItem="It9-NU-Tm3" secondAttribute="centerY" multiplier="0.52" id="uqN-zg-xPp"/>
@@ -371,6 +408,7 @@
                         <outlet property="choice1Btn" destination="Lr3-O7-k6o" id="4fN-El-bFi"/>
                         <outlet property="choice2Btn" destination="6Zw-fl-0Ik" id="0Mk-4C-lvL"/>
                         <outlet property="choice3Btn" destination="AIu-BB-rZD" id="NhV-jb-UD3"/>
+                        <outlet property="fourthBtn" destination="ejD-FF-w2O" id="RpH-VN-S6b"/>
                         <outlet property="must1Btn" destination="Uwd-84-cKP" id="X5v-T7-Uwj"/>
                         <outlet property="must2Btn" destination="oOh-3x-71z" id="zE5-as-e2k"/>
                         <outlet property="must3Btn" destination="Z83-dZ-ZcL" id="Wi6-GY-PYO"/>
@@ -379,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPk-bG-ZnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="112"/>
+            <point key="canvasLocation" x="101.53846153846153" y="111.61137440758293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hfj-pj-6BW">
@@ -490,7 +528,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="인증번호 다시받기">
-                                    <color key="titleColor" red="0.0" green="0.74509803921568629" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="reInjeingBtn:" destination="u8J-6L-fBW" eventType="touchUpInside" id="uah-Gq-Rcx"/>
@@ -562,6 +600,7 @@
                         <outlet property="pheneCheckImage" destination="dWR-HZ-oOH" id="pk6-1C-p7M"/>
                         <outlet property="phoneBtn" destination="7Yi-7l-Oe8" id="2iV-Xg-rAu"/>
                         <outlet property="phoneTextField" destination="niM-Me-Pdl" id="Pgr-n6-vZG"/>
+                        <outlet property="reInjeingBtn" destination="7vG-4Q-djJ" id="Dnc-Tq-2w3"/>
                         <outlet property="timeLabel" destination="6Ao-4P-eNR" id="8fC-9O-Zvy"/>
                     </connections>
                 </viewController>
@@ -766,12 +805,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="14세이하" width="1087" height="201"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="다음으로X" width="851" height="121"/>
         <image name="로그인바" width="1169" height="23"/>
         <image name="체크X" width="56" height="56"/>
-        <image name="카카오로그인버튼" width="300" height="45"/>
         <image name="회색체크" width="43" height="31"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,8 +9,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet var baeminView: UIView!
 
+    @IBOutlet var totalServiceBtn: UIButton!
+    @IBOutlet var locationBtn: UIButton!
+    @IBOutlet var alarmBtn: UIButton!
+    @IBOutlet var myBaeminBtn: UIButton!
     @IBOutlet var tableView: UITableView!
     
     //MARK: pulltorefresh
@@ -24,7 +27,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        refreshControl = UIRefreshControl()
-//        refreshControl.backgroundColor = hexStringToUIColor(hex: "5DBAB9")
+//        refreshControl.backgroundColor = hexStringToUIColor(hex: "2DC0BD")
 //        refreshControl.tintColor = UIColor.clear
 //        tableView.addSubview(refreshControl)
         
@@ -32,24 +35,7 @@ class MainViewController: UIViewController {
         setUpTableView()
         //MARK: - 바 버튼 아이템 간격조절
         //이미지 생성
-        var alarmImage = UIImage(named: "홈_오른쪽버튼1")
-        var myBaeminImage = UIImage(named: "홈_오른쪽버튼2")
-        //버튼 생성
-        let alarmButton: UIButton = UIButton.init(type: .custom)
-        alarmButton.setImage(alarmImage, for: .normal)
-        alarmButton.addTarget(self, action: #selector(didTapAlarmBtn), for: .touchUpInside)
-        alarmButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        let barAlarmButton = UIBarButtonItem(customView: alarmButton)
-        
-        let myBaeminButton: UIButton = UIButton.init(type: .custom)
-        myBaeminButton.setImage(myBaeminImage, for: .normal)
-        myBaeminButton.addTarget(self, action: #selector(didTapmyBaeminBtn), for: .touchUpInside)
-        myBaeminButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        myBaeminButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        let barMyBaeminButton = UIBarButtonItem(customView: myBaeminButton)
-        //바 버튼 추가
-       
-        self.navigationItem.setRightBarButtonItems([barMyBaeminButton, barAlarmButton], animated: false)
+
         func setUpTableView() {
             models.append(Model(imageName: "광고1"))
             models.append(Model(imageName: "광고2"))
@@ -70,41 +56,42 @@ class MainViewController: UIViewController {
             tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
             tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
         }
-
         
-        //MARK: - 네이게이션바 색
-//        self.navigationController?.navigationBar.backgroundColor = self.hexStringToUIColor(hex: "2DC0BD")
-//        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
-        //MARK: - 네비게이션바에 버튼 삽입하기
-        let button =  UIButton(type: .custom)
-        button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .bold) //버튼 폰트
-        button.setTitle(Location.titleLocation, for: .normal)
-        button.setImage(UIImage(systemName: "chevron.down"), for: .normal)
-        button.semanticContentAttribute = .forceRightToLeft
-        button.tintColor = .white
-        button.addTarget(self, action: #selector(clickOnButton), for: .touchUpInside)
-        navigationItem.titleView = button
-        
+        //MARK: - 네비게이션 바 버튼 관련
+        //중앙주소버튼
+        locationBtn.setTitle(Location.titleLocation + " ", for: .normal)
+ 
     }
+    //MARK: - 네비게이션바 없애기
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
+
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        }
     
     @objc func clickOnButton() {
         print("click")
     }
+    //MARK: - 네비게이션바에 오른쪽에 버튼1 화면전환
     
-    @objc func didTapAlarmBtn() {
+    @IBAction func didTapAlarmBtn(_ sender: Any) {
         let alStoryboard = UIStoryboard(name: "AlarmStoryboard", bundle: nil) //스토리보드 결정
         let alarmVC = alStoryboard.instantiateViewController(identifier: "AlarmViewController")
         self.navigationController?.pushViewController(alarmVC, animated: true)
     }
-    
-    @objc func didTapmyBaeminBtn() {
-        //MARK: - 네이비게이션 컨트롤러를 이용해서 화면전환
+    //MARK: - 네이비게이션바에 오른쪽에 버튼2 화면전환
+    @IBAction func didTapMyBaeminBtn(_ sender: Any) {
         let myStoryboard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil) //스토리보드 결정
         let myBeaminVC = myStoryboard.instantiateViewController(identifier: "MyBeaminViewController")
         self.navigationController?.pushViewController(myBeaminVC, animated: true)
     }
+    
+
     
 }
 

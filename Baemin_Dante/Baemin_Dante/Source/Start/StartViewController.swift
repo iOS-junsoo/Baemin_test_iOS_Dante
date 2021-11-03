@@ -87,10 +87,10 @@ class StartViewController: UIViewController {
     }
     @IBAction func startBtnClicked(_ sender: UIButton) {
         if must == true{
-            guard let localVC = self.storyboard?.instantiateViewController(withIdentifier: "LocalViewController") as? LocalViewController else{ return }
-            localVC.modalTransitionStyle = .coverVertical
-            localVC.modalPresentationStyle = .formSheet
-            self.present(localVC, animated: true, completion: nil)
+            guard let naviVC = self.storyboard?.instantiateViewController(withIdentifier: "naviViewController") as? naviViewController else{ return }
+            naviVC.modalTransitionStyle = .coverVertical
+            naviVC.modalPresentationStyle = .formSheet
+            self.present(naviVC, animated: true, completion: nil)
             print("next")
         }
     }

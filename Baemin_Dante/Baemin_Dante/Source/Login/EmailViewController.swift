@@ -24,6 +24,11 @@ class EmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //MARK: - 텍스트필드
+        emailTextField.delegate = self
+        nicknameTextField.delegate = self
+        pwTextField.delegate = self
+        
         jungbokBtn.layer.cornerRadius = 2
         jungbokBtn.layer.borderWidth = 0.3
         jungbokBtn.layer.borderColor = UIColor.gray.cgColor
@@ -55,7 +60,7 @@ class EmailViewController: UIViewController {
         }
     }
     @IBAction func backBtn(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func jungbokBtn(_ sender: UIButton) { //이후 이메일 중복 체크시 이미지가 변경되도록 조건문 추가해야함
         emailCheck.image = UIImage(named: "초록체크")
@@ -138,6 +143,62 @@ extension EmailViewController {
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: CGFloat(1.0)
         )
+    }
+
+}
+
+extension EmailViewController: UITextFieldDelegate {
+
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        // return NO to disallow editing.
+        print("TextField should begin editing method called")
+        return true
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        // became first responder
+        print("TextField did begin editing method called")
+    }
+
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
+        print("TextField should snd editing method called")
+        return true
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+        print("TextField did end editing method called")
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        // if implemented, called in place of textFieldDidEndEditing:
+        print("TextField did end editing with reason method called")
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        // return NO to not change text
+        print("While entering the characters this method gets called")
+        return true
+    }
+
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        // called when clear button pressed. return NO to ignore (no notifications)
+        print("TextField should clear method called")
+        return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool { //리턴키 입력시 호출
+        // called when 'return' key pressed. return NO to ignore.
+        print("TextField should return method called")
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //다른 화면 터치시 호출
+        self.view.endEditing(true) //키보드 내림
+        
     }
 
 }

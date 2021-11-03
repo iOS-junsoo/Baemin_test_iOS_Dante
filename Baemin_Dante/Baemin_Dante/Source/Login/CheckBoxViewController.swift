@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class CheckBoxViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class CheckBoxViewController: UIViewController {
     @IBOutlet var choice2Btn: UIButton!
     @IBOutlet var choice3Btn: UIButton!
     @IBOutlet var nextBtn: UIButton!
+    @IBOutlet var fourthBtn: UIButton!
     var must1 = false
     var must2 = false
     var must3 = false
@@ -27,8 +29,11 @@ class CheckBoxViewController: UIViewController {
     var choice1Count = 0
     var choice2Count = 0
     var choice3Count = 0
+    var fourteenCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        fourthBtn.adjustsImageWhenHighlighted = false
+        
         //MARK: - 모든 버튼 기본값으로 변경
         self.allCheckBtn.setImage(UIImage(named: "체크X"), for: .normal)
         self.must1Btn.setImage(UIImage(named: "체크X"), for: .normal)
@@ -90,7 +95,7 @@ class CheckBoxViewController: UIViewController {
             self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
             must1 = false
         }
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
             self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
         }
     }
@@ -105,7 +110,7 @@ class CheckBoxViewController: UIViewController {
             self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
             must2 = false
         }
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
             self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
         }
     }
@@ -119,7 +124,7 @@ class CheckBoxViewController: UIViewController {
             self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
             must3 = false
         }
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
             self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
         }
         print(must3Count)
@@ -132,7 +137,7 @@ class CheckBoxViewController: UIViewController {
         } else {
             self.choice1Btn.setImage(UIImage(named: "체크X"), for: .normal)
         }
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
             self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
         }
     }
@@ -143,6 +148,9 @@ class CheckBoxViewController: UIViewController {
         } else {
             self.choice2Btn.setImage(UIImage(named: "체크X"), for: .normal)
         }
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+        }
     }
     @IBAction func choice3Tap(_ sender: UIButton) {
         choice3Count = choice3Count + 1
@@ -151,12 +159,12 @@ class CheckBoxViewController: UIViewController {
         } else {
             self.choice3Btn.setImage(UIImage(named: "체크X"), for: .normal)
         }
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
             self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
         }
     }
     @IBAction func nextBtnTap(_ sender: UIButton) {
-        if must1 == true && must2 == true && must3 == true {
+        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
 //            guard let SelfVC = self.storyboard?.instantiateViewController(withIdentifier: "SelfCertificationViewController") as? SelfCertificationViewController else{ return }
 //            SelfVC.modalTransitionStyle = .coverVertical
 //            SelfVC.modalPresentationStyle = .fullScreen
@@ -165,6 +173,9 @@ class CheckBoxViewController: UIViewController {
             self.navigationController?.pushViewController(SelfVC, animated: true)
             }
 
+        }
+        if fourteenCount % 2 == 0 { //사용자가 14세 이상을 선택하지 않고 다음으로 버튼을 누를 때
+            self.view.makeToast("14세 미만은 회원가입을 진행할 수 없습니다. ")
         }
         
     }
@@ -175,6 +186,14 @@ class CheckBoxViewController: UIViewController {
     }
     @IBAction func back(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
+    }
+    @IBAction func fourteen(_ sender: UIButton) {
+        fourteenCount += 1
+        if fourteenCount % 2 == 1 {
+            fourthBtn.setImage(UIImage(named: "14세이상"), for: .normal)
+        } else {
+            fourthBtn.setImage(UIImage(named: "14세이하"), for: .normal)
+        }
     }
     
 

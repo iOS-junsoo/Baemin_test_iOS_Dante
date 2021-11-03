@@ -1,25 +1,19 @@
 //
-//  LocalViewController.swift
+//  naviViewController.swift
 //  Baemin_Dante
 //
-//  Created by 준수김 on 2021/10/30.
+//  Created by 준수김 on 2021/11/03.
 //
 
 import UIKit
 
-class LocalViewController: UIViewController {
+class naviViewController: UINavigationController {
 
-    @IBOutlet weak var findBtn: UIButton!
-    @IBOutlet weak var nowBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //MARK: - 버튼클릭시 회색으로 변하는 거 없애기
-        findBtn.adjustsImageWhenHighlighted = false
-        nowBtn.adjustsImageWhenHighlighted = false
+        // Do any additional setup after loading the view.
     }
-   
-
     
 
     /*

@@ -26,37 +26,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPp-my-0oX">
-                                <rect key="frame" x="0.0" y="-1" width="390" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36470588235294116" green="0.72941176470588232" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-cb-iao">
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-iT-Zsj">
+                                <rect key="frame" x="9" y="48" width="35" height="36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="홈_왼쪽버튼"/>
+                                <connections>
+                                    <segue destination="3KR-J3-2ql" kind="push" id="mvi-b9-FdP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfw-0L-615">
+                                <rect key="frame" x="103" y="60" width="184" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="경북 구미시 고아읍 선산대로" image="chevron.down" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-vd-vCR">
+                                <rect key="frame" x="308" y="48" width="34" height="36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="홈_오른쪽버튼1"/>
+                                <connections>
+                                    <action selector="didTapAlarmBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DX1-93-puL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-sc-cJG">
+                                <rect key="frame" x="340.66666666666669" y="48" width="40" height="36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="홈_오른쪽버튼2"/>
+                                <connections>
+                                    <action selector="didTapMyBaeminBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wm-rU-xJA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.37254901960784315" green="0.74117647058823533" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.75294117647058822" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6wt-sc-cJG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.042654" id="1ye-lN-6FX"/>
+                            <constraint firstItem="pfw-0L-615" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.166" id="26y-Ab-uRn"/>
+                            <constraint firstItem="wdI-iT-Zsj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.042654" id="4Sf-mm-8rA"/>
+                            <constraint firstItem="6wt-sc-cJG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.102564" id="9CS-Ey-SYl"/>
+                            <constraint firstItem="9Yg-vd-vCR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.042654" id="A7v-IT-cd3"/>
+                            <constraint firstItem="9Yg-vd-vCR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.156" id="Akd-S8-h17"/>
+                            <constraint firstItem="6wt-sc-cJG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.156" id="BTH-vT-4i0"/>
+                            <constraint firstItem="pfw-0L-615" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0236967" id="F7F-hg-Zbz"/>
+                            <constraint firstItem="6wt-sc-cJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.85" id="Mef-EL-cKy"/>
+                            <constraint firstItem="9Yg-vd-vCR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.0871795" id="N4o-ES-0cH"/>
+                            <constraint firstItem="wdI-iT-Zsj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.136" id="cdY-DC-GEt"/>
+                            <constraint firstItem="wdI-iT-Zsj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.0897436" id="gTJ-SQ-B8s"/>
+                            <constraint firstItem="pfw-0L-615" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTL-rW-7rg"/>
+                            <constraint firstItem="9Yg-vd-vCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.667" id="kAt-Ie-lGs"/>
+                            <constraint firstItem="wdI-iT-Zsj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.156" id="tWI-OI-20p"/>
+                            <constraint firstItem="pfw-0L-615" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.471795" id="tyn-Zf-PSw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Igb-3s-QbV">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="홈_왼쪽버튼" id="Vl2-Q0-bSp">
-                            <color key="tintColor" red="0.96078437569999997" green="0.96470600370000004" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="3KR-J3-2ql" kind="show" id="kJr-P1-OC0"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="baeminView" destination="QPp-my-0oX" id="qsf-NG-tL6"/>
+                        <outlet property="alarmBtn" destination="9Yg-vd-vCR" id="tCh-DE-tYD"/>
+                        <outlet property="locationBtn" destination="pfw-0L-615" id="trf-wu-9g1"/>
+                        <outlet property="myBaeminBtn" destination="6wt-sc-cJG" id="dmO-Xq-Lfl"/>
                         <outlet property="tableView" destination="Sfv-cb-iao" id="UV3-hC-Uyn"/>
+                        <outlet property="totalServiceBtn" destination="wdI-iT-Zsj" id="nrn-e4-x9X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.38461538461536" y="186.25592417061611"/>
+            <point key="canvasLocation" x="223" y="193"/>
         </scene>
         <!--서치바 화면-->
         <scene sceneID="nZR-U0-75s">
@@ -72,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlP-LG-MIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="187"/>
+            <point key="canvasLocation" x="909" y="193"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZIf-jF-Ru5">
@@ -92,6 +136,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="홈_오른쪽버튼1" width="33.333332061767578" height="36"/>
+        <image name="홈_오른쪽버튼2" width="40" height="36"/>
         <image name="홈_왼쪽버튼" width="34.333332061767578" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
