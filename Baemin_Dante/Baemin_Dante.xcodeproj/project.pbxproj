@@ -396,12 +396,12 @@
 		99985912272D5BCD00D7B167 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9950636527311200002C43B8 /* TableViewEntity */,
-				9950635027310F21002C43B8 /* TableViewCell */,
-				9950634F27310F1F002C43B8 /* CollectionViewCell */,
 				999858D9272D5AB600D7B167 /* Main.storyboard */,
 				9979BC33272F7F0000A77C36 /* SearchViewController.swift */,
 				999858D7272D5AB600D7B167 /* MainViewController.swift */,
+				9950636527311200002C43B8 /* TableViewEntity */,
+				9950635027310F21002C43B8 /* TableViewCell */,
+				9950634F27310F1F002C43B8 /* CollectionViewCell */,
 				99985D39272E800600D7B167 /* TotalService */,
 				99985D38272E7FF400D7B167 /* MyBaemin */,
 				99985D37272E7FEA00D7B167 /* Alarm */,

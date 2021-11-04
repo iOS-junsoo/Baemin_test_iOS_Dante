@@ -11,8 +11,7 @@ class firstTableViewCell: UITableViewCell {
 
     @IBOutlet weak var baeminView: UIView!
     @IBOutlet weak var searchBtn: UIButton!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         baeminView.layer.cornerRadius = 18
@@ -34,7 +33,7 @@ class firstTableViewCell: UITableViewCell {
 //        let myStoryboard = UIStoryboard(name: "SearchViewController", bundle: nil) //스토리보드 결정
 //        let myBeaminVC = myStoryboard.instantiateViewController(identifier: "SearchViewController")
 //        self.navigationController?.pushViewController(myBeaminVC, animated: true)
-        print("search")
+//        print("search")
     }
     
     

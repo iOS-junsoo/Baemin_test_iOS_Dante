@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import CoreLocation
 
 public let DEFAULT_POSITION = MTMapPointGeo(latitude: 36.22473, longitude: 128.31230)
-class nowLocationViewController: UIViewController, MTMapViewDelegate {
+class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate {
 
     var mapView: MTMapView?
     var currnetLocation: MTMapView?
@@ -17,12 +18,27 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
     var jibunCount = 0
     @IBOutlet var jibunBtn: UIButton!
     @IBOutlet var userLocationLabel: UILabel!
-    
+    var locationManger = CLLocationManager() //현재위치 설정
         override func viewDidLoad() {
             super.viewDidLoad()
-         
+         //MARK: - 현재 위치
+            // 델리게이트 설정
+            locationManger.delegate = self
+            // 거리 정확도 설정
+            locationManger.desiredAccuracy = kCLLocationAccuracyBest
+            // 사용자에게 허용 받기 alert 띄우기
+            locationManger.requestWhenInUseAuthorization()
+              
+            // 아이폰 설정에서의 위치 서비스가 켜진 상태라면
+            if CLLocationManager.locationServicesEnabled() {
+                print("위치 서비스 On 상태")
+            locationManger.startUpdatingLocation() //위치 정보 받아오기 시작
+                print(locationManger.location?.coordinate)
+            } else {
+                print("위치 서비스 Off 상태")
+            }
             
-            //MARK: 지번 버튼 둥글게
+            //MARK: - 지번 버튼 둥글게
             jibunBtn.layer.cornerRadius = 20
             
             mapView = MTMapView(frame: self.view.frame)
@@ -37,24 +53,14 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
                 
                 //MARK: -  현재 위치 트래킹
                 mapView.showCurrentLocationMarker = true
-                mapView.currentLocationTrackingMode = .onWithHeading
-//                mapView(, updateCurrentLocation: mapPoint1, withAccuracy: 5.0)
-               
-                //MARK: -  마커 추가
-                self.mapPoint1 = MTMapPoint(geoCoord: MTMapPointGeo(latitude:  36.22473, longitude: 128.31230))
-                poiItem1 = MTMapPOIItem()
-                poiItem1?.markerType = MTMapPOIItemMarkerType.redPin
-                poiItem1?.mapPoint = mapPoint1
-                poiItem1?.itemName = "움직여 위치를 설정하세요." //위치 마크 이름
-                mapView.add(poiItem1)
+                mapView.currentLocationTrackingMode = .onWithoutHeading
+
                 self.view.addSubview(mapView)
             }
             
             //MARK: - 현재위치로 돌아가는 버튼추가
             let button = UIButton(frame: CGRect(x: 322, y: 500, width: 60, height: 60))
             button.setImage(UIImage(named: "현재위치버튼"), for: .normal)
-//            button.setTitle("Button", for: .normal)
-//            button.setTitleColor(.red, for: .normal)
             button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
             
             //버튼 그림자
@@ -67,17 +73,58 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
             
             
             
-            //MARK: - 주소 입력(미구현)
-            Location.titleLocation = "경북 구미시 선산대로 1220"
-            userLocationLabel.text = Location.titleLocation
-            // 1. 현재 위치를 시스템상에서 알아내어 Location.titleLocation에 저장
-            // 2. userLocationLabel.text에 Location.titleLocation 저장
+//            //MARK: - 주소 입력(미구현)
+//            Location.titleLocation = "경북 구미시 선산대로 1220"
+//            userLocationLabel.text = Location.titleLocation
+//            // 1. 현재 위치를 시스템상에서 알아내어 Location.titleLocation에 저장
+//            // 2. userLocationLabel.text에 Location.titleLocation 저장
     
+            
+
+            
         }
+    
+    // 위치 정보 계속 업데이트 -> 위도 경도 받아옴
+       func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+           print("didUpdateLocations")
+           if let location = locations.first {
+               print("위도: \(location.coordinate.latitude)")
+               UserInfo.latitude = location.coordinate.latitude
+               print("경도: \(location.coordinate.longitude)")
+               UserInfo.longitude = location.coordinate.longitude
+           }
+           juso()
+       }
+       
+       // 위도 경도 받아오기 에러
+       func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+           print(error)
+       }
+    
+    func juso(){
+        //위도 경도 -> 주소
+        let findLocation = CLLocation(latitude: UserInfo.latitude, longitude: UserInfo.longitude)
+        print("확인")
+        print(UserInfo.latitude)
+        print(UserInfo.longitude)
+        
+        let geocoder = CLGeocoder()
+        let locale = Locale(identifier: "Ko-kr") //원하는 언어의 나라 코드를 넣어주시면 됩니다.
+        geocoder.reverseGeocodeLocation(findLocation, preferredLocale: locale, completionHandler: {(placemarks, error) in
+            if let address: [CLPlacemark] = placemarks { if let name: String = address.first?.name { print("주소: \(name)")
+                UserInfo.location = name
+            }
+                
+            } })
+    }
+//address.last?.name
     
     //현재 위치로 돌아가기
     @objc func handleTap(_ sender: UIButton) {
         print("currnt location")
+        //현재 위치로 돌아가기
+        mapView?.setMapCenter(MTMapPoint(geoCoord: DEFAULT_POSITION), zoomLevel: -2, animated: true)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,7 +150,8 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
             userLocationLabel.text = Location.titleLocation
         } else {
             jibunBtn.setTitle(" 도로명으로 보기", for: .normal)
-            Location.titleLocation = "경북 구미시 오로리 460-1"
+//            Location.titleLocation = "경북 구미시 오로리 460-1"
+            Location.titleLocation =  UserInfo.location
             userLocationLabel.text = Location.titleLocation
         }
     }
@@ -124,4 +172,5 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate {
 
 
 }
+
 

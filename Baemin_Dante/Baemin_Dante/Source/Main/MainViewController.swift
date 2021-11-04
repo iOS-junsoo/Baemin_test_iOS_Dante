@@ -9,13 +9,14 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    
 
     @IBOutlet var totalServiceBtn: UIButton!
     @IBOutlet var locationBtn: UIButton!
     @IBOutlet var alarmBtn: UIButton!
     @IBOutlet var myBaeminBtn: UIButton!
     @IBOutlet var tableView: UITableView!
-    
+    let ctrl = UIRefreshControl(frame: .zero)
     //MARK: pulltorefresh
     var refreshControl: UIRefreshControl!
     
@@ -30,6 +31,13 @@ class MainViewController: UIViewController {
 //        refreshControl.backgroundColor = hexStringToUIColor(hex: "2DC0BD")
 //        refreshControl.tintColor = UIColor.clear
 //        tableView.addSubview(refreshControl)
+        
+        //MARK: -  pull to refresh
+        ctrl.backgroundColor = hexStringToUIColor(hex: "2DC0BD")
+        ctrl.tintColor = UIColor.clear
+        tableView.refreshControl = ctrl
+        tableView.refreshControl?.addTarget(self, action: #selector(pullToRefresh(_:)), for: .valueChanged)
+        
         
         tableView.separatorStyle = .none
         setUpTableView()
@@ -91,6 +99,10 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(myBeaminVC, animated: true)
     }
     
+    //MARK: -  pull to refresh 늘어나는 거 방지
+    @objc func pullToRefresh(_ sender: Any) {
+        ctrl.endRefreshing()
+    }
 
     
 }
@@ -138,12 +150,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as! secondTableViewCell
             cell.configure(with: models)
-//            cell.selectionStyle = .none
+            cell.selectionStyle = .none
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as! fourthTableViewCell
             cell.configure(with: models3)
-//            cell.selectionStyle = .none
+            cell.selectionStyle = .none
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "thridTableViewCell", for: indexPath) as! thridTableViewCell

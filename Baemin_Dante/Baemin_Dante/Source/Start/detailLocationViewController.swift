@@ -46,7 +46,7 @@ class detailLocationViewController: UIViewController {
     //MARK: 텍스트필드 애니메이션
     func ZoomIn() {
         
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.myView.frame = CGRect(x: 28, y: 157, width: 83, height: 15)
             self.myView.image = UIImage(named: "상세주소입력미니")
         }, completion: nil
@@ -57,7 +57,7 @@ class detailLocationViewController: UIViewController {
     
     func ZoomOut() {
         
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.myView.frame =  CGRect(x: 16, y: 161.5, width: 360, height: 52)
             self.myView.image = UIImage(named: "상세주소입력")
         }, completion: nil
