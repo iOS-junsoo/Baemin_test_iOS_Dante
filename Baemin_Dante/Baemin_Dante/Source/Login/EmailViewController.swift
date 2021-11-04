@@ -17,12 +17,19 @@ class EmailViewController: UIViewController {
     @IBOutlet var nicknameCheck: UIImageView!
     @IBOutlet var passwordCheck: UIImageView!
     @IBOutlet var completeBtn: UIButton!
+    @IBOutlet var emailErrorLabel: UILabel!
+    @IBOutlet var nicknameErrorLabel: UILabel!
+    @IBOutlet var passwordErrorLabel: UILabel!
     var pwCount = 0
     var emailState = false
     var nicknameState = false
     var passwordState = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - 에러메세지 숨기기
+        emailErrorLabel.textColor = UIColor.white
+        nicknameErrorLabel.textColor = UIColor.white
+        passwordErrorLabel.textColor = UIColor.white
         
         //MARK: - 텍스트필드
         emailTextField.delegate = self
@@ -63,7 +70,9 @@ class EmailViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func jungbokBtn(_ sender: UIButton) { //이후 이메일 중복 체크시 이미지가 변경되도록 조건문 추가해야함
-        emailCheck.image = UIImage(named: "초록체크")
+        emailCheck.image = UIImage(named: "초록체크") //응답이 true라면
+//        emailErrorLabel.textColor = UIColor.red //응답이 false라면
+        
     }
     
     //MARK: - 텍스트 필드 입력 감지
@@ -76,22 +85,27 @@ class EmailViewController: UIViewController {
         UserInfo.nickName = nicknameTextField.text!
         if nicknameTextField.text?.count ?? 0 > 1 && nicknameTextField.text?.count ?? 0 < 11 {
             nicknameCheck.image = UIImage(named: "초록체크")
+            nicknameErrorLabel.textColor = UIColor.white
             nicknameState = true
         } else {
             nicknameCheck.image = UIImage(named: "회색체크")
+            nicknameErrorLabel.textColor = UIColor.red
             nicknameState = false
         }
     }
     
     @objc func passwordTextFieldDidChange(_ sender: Any?) {
         UserInfo.passWord = pwTextField.text!
-        if pwTextField.text?.count ?? 0 > 1  {
+        if pwTextField.text?.count ?? 0 > 10  {
             passwordCheck.image = UIImage(named: "초록체크")
+            passwordErrorLabel.textColor = UIColor.white
             passwordState = true//완료버튼 활성화 
         } else {
             passwordCheck.image = UIImage(named: "회색체크")
             passwordState = false
         }
+       
+        
         
         if emailState == true && nicknameState == true && passwordState == true {
             completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
@@ -106,9 +120,19 @@ class EmailViewController: UIViewController {
         if emailState == true && nicknameState == true && passwordState == true {
             completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
             completeBtn.isEnabled = true
+            Request().postData()
+            print(UserInfo.email)
+            print(UserInfo.passWord)
+            print(UserInfo.phoneNumber)
+            print(UserInfo.nickName)
+            print(JoinCheck.agreementCollection)
+            print(JoinCheck.agreementProvision)
+            print(JoinCheck.agreementMail)
+            print(JoinCheck.agreementSMS)
+            print(JoinCheck.over14)
             Check.dis = 1
             dismiss(animated: true, completion: nil)
-                    }
+        }
     }
     
     //MARK: - 텍스트 필드 글자수 제한 함수
@@ -191,6 +215,14 @@ extension EmailViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool { //리턴키 입력시 호출
         // called when 'return' key pressed. return NO to ignore.
         print("TextField should return method called")
+        if pwTextField.text?.count ?? 0 < 10 && pwTextField.text?.count ?? 0 > 0 {
+            passwordErrorLabel.textColor = UIColor.red
+        }
+        if nicknameTextField.text?.count ?? 0 < 2 {
+            nicknameErrorLabel.textColor = UIColor.red
+        }
+        
+        
         textField.resignFirstResponder()
         
         return true
@@ -198,7 +230,6 @@ extension EmailViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //다른 화면 터치시 호출
         self.view.endEditing(true) //키보드 내림
-        
     }
 
 }

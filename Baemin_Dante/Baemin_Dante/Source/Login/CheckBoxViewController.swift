@@ -70,6 +70,10 @@ class CheckBoxViewController: UIViewController {
             must1 = true
             must2 = true
             must3 = true
+            JoinCheck.agreementCollection = "1"
+            JoinCheck.agreementProvision = "1"
+            JoinCheck.agreementMail = "1"
+            JoinCheck.agreementSMS = "1"
         } else{
             self.allCheckBtn.setImage(UIImage(named: "체크X"), for: .normal)
             self.must1Btn.setImage(UIImage(named: "체크X"), for: .normal)
@@ -82,85 +86,187 @@ class CheckBoxViewController: UIViewController {
             must1 = false
             must2 = false
             must3 = false
+            JoinCheck.agreementCollection = "0"
+            JoinCheck.agreementProvision = "0"
+            JoinCheck.agreementMail = "0"
+            JoinCheck.agreementSMS = "0"
         }
         
     }
     @IBAction func must1Tap(_ sender: UIButton) {
-        must1Count = must1Count + 1
-        if must1Count % 2 == 1{
-            self.must1Btn.setImage(UIImage(named: "체크O"), for: .normal)
-            must1 = true
-        } else {
-            self.must1Btn.setImage(UIImage(named: "체크X"), for: .normal)
-            self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
-            must1 = false
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            must1Count = must1Count + 1
+            if must1Count % 2 == 0{
+                self.must1Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                must1 = true
+            } else {
+                self.must1Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must1 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
+        } else{
+            must1Count = must1Count + 1
+            if must1Count % 2 == 1{
+                self.must1Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                must1 = true
+            } else {
+                self.must1Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must1 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         }
     }
     @IBAction func must2Tap(_ sender: UIButton) {
-        must2Count = must2Count + 1
-        if must2Count % 2 == 1{
-            self.must2Btn.setImage(UIImage(named: "체크O"), for: .normal)
-            
-            must2 = true
-        } else {
-            self.must2Btn.setImage(UIImage(named: "체크X"), for: .normal)
-            self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
-            must2 = false
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            must2Count = must2Count + 1
+            if must2Count % 2 == 0{
+                self.must2Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                
+                must2 = true
+            } else {
+                self.must2Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must2 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
+        } else{
+            must2Count = must2Count + 1
+            if must2Count % 2 == 1{
+                self.must2Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                
+                must2 = true
+            } else {
+                self.must2Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must2 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         }
     }
     @IBAction func must3Tap(_ sender: UIButton) {
-        must3Count = must3Count + 1
-        if must3Count % 2 == 1{
-            self.must3Btn.setImage(UIImage(named: "체크O"), for: .normal)
-            must3 = true
-        } else {
-            self.must3Btn.setImage(UIImage(named: "체크X"), for: .normal)
-            self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
-            must3 = false
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
-        }
-        print(must3Count)
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            must3Count = must3Count + 1
+            if must3Count % 2 == 0{
+                self.must3Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                must3 = true
+            } else {
+                self.must3Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must3 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         
+        } else {
+            must3Count = must3Count + 1
+            if must3Count % 2 == 1{
+                self.must3Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                must3 = true
+            } else {
+                self.must3Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                self.nextBtn.setImage(UIImage(named: "다음으로X"), for: .normal)
+                must3 = false
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
+        }
     }
     @IBAction func choice1Tap(_ sender: UIButton) {
-        choice1Count = choice1Count + 1
-        if choice1Count % 2 == 1 {
-            self.choice1Btn.setImage(UIImage(named: "체크O"), for: .normal)
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            choice1Count = choice1Count + 1
+            if choice1Count % 2 == 0 {
+                self.choice1Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementCollection = "1"
+            } else {
+                self.choice1Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementCollection = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         } else {
-            self.choice1Btn.setImage(UIImage(named: "체크X"), for: .normal)
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            choice1Count = choice1Count + 1
+            if choice1Count % 2 == 1 {
+                self.choice1Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementCollection = "1"
+            } else {
+                self.choice1Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementCollection = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         }
     }
     @IBAction func choice2Tap(_ sender: UIButton) {
-        choice2Count = choice2Count + 1
-        if choice2Count % 2 == 1 {
-            self.choice2Btn.setImage(UIImage(named: "체크O"), for: .normal)
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            choice2Count = choice2Count + 1
+            if choice2Count % 2 == 0 {
+                self.choice2Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementProvision = "1"
+            } else {
+                self.choice2Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementProvision = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         } else {
-            self.choice2Btn.setImage(UIImage(named: "체크X"), for: .normal)
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            choice2Count = choice2Count + 1
+            if choice2Count % 2 == 1 {
+                self.choice2Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementProvision = "1"
+            } else {
+                self.choice2Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementProvision = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         }
     }
     @IBAction func choice3Tap(_ sender: UIButton) {
-        choice3Count = choice3Count + 1
-        if choice3Count % 2 == 1 {
-            self.choice3Btn.setImage(UIImage(named: "체크O"), for: .normal)
+        
+        if allCheckBtnCount % 2 == 1 { //전체 동의를 눌렀다면
+            choice3Count = choice3Count + 1
+            if choice3Count % 2 == 0 {
+                self.choice3Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementMail = "1"
+                JoinCheck.agreementSMS = "1"
+            } else {
+                self.choice3Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementMail = "0"
+                JoinCheck.agreementSMS = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         } else {
-            self.choice3Btn.setImage(UIImage(named: "체크X"), for: .normal)
-        }
-        if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
-            self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            choice3Count = choice3Count + 1
+            if choice3Count % 2 == 1 {
+                self.choice3Btn.setImage(UIImage(named: "체크O"), for: .normal)
+                JoinCheck.agreementMail = "1"
+                JoinCheck.agreementSMS = "1"
+            } else {
+                self.choice3Btn.setImage(UIImage(named: "체크X"), for: .normal)
+                JoinCheck.agreementMail = "0"
+                JoinCheck.agreementSMS = "0"
+            }
+            if must1 == true && must2 == true && must3 == true && fourteenCount % 2 == 1{
+                self.nextBtn.setImage(UIImage(named: "다음으로O"), for: .normal)
+            }
         }
     }
     @IBAction func nextBtnTap(_ sender: UIButton) {
@@ -184,15 +290,15 @@ class CheckBoxViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
         dismiss(animated: true)
     }
-    @IBAction func back(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
-    }
+
     @IBAction func fourteen(_ sender: UIButton) {
         fourteenCount += 1
         if fourteenCount % 2 == 1 {
             fourthBtn.setImage(UIImage(named: "14세이상"), for: .normal)
+            JoinCheck.over14 = "1"
         } else {
             fourthBtn.setImage(UIImage(named: "14세이하"), for: .normal)
+            JoinCheck.over14 = "0"
         }
     }
     

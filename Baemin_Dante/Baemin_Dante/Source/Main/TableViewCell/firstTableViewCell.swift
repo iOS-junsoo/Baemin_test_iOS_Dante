@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol CustomDelegate: class {
+    func nextView()
+}
+
+
+
 class firstTableViewCell: UITableViewCell {
 
     @IBOutlet weak var baeminView: UIView!
     @IBOutlet weak var searchBtn: UIButton!
+    weak var delegate: CustomDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,13 +36,15 @@ class firstTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
     @IBAction func searchBarTap(_ sender: UIButton) {
-//        let myStoryboard = UIStoryboard(name: "SearchViewController", bundle: nil) //스토리보드 결정
-//        let myBeaminVC = myStoryboard.instantiateViewController(identifier: "SearchViewController")
-//        self.navigationController?.pushViewController(myBeaminVC, animated: true)
-//        print("search")
+        nextView()
     }
-    
-    
-    
+}
+
+extension firstTableViewCell: CustomDelegate {
+    func nextView() {
+        delegate?.nextView()
+        
+    }
 }

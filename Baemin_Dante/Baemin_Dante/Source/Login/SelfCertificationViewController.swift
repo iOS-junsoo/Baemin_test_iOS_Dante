@@ -23,8 +23,10 @@ class SelfCertificationViewController: UIViewController {
     var phoneState = false
     var numbarState = false
     var limitTime = 300 //타이머 5분설정
+    @IBOutlet var ingeErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ingeErrorLabel.textColor = UIColor.white
         phoneTextField.becomeFirstResponder()
         reInjeingBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#FFFFFF")
         timeLabel.isHidden = true //타임 레이블 숨기기
@@ -115,10 +117,11 @@ class SelfCertificationViewController: UIViewController {
     
     //휴대전화 함수
     @objc func phoneTextFieldDidChange(_ sender: Any?) {
-            
+        UserInfo.phoneNumber = phoneTextField.text ?? ""
         if phoneTextField.text?.count == 13 { //글자수가 10이면 초록색 체크로
             pheneCheckImage.image = UIImage(named: "초록체크")
             phoneBtn.tintColor = UIColor.black //버튼 색 변경
+            
             phoneState = true
         }else {
             pheneCheckImage.image = UIImage(named: "회색체크")
@@ -141,11 +144,13 @@ class SelfCertificationViewController: UIViewController {
         if numberTextField.text?.count == 4 { //글자수가 4이상이면 초록색 체크로
                 numberCheckImage.image = UIImage(named: "초록체크")
                 nextBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
+            ingeErrorLabel.textColor = UIColor.white
             //화면전환
             numbarState = true
             } else {
                 numberCheckImage.image = UIImage(named: "회색체크")
                 nextBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#D7D7D7")
+                ingeErrorLabel.textColor = UIColor.red
             }
         checkMaxLength(textField: numberTextField, maxLength: 4) //텍스트 필드 글자수 제한
         }

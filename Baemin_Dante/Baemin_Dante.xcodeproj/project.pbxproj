@@ -28,7 +28,6 @@
 		9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */; };
 		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
 		9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */; };
-		9979BC34272F7F0000A77C36 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC33272F7F0000A77C36 /* SearchViewController.swift */; };
 		9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC35272FA16C00A77C36 /* EmailViewController.swift */; };
 		9984D61A273268A400387158 /* naviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D619273268A400387158 /* naviViewController.swift */; };
 		9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D63D2732939D00387158 /* UIViewExtension.swift */; };
@@ -97,6 +96,23 @@
 		99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */; };
 		99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99985D42272E80F800D7B167 /* AlarmViewController.swift */; };
 		99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99985D44272E810000D7B167 /* AlarmStoryboard.storyboard */; };
+		99A4378E27339F900076F023 /* joinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4378D27339F900076F023 /* joinResponse.swift */; };
+		99A4379027339F9C0076F023 /* joinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4378F27339F9C0076F023 /* joinDataManager.swift */; };
+		99A437932733DECB0076F023 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437922733DECB0076F023 /* Constant.swift */; };
+		99A437962733FAF20076F023 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437952733FAF20076F023 /* SearchViewController.swift */; };
+		99A437982733FAFD0076F023 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437972733FAFD0076F023 /* SearchStoryboard.storyboard */; };
+		99A437A12734134C0076F023 /* BaedalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437A02734134C0076F023 /* BaedalViewController.swift */; };
+		99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437A2273413550076F023 /* BaedalStoryboard.storyboard */; };
+		99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437A4273413660076F023 /* Baemin1ViewController.swift */; };
+		99A437A7273413700076F023 /* Baemin1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437A6273413700076F023 /* Baemin1Storyboard.storyboard */; };
+		99A437A9273413890076F023 /* PojangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437A8273413890076F023 /* PojangViewController.swift */; };
+		99A437AB273413940076F023 /* PojangStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437AA273413940076F023 /* PojangStoryboard.storyboard */; };
+		99A437AD273413A40076F023 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437AC273413A40076F023 /* LiveViewController.swift */; };
+		99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437AE273413B00076F023 /* LiveStoryboard.storyboard */; };
+		99A437B1273413BF0076F023 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437B0273413BF0076F023 /* GiftViewController.swift */; };
+		99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437B2273413CC0076F023 /* GiftStoryboard.storyboard */; };
+		99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437B4273413F50076F023 /* JeongukViewController.swift */; };
+		99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437B6273413FE0076F023 /* JeongukStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,7 +151,6 @@
 		9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
 		9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCertificationViewController.swift; sourceTree = "<group>"; };
-		9979BC33272F7F0000A77C36 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9979BC35272FA16C00A77C36 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		9984D619273268A400387158 /* naviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviViewController.swift; sourceTree = "<group>"; };
 		9984D63D2732939D00387158 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -215,6 +230,23 @@
 		99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBeaminStoryboard.storyboard; sourceTree = "<group>"; };
 		99985D42272E80F800D7B167 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		99985D44272E810000D7B167 /* AlarmStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlarmStoryboard.storyboard; sourceTree = "<group>"; };
+		99A4378D27339F900076F023 /* joinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = joinResponse.swift; sourceTree = "<group>"; };
+		99A4378F27339F9C0076F023 /* joinDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = joinDataManager.swift; sourceTree = "<group>"; };
+		99A437922733DECB0076F023 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		99A437952733FAF20076F023 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		99A437972733FAFD0076F023 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		99A437A02734134C0076F023 /* BaedalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaedalViewController.swift; sourceTree = "<group>"; };
+		99A437A2273413550076F023 /* BaedalStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaedalStoryboard.storyboard; sourceTree = "<group>"; };
+		99A437A4273413660076F023 /* Baemin1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baemin1ViewController.swift; sourceTree = "<group>"; };
+		99A437A6273413700076F023 /* Baemin1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Baemin1Storyboard.storyboard; sourceTree = "<group>"; };
+		99A437A8273413890076F023 /* PojangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PojangViewController.swift; sourceTree = "<group>"; };
+		99A437AA273413940076F023 /* PojangStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PojangStoryboard.storyboard; sourceTree = "<group>"; };
+		99A437AC273413A40076F023 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		99A437AE273413B00076F023 /* LiveStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LiveStoryboard.storyboard; sourceTree = "<group>"; };
+		99A437B0273413BF0076F023 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		99A437B2273413CC0076F023 /* GiftStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiftStoryboard.storyboard; sourceTree = "<group>"; };
+		99A437B4273413F50076F023 /* JeongukViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeongukViewController.swift; sourceTree = "<group>"; };
+		99A437B6273413FE0076F023 /* JeongukStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JeongukStoryboard.storyboard; sourceTree = "<group>"; };
 		CDB1F3588D76FA54F737561D /* Pods-Baemin_Dante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.debug.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -323,6 +355,7 @@
 		999858E9272D5B0F00D7B167 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				99A437922733DECB0076F023 /* Constant.swift */,
 				999858EA272D5B2700D7B167 /* Secret */,
 				999858EE272D5B4E00D7B167 /* Font */,
 				999858ED272D5B4E00D7B167 /* Extension */,
@@ -396,12 +429,18 @@
 		99985912272D5BCD00D7B167 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				99A4379F273412DC0076F023 /* Baedal */,
+				99A4379E273412D90076F023 /* Baemin1 */,
+				99A4379D273412D80076F023 /* Pojang */,
+				99A4379C273412D70076F023 /* Live */,
+				99A4379A273412CB0076F023 /* Gift */,
+				99A43799273412CA0076F023 /* jeonguk */,
 				999858D9272D5AB600D7B167 /* Main.storyboard */,
-				9979BC33272F7F0000A77C36 /* SearchViewController.swift */,
 				999858D7272D5AB600D7B167 /* MainViewController.swift */,
 				9950636527311200002C43B8 /* TableViewEntity */,
 				9950635027310F21002C43B8 /* TableViewCell */,
 				9950634F27310F1F002C43B8 /* CollectionViewCell */,
+				99A437942733FAA80076F023 /* Search */,
 				99985D39272E800600D7B167 /* TotalService */,
 				99985D38272E7FF400D7B167 /* MyBaemin */,
 				99985D37272E7FEA00D7B167 /* Alarm */,
@@ -461,6 +500,7 @@
 		9998591F272D61C600D7B167 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				99A4378F27339F9C0076F023 /* joinDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -482,6 +522,7 @@
 		99985922272D61D400D7B167 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				99A4378D27339F900076F023 /* joinResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -587,6 +628,69 @@
 			path = TotalService;
 			sourceTree = "<group>";
 		};
+		99A437942733FAA80076F023 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				99A437952733FAF20076F023 /* SearchViewController.swift */,
+				99A437972733FAFD0076F023 /* SearchStoryboard.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		99A43799273412CA0076F023 /* jeonguk */ = {
+			isa = PBXGroup;
+			children = (
+				99A437B4273413F50076F023 /* JeongukViewController.swift */,
+				99A437B6273413FE0076F023 /* JeongukStoryboard.storyboard */,
+			);
+			path = jeonguk;
+			sourceTree = "<group>";
+		};
+		99A4379A273412CB0076F023 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				99A437B0273413BF0076F023 /* GiftViewController.swift */,
+				99A437B2273413CC0076F023 /* GiftStoryboard.storyboard */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		99A4379C273412D70076F023 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				99A437AC273413A40076F023 /* LiveViewController.swift */,
+				99A437AE273413B00076F023 /* LiveStoryboard.storyboard */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		99A4379D273412D80076F023 /* Pojang */ = {
+			isa = PBXGroup;
+			children = (
+				99A437A8273413890076F023 /* PojangViewController.swift */,
+				99A437AA273413940076F023 /* PojangStoryboard.storyboard */,
+			);
+			path = Pojang;
+			sourceTree = "<group>";
+		};
+		99A4379E273412D90076F023 /* Baemin1 */ = {
+			isa = PBXGroup;
+			children = (
+				99A437A4273413660076F023 /* Baemin1ViewController.swift */,
+				99A437A6273413700076F023 /* Baemin1Storyboard.storyboard */,
+			);
+			path = Baemin1;
+			sourceTree = "<group>";
+		};
+		99A4379F273412DC0076F023 /* Baedal */ = {
+			isa = PBXGroup;
+			children = (
+				99A437A02734134C0076F023 /* BaedalViewController.swift */,
+				99A437A2273413550076F023 /* BaedalStoryboard.storyboard */,
+			);
+			path = Baedal;
+			sourceTree = "<group>";
+		};
 		A9018F600684155E411AF3C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,15 +780,19 @@
 				99985D1E272E308E00D7B167 /* copyright.png in Resources */,
 				99506361273111D4002C43B8 /* secondCollectionViewCell.xib in Resources */,
 				99506363273111D4002C43B8 /* firstCollectionViewCell.xib in Resources */,
+				99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */,
 				99985D2C272E308E00D7B167 /* map_present.png in Resources */,
 				9950635A2731118E002C43B8 /* thridTableViewCell.xib in Resources */,
 				99985D24272E308E00D7B167 /* map_pin_red.png in Resources */,
 				99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */,
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
+				99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
+				99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */,
 				99985D21272E308E00D7B167 /* daum_copyright.png in Resources */,
 				9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
+				99A437982733FAFD0076F023 /* SearchStoryboard.storyboard in Resources */,
 				99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */,
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
 				995063692731171F002C43B8 /* 배민1.gif in Resources */,
@@ -711,8 +819,11 @@
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
 				99985D1D272E308E00D7B167 /* map_pin_shadow@3x.png in Resources */,
 				99985D1B272E308E00D7B167 /* map_pin_custom@3x.png in Resources */,
+				99A437A7273413700076F023 /* Baemin1Storyboard.storyboard in Resources */,
 				99985D16272E308E00D7B167 /* map_pinup_custom@3x.png in Resources */,
 				99985D17272E308E00D7B167 /* map_pin_custom.png in Resources */,
+				99A437AB273413940076F023 /* PojangStoryboard.storyboard in Resources */,
+				99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */,
 				99985D29272E308E00D7B167 /* noimage256.png in Resources */,
 				99985D26272E308E00D7B167 /* point_sprite.png in Resources */,
 			);
@@ -768,18 +879,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				99985902272D5BAA00D7B167 /* Device.swift in Sources */,
+				99A4379027339F9C0076F023 /* joinDataManager.swift in Sources */,
 				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
-				9979BC34272F7F0000A77C36 /* SearchViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
+				99A4378E27339F900076F023 /* joinResponse.swift in Sources */,
 				9984D61A273268A400387158 /* naviViewController.swift in Sources */,
+				99A437A12734134C0076F023 /* BaedalViewController.swift in Sources */,
+				99A437932733DECB0076F023 /* Constant.swift in Sources */,
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
+				99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
+				99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */,
 				999858FC272D5B9900D7B167 /* String.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
@@ -789,17 +905,21 @@
 				99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */,
 				9950635C2731118E002C43B8 /* firstTableViewCell.swift in Sources */,
 				9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */,
+				99A437B1273413BF0076F023 /* GiftViewController.swift in Sources */,
 				999858FB272D5B9900D7B167 /* UIButton.swift in Sources */,
+				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
 				99985929272D71F200D7B167 /* nowLocationViewController.swift in Sources */,
 				9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */,
 				999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */,
 				999858FA272D5B9900D7B167 /* UINavigationBar.swift in Sources */,
 				99985D3F272E80DD00D7B167 /* MyBeaminViewController.swift in Sources */,
+				99A437AD273413A40076F023 /* LiveViewController.swift in Sources */,
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
 				9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */,
+				99A437962733FAF20076F023 /* SearchViewController.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,

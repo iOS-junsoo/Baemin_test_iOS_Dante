@@ -8,7 +8,20 @@
 import UIKit
 import Gifu
 
+protocol Custom1Delegate: class {
+    func beadal()
+    func baemin1()
+    func pojang()
+    func live()
+    func gift()
+    func jeonguk()
+}
+
+
 class secondTableViewCell: UITableViewCell {
+    
+    weak var delegate: Custom1Delegate?
+    
     @IBOutlet var gifImageView: GIFImageView!
     @IBOutlet var baedalBtn: UIButton!
     @IBOutlet var pojangBtn: UIButton!
@@ -51,8 +64,32 @@ class secondTableViewCell: UITableViewCell {
         collectionView.register(UINib(nibName: "firstCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "firstCollectionViewCell") //xib파일 등록
         
     }
-
-
+    @IBAction func baedalTap(_ sender: UIButton) {
+        beadal()
+    }
+    
+    @IBAction func baemin1Tap(_ sender: UIButton) {
+        baemin1()
+    }
+    
+    @IBAction func pojangTap(_ sender: UIButton) {
+        pojang()
+    }
+    
+    @IBAction func liveTap(_ sender: UIButton) {
+        live()
+    }
+    
+    @IBAction func giftTap(_ sender: UIButton) {
+        gift()
+    }
+    
+    @IBAction func jeongukTap(_ sender: UIButton) {
+        jeonguk()
+    }
+    
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         bannerTimer() //자동배너 함수
@@ -101,5 +138,35 @@ extension secondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }
+    
+}
+
+extension secondTableViewCell: Custom1Delegate {
+    func beadal() {
+        delegate?.beadal()
+    }
+    
+    func baemin1() {
+        delegate?.baemin1()
+    }
+    
+    func pojang() {
+        delegate?.pojang()
+    }
+    
+    func live() {
+        delegate?.live()
+    }
+    
+    func gift() {
+        delegate?.gift()
+    }
+    
+    func jeonguk() {
+        delegate?.jeonguk()
+    }
+    
+    
+    
     
 }

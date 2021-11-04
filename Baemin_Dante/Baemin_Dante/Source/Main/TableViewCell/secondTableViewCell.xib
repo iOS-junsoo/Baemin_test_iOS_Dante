@@ -24,6 +24,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="배달"/>
+                        <connections>
+                            <action selector="baedalTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5wd-80-Okb"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXi-on-Q77">
                         <rect key="frame" x="16" y="213" width="358" height="89"/>
@@ -31,6 +34,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="포장"/>
+                        <connections>
+                            <action selector="pojangTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="be6-OR-IhA"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqr-Jg-ES8">
                         <rect key="frame" x="16" y="452" width="358" height="89"/>
@@ -38,6 +44,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="전국별미"/>
+                        <connections>
+                            <action selector="jeongukTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J2Z-Mp-nuH"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enl-tQ-uTD">
                         <rect key="frame" x="16" y="317" width="172" height="120"/>
@@ -45,6 +54,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="쇼핑라이브"/>
+                        <connections>
+                            <action selector="liveTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wpN-YS-qIA"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-Zx-FOY">
                         <rect key="frame" x="202" y="317" width="172" height="120"/>
@@ -52,6 +64,9 @@
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="선물하기"/>
+                        <connections>
+                            <action selector="giftTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YNG-15-gUd"/>
+                        </connections>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8Va-9k-hyF" customClass="GIFImageView" customModule="Gifu">
                         <rect key="frame" x="202" y="20" width="172" height="178"/>
@@ -62,6 +77,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="baemin1Tap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="odH-sX-gY1"/>
+                        </connections>
                     </button>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UMC-mf-ap9">
                         <rect key="frame" x="16" y="556" width="358" height="118"/>

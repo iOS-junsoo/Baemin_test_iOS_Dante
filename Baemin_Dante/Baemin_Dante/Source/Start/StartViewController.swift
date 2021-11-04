@@ -60,27 +60,57 @@ class StartViewController: UIViewController {
         }
     }
     @IBAction func localCheckClicked(_ sender: UIButton) {
-        countLocal = countLocal + 1
-        if countLocal % 2 == 1{
-            self.localCheck.setImage(UIImage(named: "체크O"), for: .normal)
-            self.startBtn.setImage(UIImage(named: "시작하기O"), for: .normal)
-            must = true
-        } else {
-            self.localCheck.setImage(UIImage(named: "체크X"), for: .normal)
-            self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
-            must = false
+        if countAll % 2 == 1 {
+            countLocal = countLocal + 1
+            if countLocal % 2 == 0{
+                self.localCheck.setImage(UIImage(named: "체크O"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기O"), for: .normal)
+                must = true
+            } else {
+                self.localCheck.setImage(UIImage(named: "체크X"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                must = false
+            }
+        } else{
+            countLocal = countLocal + 1
+            if countLocal % 2 == 1{
+                self.localCheck.setImage(UIImage(named: "체크O"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기O"), for: .normal)
+                must = true
+            } else {
+                self.localCheck.setImage(UIImage(named: "체크X"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                must = false
+            }
         }
     }
     @IBAction func marketCheckClicked(_ sender: UIButton) {
-        countMarket = countMarket + 1
-        if countMarket % 2 == 1{
-            self.marketCheck.setImage(UIImage(named: "체크O"), for: .normal)
-            self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
-            choice = true
-        } else {
-            self.marketCheck.setImage(UIImage(named: "체크X"), for: .normal)
-            self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
-            choice = false
+        if countAll % 2 == 1 {
+            countMarket = countMarket + 1
+            if countMarket % 2 == 1{
+                self.marketCheck.setImage(UIImage(named: "체크O"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                StartCheck.agreePush = 1
+                choice = true
+            } else {
+                self.marketCheck.setImage(UIImage(named: "체크X"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                StartCheck.agreePush = 0
+                choice = false
+            }
+        } else{
+            countMarket = countMarket + 1
+            if countMarket % 2 == 0{
+                self.marketCheck.setImage(UIImage(named: "체크O"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                StartCheck.agreePush = 1
+                choice = true
+            } else {
+                self.marketCheck.setImage(UIImage(named: "체크X"), for: .normal)
+                self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
+                StartCheck.agreePush = 0
+                choice = false
+            }
         }
         
         

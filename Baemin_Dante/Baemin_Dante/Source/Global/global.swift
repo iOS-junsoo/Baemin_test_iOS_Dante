@@ -33,3 +33,22 @@ struct UserInfo {
 struct Check {
     static var dis = 0
 }
+
+//시작하기 체크 State
+struct StartCheck {
+    static var agreePush = 0
+}
+
+//회원가입 체크 State
+struct JoinCheck {
+    static var agreementCollection = "0"
+    static var agreementProvision = "0"
+    static var agreementMail = "0"
+    static var agreementSMS = "0"
+    static var over14 = "0"
+}
+
+//회원가입 응답
+struct JoinSeverResponse {
+    static var ResponseValue = ""
+}

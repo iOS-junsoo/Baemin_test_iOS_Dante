@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+
 class MainViewController: UIViewController {
 
     
@@ -27,6 +30,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        refreshControl = UIRefreshControl()
 //        refreshControl.backgroundColor = hexStringToUIColor(hex: "2DC0BD")
 //        refreshControl.tintColor = UIColor.clear
@@ -144,12 +148,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
 
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "firstTableViewCell", for: indexPath) as! firstTableViewCell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "firstTableViewCell", for: indexPath) as! firstTableViewCell
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as! secondTableViewCell
             cell.configure(with: models)
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
         case 2:
@@ -183,6 +189,60 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return 100
         }
     }
-   
     
+    
+}
+extension MainViewController: CustomDelegate {
+    func nextView() {
+        let storyBoard = UIStoryboard(name: "SearchStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    
+}
+
+extension MainViewController: Custom1Delegate {
+    func beadal() {
+        let storyBoard = UIStoryboard(name: "BaedalStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "BaedalViewController") as? BaedalViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    
+    func baemin1() {
+        let storyBoard = UIStoryboard(name: "Baemin1Storyboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "Baemin1ViewController") as? Baemin1ViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func pojang() {
+        let storyBoard = UIStoryboard(name: "PojangStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "PojangViewController") as? PojangViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func live() {
+        let storyBoard = UIStoryboard(name: "LiveStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "LiveViewController") as? LiveViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func gift() {
+        let storyBoard = UIStoryboard(name: "GiftStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "GiftViewController") as? GiftViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    func jeonguk() {
+        let storyBoard = UIStoryboard(name: "JeongukStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "JeongukViewController") as? JeongukViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }
