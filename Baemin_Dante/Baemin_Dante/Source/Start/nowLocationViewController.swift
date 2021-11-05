@@ -137,7 +137,6 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
             userLocationLabel.text = Location.titleLocation
         } else {
             jibunBtn.setTitle(" 도로명으로 보기", for: .normal)
-//            Location.titleLocation = "경북 구미시 오로리 460-1"
             Location.titleLocation =  UserInfo.location
             userLocationLabel.text = Location.titleLocation
         }

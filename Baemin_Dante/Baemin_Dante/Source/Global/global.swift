@@ -74,4 +74,7 @@ struct LoginSeverResponse {
     static var ResponseGrade = ""
 }
 
-
+struct Page {
+    static var pageTitle1 = 0
+    static var pageTitle2 = 0
+}

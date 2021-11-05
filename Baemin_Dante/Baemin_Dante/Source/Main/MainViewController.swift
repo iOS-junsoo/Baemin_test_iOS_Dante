@@ -205,8 +205,8 @@ extension MainViewController: CustomDelegate {
 
 extension MainViewController: Custom1Delegate {
     func beadal() {
-        let storyBoard = UIStoryboard(name: "BaedalStoryboard", bundle: nil)
-        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "BaedalViewController") as? BaedalViewController {
+        let storyBoard = UIStoryboard(name: "PagingStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "PagingViewController") as? PagingViewController {
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
     }

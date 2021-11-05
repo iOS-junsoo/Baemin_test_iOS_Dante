@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     var loginErrorCount = 5
     override func viewDidLoad() {
         super.viewDidLoad()
+        pwTextField.isSecureTextEntry = true
+        
         loginErrorLabel.textColor = UIColor.white
         
         //MARK: - navigationbar back button hide

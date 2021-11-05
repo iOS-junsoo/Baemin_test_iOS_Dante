@@ -37,6 +37,10 @@
 		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
 		9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */; };
 		9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC35272FA16C00A77C36 /* EmailViewController.swift */; };
+		997EA6B9273569970034AD1B /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EA6B8273569970034AD1B /* PagingViewController.swift */; };
+		997EA6BB2735699F0034AD1B /* PagingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997EA6BA2735699F0034AD1B /* PagingStoryboard.storyboard */; };
+		997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997EA6BC273569C40034AD1B /* MenuCell.xib */; };
+		997EA6BF273569C40034AD1B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EA6BD273569C40034AD1B /* MenuCell.swift */; };
 		9984D61A273268A400387158 /* naviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D619273268A400387158 /* naviViewController.swift */; };
 		9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D63D2732939D00387158 /* UIViewExtension.swift */; };
 		999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D3272D5AB600D7B167 /* AppDelegate.swift */; };
@@ -168,6 +172,10 @@
 		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
 		9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCertificationViewController.swift; sourceTree = "<group>"; };
 		9979BC35272FA16C00A77C36 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		997EA6B8273569970034AD1B /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		997EA6BA2735699F0034AD1B /* PagingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PagingStoryboard.storyboard; sourceTree = "<group>"; };
+		997EA6BC273569C40034AD1B /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		997EA6BD273569C40034AD1B /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		9984D619273268A400387158 /* naviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviViewController.swift; sourceTree = "<group>"; };
 		9984D63D2732939D00387158 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		999858D0272D5AB600D7B167 /* Baemin_Dante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin_Dante.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,6 +373,17 @@
 			path = TableViewEntity;
 			sourceTree = "<group>";
 		};
+		997EA6B7273569160034AD1B /* PagingKit */ = {
+			isa = PBXGroup;
+			children = (
+				997EA6B8273569970034AD1B /* PagingViewController.swift */,
+				997EA6BA2735699F0034AD1B /* PagingStoryboard.storyboard */,
+				997EA6BD273569C40034AD1B /* MenuCell.swift */,
+				997EA6BC273569C40034AD1B /* MenuCell.xib */,
+			);
+			path = PagingKit;
+			sourceTree = "<group>";
+		};
 		999858C7272D5AB600D7B167 = {
 			isa = PBXGroup;
 			children = (
@@ -490,17 +509,18 @@
 		99985912272D5BCD00D7B167 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9950634F27310F1F002C43B8 /* CollectionViewCell */,
+				9950636527311200002C43B8 /* TableViewEntity */,
+				9950635027310F21002C43B8 /* TableViewCell */,
 				999858D9272D5AB600D7B167 /* Main.storyboard */,
 				999858D7272D5AB600D7B167 /* MainViewController.swift */,
+				997EA6B7273569160034AD1B /* PagingKit */,
 				99A4379F273412DC0076F023 /* Baedal */,
 				99A4379E273412D90076F023 /* Baemin1 */,
 				99A4379D273412D80076F023 /* Pojang */,
 				99A4379C273412D70076F023 /* Live */,
 				99A4379A273412CB0076F023 /* Gift */,
 				99A43799273412CA0076F023 /* jeonguk */,
-				9950636527311200002C43B8 /* TableViewEntity */,
-				9950635027310F21002C43B8 /* TableViewCell */,
-				9950634F27310F1F002C43B8 /* CollectionViewCell */,
 				99A437942733FAA80076F023 /* Search */,
 				99985D39272E800600D7B167 /* TotalService */,
 				99985D38272E7FF400D7B167 /* MyBaemin */,
@@ -852,7 +872,9 @@
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
 				99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
+				997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */,
 				99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */,
+				997EA6BB2735699F0034AD1B /* PagingStoryboard.storyboard in Resources */,
 				99985D21272E308E00D7B167 /* daum_copyright.png in Resources */,
 				9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
@@ -960,6 +982,7 @@
 				99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
+				997EA6BF273569C40034AD1B /* MenuCell.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
 				99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */,
@@ -968,6 +991,7 @@
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
 				995063572731118E002C43B8 /* thridTableViewCell.swift in Sources */,
+				997EA6B9273569970034AD1B /* PagingViewController.swift in Sources */,
 				99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */,
 				999858FD272D5B9900D7B167 /* UIViewController.swift in Sources */,
 				99277CEB2734BB2900CD665E /* EmailResponse.swift in Sources */,
