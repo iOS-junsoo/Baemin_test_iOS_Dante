@@ -26,6 +26,9 @@ class SelfCertificationViewController: UIViewController {
     @IBOutlet var ingeErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         ingeErrorLabel.textColor = UIColor.white
         phoneTextField.becomeFirstResponder()
         reInjeingBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#FFFFFF")

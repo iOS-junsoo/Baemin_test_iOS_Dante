@@ -21,6 +21,8 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
     var locationManger = CLLocationManager() //현재위치 설정
         override func viewDidLoad() {
             super.viewDidLoad()
+            //MARK: - navigationbar back button hide
+            self.navigationItem.setHidesBackButton(true, animated: true)
          //MARK: - 현재 위치
             // 델리게이트 설정
             locationManger.delegate = self
@@ -93,7 +95,8 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
                print("경도: \(location.coordinate.longitude)")
                UserInfo.longitude = location.coordinate.longitude
            }
-           juso()
+
+           getAddressFromLatLon(pdblLatitude: String(UserInfo.latitude), withLongitude: String(UserInfo.longitude))
        }
        
        // 위도 경도 받아오기 에러
@@ -101,23 +104,7 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
            print(error)
        }
     
-    func juso(){
-        //위도 경도 -> 주소
-        let findLocation = CLLocation(latitude: UserInfo.latitude, longitude: UserInfo.longitude)
-        print("확인")
-        print(UserInfo.latitude)
-        print(UserInfo.longitude)
-        
-        let geocoder = CLGeocoder()
-        let locale = Locale(identifier: "Ko-kr") //원하는 언어의 나라 코드를 넣어주시면 됩니다.
-        geocoder.reverseGeocodeLocation(findLocation, preferredLocale: locale, completionHandler: {(placemarks, error) in
-            if let address: [CLPlacemark] = placemarks { if let name: String = address.first?.name { print("주소: \(name)")
-                UserInfo.location = name
-            }
-                
-            } })
-    }
-//address.last?.name
+
     
     //현재 위치로 돌아가기
     @objc func handleTap(_ sender: UIButton) {
@@ -168,7 +155,54 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
        func mapView(_ mapView: MTMapView?, updateDeviceHeading headingAngle: MTMapRotationAngle) {
            print("MTMapView updateDeviceHeading (\(headingAngle)) degrees")
        }
-    
+    //MARK: - 주소 풀네임
+    func getAddressFromLatLon(pdblLatitude: String, withLongitude pdblLongitude: String) {
+            var center : CLLocationCoordinate2D = CLLocationCoordinate2D()
+            let lat: Double = Double("\(pdblLatitude)")!
+            //21.228124
+            let lon: Double = Double("\(pdblLongitude)")!
+            //72.833770
+            let ceo: CLGeocoder = CLGeocoder()
+            center.latitude = lat
+            center.longitude = lon
+
+            let loc: CLLocation = CLLocation(latitude:center.latitude, longitude: center.longitude)
+
+
+            ceo.reverseGeocodeLocation(loc, completionHandler:
+                {(placemarks, error) in
+                    if (error != nil)
+                    {
+                        print("reverse geodcode fail: \(error!.localizedDescription)")
+                    }
+                    let pm = placemarks! as [CLPlacemark]
+
+                    if pm.count > 0 {
+                        let pm = placemarks![0]
+//                        print(pm.country)
+                        print(pm.locality)
+                        print(pm.subLocality)
+//                        print(pm.thoroughfare)
+//                        print(pm.postalCode)
+                        print(pm.subThoroughfare)
+                        var addressString : String = ""
+                        if pm.locality != nil {
+                            addressString = addressString + pm.locality! + " "
+                        }
+                        
+                        if pm.subLocality != nil {
+                            addressString = addressString + pm.subLocality! + " "
+                        }
+                        if pm.subThoroughfare != nil {
+                            addressString = addressString + pm.subThoroughfare! + " "
+                        }
+                        
+                        print(addressString)
+                        UserInfo.location = addressString
+                  }
+            })
+
+        }
 
 
 }

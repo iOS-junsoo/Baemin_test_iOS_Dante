@@ -1,21 +1,22 @@
 //
-//  TotalSearviceViewController.swift
+//  FindPWViewController.swift
 //  Baemin_Dante
 //
-//  Created by 준수김 on 2021/10/31.
+//  Created by 준수김 on 2021/11/05.
 //
 
 import UIKit
 
-class TotalSearviceViewController: UIViewController {
+class Find2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //MARK: - navigationbar back button hide
-        self.navigationItem.setHidesBackButton(true, animated: true)
+
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func backBtn(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

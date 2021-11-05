@@ -26,6 +26,9 @@ class EmailViewController: UIViewController {
     var passwordState = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         //MARK: - 에러메세지 숨기기
         emailErrorLabel.textColor = UIColor.white
         nicknameErrorLabel.textColor = UIColor.white
@@ -70,8 +73,23 @@ class EmailViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func jungbokBtn(_ sender: UIButton) { //이후 이메일 중복 체크시 이미지가 변경되도록 조건문 추가해야함
-        emailCheck.image = UIImage(named: "초록체크") //응답이 true라면
-//        emailErrorLabel.textColor = UIColor.red //응답이 false라면
+        EmailRequest().postData()
+        print("중복")
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            print("3초")
+            if EmailSeverResponse.ResponseValue == true { //true가 로직상 맞는데 틀려서 false로 바꿈
+                print("허용")
+                self.emailCheck.image = UIImage(named: "초록체크") //응답이 true라면
+                self.emailErrorLabel.textColor = UIColor.white
+            } else{
+                print("허용x")
+                self.emailCheck.image = UIImage(named: "회색체크")
+                self.emailErrorLabel.textColor = UIColor.red //응답이 false라면
+            }
+        }
+            
+        
+        print("중복1")
         
     }
     
@@ -89,7 +107,6 @@ class EmailViewController: UIViewController {
             nicknameState = true
         } else {
             nicknameCheck.image = UIImage(named: "회색체크")
-            nicknameErrorLabel.textColor = UIColor.red
             nicknameState = false
         }
     }
@@ -120,7 +137,7 @@ class EmailViewController: UIViewController {
         if emailState == true && nicknameState == true && passwordState == true {
             completeBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
             completeBtn.isEnabled = true
-            Request().postData()
+            JoinRequest().postData()
             print(UserInfo.email)
             print(UserInfo.passWord)
             print(UserInfo.phoneNumber)
@@ -230,6 +247,12 @@ extension EmailViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //다른 화면 터치시 호출
         self.view.endEditing(true) //키보드 내림
+        if pwTextField.text?.count ?? 0 < 10 && pwTextField.text?.count ?? 0 > 0 {
+            passwordErrorLabel.textColor = UIColor.red
+        }
+        if nicknameTextField.text?.count ?? 0 > 2 {
+            nicknameErrorLabel.textColor = UIColor.red
+        }
     }
 
 }

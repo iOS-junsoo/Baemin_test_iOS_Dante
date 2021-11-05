@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -9,6 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Find1ViewController-->
+        <scene sceneID="D6H-xH-nev">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Find1Storyboard" referencedIdentifier="Find1ViewController" id="jkj-s7-Q9U" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="whF-NC-KfO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzs-bE-tZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2001" y="70"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -36,6 +46,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseBackgroundColor" red="0.078431372549019607" green="0.70588235294117641" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="LoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ogQ-05-wxD"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Hxc-k8-eKk">
                                 <rect key="frame" x="99" y="366" width="192" height="32"/>
@@ -47,6 +60,9 @@
                                         <state key="normal" title="아이디 찾기">
                                             <color key="titleColor" red="0.70588243009999996" green="0.70588237050000002" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="jkj-s7-Q9U" kind="presentation" modalPresentationStyle="fullScreen" id="82Z-LE-mbK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36H-vQ-r4b">
                                         <rect key="frame" x="104" y="0.0" width="88" height="32"/>
@@ -55,6 +71,9 @@
                                         <state key="normal" title="비밀번호 찾기">
                                             <color key="titleColor" red="0.70588243009999996" green="0.70588237050000002" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xyr-f7-WfJ" kind="presentation" modalPresentationStyle="fullScreen" id="oIl-5i-yg2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,11 +136,18 @@
                                     <action selector="kakaoLoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oBC-K3-kZ3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 잠겼습니다. 비밀번호 찾기를 통해 새로운 비밀번호를 받으세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nM-53-Qcq">
+                                <rect key="frame" x="66" y="90" width="258" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.866667" id="2Co-yB-QxK"/>
+                            <constraint firstItem="7nM-53-Qcq" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.661538" id="58C-9j-Sba"/>
                             <constraint firstItem="2KZ-IM-5U3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5Ot-P3-t2W"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0402844" id="89o-2Z-S6w"/>
                             <constraint firstItem="BZr-78-Aor" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Az8-06-PYM"/>
@@ -134,6 +160,7 @@
                             <constraint firstItem="BZr-78-Aor" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.6" id="Psj-5X-ToJ"/>
                             <constraint firstItem="QaQ-Fh-NdY" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.866667" id="Q0l-7N-Ntu"/>
                             <constraint firstItem="2KZ-IM-5U3" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.75" id="QEC-vJ-XWu"/>
+                            <constraint firstItem="7nM-53-Qcq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SIc-dW-xnQ"/>
                             <constraint firstItem="Z2j-tu-Pg5" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.014218" id="SzO-4H-lfB"/>
                             <constraint firstItem="tgG-VY-qZ4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="T9j-uF-DxF"/>
                             <constraint firstItem="Ze2-7s-huM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YQX-zI-Etm"/>
@@ -145,6 +172,7 @@
                             <constraint firstItem="Hxc-k8-eKk" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0379147" id="fV5-Gn-JgS"/>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.78" id="fdU-vs-mix"/>
                             <constraint firstItem="Ze2-7s-huM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="fdp-lb-mjH"/>
+                            <constraint firstItem="7nM-53-Qcq" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.25" id="hCS-wh-eO1"/>
                             <constraint firstItem="tgG-VY-qZ4" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.616239" id="jOU-Lk-xOF"/>
                             <constraint firstItem="ggn-OL-GEa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kuh-Va-ayX"/>
                             <constraint firstItem="BZr-78-Aor" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.866667" id="oPc-PR-11y"/>
@@ -153,11 +181,13 @@
                             <constraint firstItem="Ze2-7s-huM" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.65" id="qqQ-UL-AVz"/>
                             <constraint firstItem="tgG-VY-qZ4" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.86" id="uOg-MS-jaO"/>
                             <constraint firstItem="Hxc-k8-eKk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.905" id="wVL-WC-vzz"/>
+                            <constraint firstItem="7nM-53-Qcq" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0367299" id="xMP-8b-NKX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="idTextField" destination="QaQ-Fh-NdY" id="r5D-0S-Zeg"/>
                         <outlet property="kakaoLoginBtn" destination="2KZ-IM-5U3" id="QEZ-tA-aXW"/>
+                        <outlet property="loginErrorLabel" destination="7nM-53-Qcq" id="3Tj-Mf-3Ap"/>
                         <outlet property="pwTextField" destination="BZr-78-Aor" id="3hg-0I-9QD"/>
                     </connections>
                 </viewController>
@@ -846,6 +876,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ed-xk-R4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444.6153846153845" y="111.61137440758293"/>
+        </scene>
+        <!--Find2ViewController-->
+        <scene sceneID="Mfm-Nr-pbV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Find2Storyboard" referencedIdentifier="Find2ViewController" id="xyr-f7-WfJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ng6-2R-IlU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3c-t1-1DJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1953" y="176"/>
         </scene>
     </scenes>
     <resources>

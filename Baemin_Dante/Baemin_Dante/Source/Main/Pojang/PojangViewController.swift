@@ -11,7 +11,8 @@ class PojangViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {

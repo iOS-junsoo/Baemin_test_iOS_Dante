@@ -32,6 +32,10 @@ class CheckBoxViewController: UIViewController {
     var fourteenCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        
         fourthBtn.adjustsImageWhenHighlighted = false
         
         //MARK: - 모든 버튼 기본값으로 변경

@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class Request {
+class JoinRequest {
     func postData() {
         let url = "\(Constant.sever_URL)/app/users"
         let params = ["id_email" : UserInfo.email,
@@ -41,3 +41,4 @@ class Request {
        
     }
 }
+

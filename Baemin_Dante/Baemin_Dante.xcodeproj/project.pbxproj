@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5D0258610D3664EA6DFC2004 /* Pods_Baemin_Dante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */; };
+		99277CE12734B83300CD665E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE02734B83300CD665E /* LoginResponse.swift */; };
+		99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE22734B83D00CD665E /* LoginDataManager.swift */; };
+		99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE82734BB0F00CD665E /* EmailDataManager.swift */; };
+		99277CEB2734BB2900CD665E /* EmailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CEA2734BB2900CD665E /* EmailResponse.swift */; };
+		992C59E82734B4BD0031AE68 /* FindIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C59E72734B4BD0031AE68 /* FindIDViewController.swift */; };
+		992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */; };
+		992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C59EB2734B4D70031AE68 /* FindPWViewController.swift */; };
+		992C59EE2734B4E20031AE68 /* Find2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */; };
 		995063572731118E002C43B8 /* thridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995063512731118D002C43B8 /* thridTableViewCell.swift */; };
 		995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995063522731118D002C43B8 /* secondTableViewCell.swift */; };
 		995063592731118E002C43B8 /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995063532731118E002C43B8 /* firstTableViewCell.xib */; };
@@ -131,6 +139,14 @@
 /* Begin PBXFileReference section */
 		56A206DB1B2F0F9C72864841 /* Pods-Baemin_Dante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.release.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.release.xcconfig"; sourceTree = "<group>"; };
 		5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baemin_Dante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99277CE02734B83300CD665E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		99277CE22734B83D00CD665E /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		99277CE82734BB0F00CD665E /* EmailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDataManager.swift; sourceTree = "<group>"; };
+		99277CEA2734BB2900CD665E /* EmailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailResponse.swift; sourceTree = "<group>"; };
+		992C59E72734B4BD0031AE68 /* FindIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDViewController.swift; sourceTree = "<group>"; };
+		992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find1Storyboard.storyboard; sourceTree = "<group>"; };
+		992C59EB2734B4D70031AE68 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
+		992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find2Storyboard.storyboard; sourceTree = "<group>"; };
 		995063512731118D002C43B8 /* thridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thridTableViewCell.swift; sourceTree = "<group>"; };
 		995063522731118D002C43B8 /* secondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCell.swift; sourceTree = "<group>"; };
 		995063532731118E002C43B8 /* firstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
@@ -270,6 +286,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99277CE42734BAD500CD665E /* Emailjungbok */ = {
+			isa = PBXGroup;
+			children = (
+				99277CE62734BAF100CD665E /* DataManager */,
+				99277CE52734BAE900CD665E /* Entity */,
+			);
+			path = Emailjungbok;
+			sourceTree = "<group>";
+		};
+		99277CE52734BAE900CD665E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				99277CEA2734BB2900CD665E /* EmailResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		99277CE62734BAF100CD665E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				99277CE82734BB0F00CD665E /* EmailDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		992C59E52734B4690031AE68 /* FindID */ = {
+			isa = PBXGroup;
+			children = (
+				992C59E72734B4BD0031AE68 /* FindIDViewController.swift */,
+				992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */,
+			);
+			path = FindID;
+			sourceTree = "<group>";
+		};
+		992C59E62734B4A10031AE68 /* FindPW */ = {
+			isa = PBXGroup;
+			children = (
+				992C59EB2734B4D70031AE68 /* FindPWViewController.swift */,
+				992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */,
+			);
+			path = FindPW;
+			sourceTree = "<group>";
+		};
 		9950634F27310F1F002C43B8 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +478,8 @@
 				9979BC2B272EA6F900A77C36 /* LoginViewController.swift */,
 				9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */,
 				9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */,
+				992C59E52734B4690031AE68 /* FindID */,
+				992C59E62734B4A10031AE68 /* FindPW */,
 				9998591D272D619E00D7B167 /* Local */,
 				9998591C272D619E00D7B167 /* Join */,
 				9998591B272D619D00D7B167 /* KaKao */,
@@ -429,14 +490,14 @@
 		99985912272D5BCD00D7B167 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				999858D9272D5AB600D7B167 /* Main.storyboard */,
+				999858D7272D5AB600D7B167 /* MainViewController.swift */,
 				99A4379F273412DC0076F023 /* Baedal */,
 				99A4379E273412D90076F023 /* Baemin1 */,
 				99A4379D273412D80076F023 /* Pojang */,
 				99A4379C273412D70076F023 /* Live */,
 				99A4379A273412CB0076F023 /* Gift */,
 				99A43799273412CA0076F023 /* jeonguk */,
-				999858D9272D5AB600D7B167 /* Main.storyboard */,
-				999858D7272D5AB600D7B167 /* MainViewController.swift */,
 				9950636527311200002C43B8 /* TableViewEntity */,
 				9950635027310F21002C43B8 /* TableViewCell */,
 				9950634F27310F1F002C43B8 /* CollectionViewCell */,
@@ -475,6 +536,7 @@
 		9998591C272D619E00D7B167 /* Join */ = {
 			isa = PBXGroup;
 			children = (
+				99277CE42734BAD500CD665E /* Emailjungbok */,
 				99985922272D61D400D7B167 /* Entity */,
 				9998591F272D61C600D7B167 /* DataManager */,
 			);
@@ -493,6 +555,7 @@
 		9998591E272D61BB00D7B167 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				99277CE22734B83D00CD665E /* LoginDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -515,6 +578,7 @@
 		99985921272D61CC00D7B167 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				99277CE02734B83300CD665E /* LoginResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -814,6 +878,7 @@
 				99985D2A272E308E00D7B167 /* map_present_direction.png in Resources */,
 				999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */,
 				999858DB272D5AB600D7B167 /* Main.storyboard in Resources */,
+				992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */,
 				99985D2B272E308E00D7B167 /* map_pin.png in Resources */,
 				99985D3D272E80C800D7B167 /* TotalSearviceStoryboard.storyboard in Resources */,
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
@@ -826,6 +891,7 @@
 				99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */,
 				99985D29272E308E00D7B167 /* noimage256.png in Resources */,
 				99985D26272E308E00D7B167 /* point_sprite.png in Resources */,
+				992C59EE2734B4E20031AE68 /* Find2Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +950,7 @@
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
+				99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
 				99A4378E27339F900076F023 /* joinResponse.swift in Sources */,
 				9984D61A273268A400387158 /* naviViewController.swift in Sources */,
@@ -896,12 +963,14 @@
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
 				99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */,
+				992C59E82734B4BD0031AE68 /* FindIDViewController.swift in Sources */,
 				999858FC272D5B9900D7B167 /* String.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
 				995063572731118E002C43B8 /* thridTableViewCell.swift in Sources */,
 				99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */,
 				999858FD272D5B9900D7B167 /* UIViewController.swift in Sources */,
+				99277CEB2734BB2900CD665E /* EmailResponse.swift in Sources */,
 				99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */,
 				9950635C2731118E002C43B8 /* firstTableViewCell.swift in Sources */,
 				9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */,
@@ -917,13 +986,16 @@
 				99A437AD273413A40076F023 /* LiveViewController.swift in Sources */,
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
+				99277CE12734B83300CD665E /* LoginResponse.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
 				9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */,
 				99A437962733FAF20076F023 /* SearchViewController.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,
+				992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
 				999858F9272D5B9900D7B167 /* Color.swift in Sources */,
+				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

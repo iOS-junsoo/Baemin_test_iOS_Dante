@@ -20,13 +20,19 @@
                         <rect key="frame" x="0.0" y="-59" width="390" height="114"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-xn-8ad">
-                                <rect key="frame" x="16" y="59" width="358" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-xn-8ad">
+                                <rect key="frame" x="16" y="58" width="358" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.1685845852" green="0.75686818359999997" blue="0.74117463829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="홈서치버튼"/>
+                                <state key="normal" title="로제떡볶이 나와라! 뚝딱!!" image="magnifyingglass" catalog="system">
+                                    <color key="titleColor" red="0.68627458809999997" green="0.68627458809999997" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="semibold"/>
+                                </state>
                                 <connections>
                                     <action selector="searchBarTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oMl-HW-HHk"/>
                                 </connections>
@@ -41,10 +47,10 @@
                 <outlet property="baeminView" destination="5e9-jY-d7Y" id="rlJ-JM-KlL"/>
                 <outlet property="searchBtn" destination="raj-xn-8ad" id="Owt-8f-ETi"/>
             </connections>
-            <point key="canvasLocation" x="381.53846153846155" y="-350.82938388625593"/>
+            <point key="canvasLocation" x="234" y="-354"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="홈서치버튼" width="1075" height="129"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>

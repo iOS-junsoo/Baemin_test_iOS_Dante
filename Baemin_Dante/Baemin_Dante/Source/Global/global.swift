@@ -29,6 +29,12 @@ struct UserInfo {
     static var location = ""
 }
 
+//로그인 확인
+struct Login {
+    static var id = ""
+    static var pw = ""
+}
+
 //회원가입 완료후 마이배민 화면으로 돌아가게 만드는 전역번수
 struct Check {
     static var dis = 0
@@ -52,3 +58,20 @@ struct JoinCheck {
 struct JoinSeverResponse {
     static var ResponseValue = ""
 }
+
+//이메일 중복 응답
+struct EmailSeverResponse {
+    static var ResponseValue = false
+}
+
+//로그인 응답
+struct LoginSeverResponse {
+    static var ResponseValue = false
+    static var ResponseEmail = ""
+    static var ResponsePassword = ""
+    static var ResponsePhoneNumber = ""
+    static var ResponseNickName = ""
+    static var ResponseGrade = ""
+}
+
+

@@ -17,6 +17,9 @@ class detailLocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         jidoBtn.adjustsImageWhenHighlighted = false
         LocationLabel.text = Location.titleLocation
         self.detalilLocationTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged) //함수 연결

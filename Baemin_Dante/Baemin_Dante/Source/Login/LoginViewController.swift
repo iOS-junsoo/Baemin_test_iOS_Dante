@@ -15,10 +15,21 @@ class LoginViewController: UIViewController {
     @IBOutlet var idTextField: UITextField!
     @IBOutlet var pwTextField: UITextField!
     @IBOutlet var kakaoLoginBtn: UIButton!
+    @IBOutlet var loginErrorLabel: UILabel!
+    var loginErrorCount = 5
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginErrorLabel.textColor = UIColor.white
+        
+        //MARK: - navigationbar back button hide
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         idTextField.delegate = self
         pwTextField.delegate = self
+        
+        self.idTextField.addTarget(self, action: #selector(self.IdTextFieldDidChange(_:)), for: .editingChanged)
+        self.pwTextField.addTarget(self, action: #selector(self.PwTextFieldDidChange(_:)), for: .editingChanged)
+
         
     }
     
@@ -62,15 +73,15 @@ class LoginViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: - 텍스트 필드 입력감지
+    @objc func IdTextFieldDidChange(_ sender: Any?) {
+        Login.id = idTextField.text!
     }
-    */
+    
+    @objc func PwTextFieldDidChange(_ sender: Any?) {
+        Login.pw = pwTextField.text!
+    }
     
     func nextCheckBox() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CheckBoxViewController") as? CheckBoxViewController {
@@ -80,6 +91,26 @@ class LoginViewController: UIViewController {
             
         }
     }
+    @IBAction func LoginBtn(_ sender: UIButton) {
+        LoginRequest().postData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            if LoginSeverResponse.ResponseValue == true {
+                self.dismiss(animated: true, completion: nil)
+                //이후 사용자 정보를 마이배민 화면에서 나타내야함
+                self.loginErrorLabel.textColor = UIColor.white
+                print("성공")
+            } else {
+                self.loginErrorCount -= 1
+                self.loginErrorLabel.text = "계정 정보가 일치하지 않습니다.(\(self.loginErrorCount)회 남음)"
+                self.loginErrorLabel.textColor = UIColor.red
+                if self.loginErrorCount == 0 { //5번 비밀번호를 틀렸을 때
+                    self.loginErrorLabel.text = "계정이 잠겼습니다. 비밀번호 찾기를 통해 새로운 비밀번호를 받으세요."
+                }
+            }
+        }
+    }
+    
+    
 
 }
 
