@@ -89,6 +89,9 @@
                         <rect key="frame" x="99.5" y="8" width="42" height="69"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="한식"/>
+                        <connections>
+                            <action selector="KoreaFoodBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ALo-Ve-eGu"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyZ-Nm-1W7">
                         <rect key="frame" x="171.5" y="5.5" width="47" height="68"/>

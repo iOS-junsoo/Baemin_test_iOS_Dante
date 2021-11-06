@@ -78,3 +78,8 @@ struct Page {
     static var pageTitle1 = 0
     static var pageTitle2 = 0
 }
+
+struct PageCheck {
+    static var page1Check = 0
+    static var page2Check = 0
+}

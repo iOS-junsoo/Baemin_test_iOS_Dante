@@ -11,10 +11,19 @@ class Baemin1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
     }
+//    override func viewDidAppear(_ animated: Bool) {
+//        if PageCheck.page2Check == 0{
+//            Page.pageTitle2 = 1
+//            PageCheck.page2Check = 1
+//        }
+//    }
+    
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             self.navigationController?.setNavigationBarHidden(true, animated: animated)

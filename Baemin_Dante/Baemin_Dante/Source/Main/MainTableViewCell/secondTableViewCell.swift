@@ -71,23 +71,23 @@ class secondTableViewCell: UITableViewCell {
     }
     
     @IBAction func baemin1Tap(_ sender: UIButton) {
-        baemin1()
+        beadal()
     }
     
     @IBAction func pojangTap(_ sender: UIButton) {
-        pojang()
+        beadal()
     }
     
     @IBAction func liveTap(_ sender: UIButton) {
-        live()
+        beadal()
     }
     
     @IBAction func giftTap(_ sender: UIButton) {
-        gift()
+        beadal()
     }
     
     @IBAction func jeongukTap(_ sender: UIButton) {
-        jeonguk()
+        beadal()
     }
     
     

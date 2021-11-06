@@ -11,6 +11,8 @@ class JeongukViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        Page.pageTitle2 = 5
+        
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.

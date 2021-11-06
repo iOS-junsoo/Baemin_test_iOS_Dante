@@ -103,6 +103,7 @@ class PagingViewController: UIViewController {
                 menuViewController = vc
                 menuViewController.dataSource = self
                 menuViewController.delegate = self
+                menuViewController.cellAlignment = .center
             } else if let vc = segue.destination as? PagingContentViewController {
                 contentViewController = vc
                 contentViewController.dataSource = self
@@ -150,7 +151,7 @@ extension PagingViewController: PagingMenuViewControllerDataSource {
         case 4:
             return 100
         case 5:
-            return 110
+            return 120
         default:
             return 100
         }
@@ -167,29 +168,39 @@ extension PagingViewController: PagingMenuViewControllerDataSource {
         switch Page.pageTitle1 {
         case 0:
             cell.myView.alpha = array1[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 31, y: 7, width: 60, height: 38)
             cell.titleLabel.textColor = array11[index]
-            cell.titleLabel.font = .systemFont(ofSize: 17, weight: .bold)
+            cell.titleLabel.font = array011[index]
         case 1:
             cell.myView.alpha = array2[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 31, y: 7, width: 60, height: 38)
             cell.titleLabel.textColor = array22[index]
+            cell.titleLabel.font = array022[index]
+
         case 2:
             cell.myView.alpha = array3[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 31, y: 7, width: 60, height: 38)
             cell.titleLabel.textColor = array33[index]
+            cell.titleLabel.font = array033[index]
+
         case 3:
             cell.myView.alpha = array4[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 8, y: 7, width: 105, height: 38)
             cell.titleLabel.textColor = array44[index]
+            cell.titleLabel.font = array044[index]
+
         case 4:
             cell.myView.alpha = array5[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 18, y: 7, width: 85, height: 38)
             cell.titleLabel.textColor = array55[index]
+            cell.titleLabel.font = array055[index]
+
         case 5:
             cell.myView.alpha = array6[index]
-            cell.myView.frame.size.width = 60
+            cell.myView.frame = CGRect(x: 18, y: 7, width: 85, height: 38)
             cell.titleLabel.textColor = array66[index]
+            cell.titleLabel.font = array066[index]
+
         default:
             print("error")
             
@@ -197,23 +208,30 @@ extension PagingViewController: PagingMenuViewControllerDataSource {
         
 //        switch Page.pageTitle2 {
 //        case 0:
-//            cell.myView.backgroundColor = array1[index]
+//            cell.myView.alpha = array1[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array11[index]
+//            cell.titleLabel.font = .systemFont(ofSize: 17, weight: .bold)
 //        case 1:
-//            cell.myView.backgroundColor = array2[index]
+//            cell.myView.alpha = array2[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array22[index]
 //        case 2:
-//            cell.myView.backgroundColor = array3[index]
+//            cell.myView.alpha = array3[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array33[index]
 //        case 3:
-//            cell.myView.backgroundColor = array4[index]
+//            cell.myView.alpha = array4[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array44[index]
 //        case 4:
-//            cell.myView.backgroundColor = array5[index]
+//            cell.myView.alpha = array5[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array55[index]
 //        case 5:
-//            cell.myView.backgroundColor = array6[index]
+//            cell.myView.alpha = array6[index]
 //            cell.myView.frame.size.width = 60
+//            cell.titleLabel.textColor = array66[index]
 //        default:
 //            print("error")
 //
@@ -246,8 +264,29 @@ extension PagingViewController: PagingMenuViewControllerDelegate {
 extension PagingViewController: PagingContentViewControllerDelegate {
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
         menuViewController.scroll(index: index, percent: percent, animated: false)
-        Page.pageTitle2 = index
-        print("인덱스\(index)")
+
+        
+        
+//        switch Page.pageTitle2 {
+//        case 0:
+//            if PageCheck.page1Check == 0 {
+//                contentViewController.reloadData()
+//            }
+//        case 1:
+//            if PageCheck.page2Check == 0 {
+//                contentViewController.reloadData()
+//            }
+//        case 2:
+//            contentViewController.reloadData()
+//        case 3:
+//            contentViewController.reloadData()
+//        case 4:
+//            contentViewController.reloadData()
+//        case 5:
+//            contentViewController.reloadData()
+//        default :
+//            print("error")
+//        }
     }
 }
 

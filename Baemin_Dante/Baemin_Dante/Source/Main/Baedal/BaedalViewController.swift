@@ -18,10 +18,20 @@ class BaedalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
         setUpTableView()
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        if PageCheck.page1Check == 0{
+//            Page.pageTitle2 = 0
+//            PageCheck.page1Check = 1
+//            print(Page.pageTitle2)
+//        }
+//    }
     
     func setUpTableView() {
         models.append(Model(imageName: "배달화면광고1"))
@@ -73,7 +83,7 @@ extension BaedalViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonTableViewCell", for: indexPath) as! ButtonTableViewCell
-//            cell.delegate = self
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
         case 2:
@@ -108,4 +118,13 @@ extension BaedalViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
+}
+
+extension BaedalViewController: ButtonDelegate {
+    func nextView() {
+        let storyBoard = UIStoryboard(name: "Paging2Storyboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "Paging2ViewController") as? Paging2ViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }

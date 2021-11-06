@@ -16,6 +16,22 @@
 		992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */; };
 		992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C59EB2734B4D70031AE68 /* FindPWViewController.swift */; };
 		992C59EE2734B4E20031AE68 /* Find2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */; };
+		994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62D1273696E200BFBF36 /* Paging2ViewController.swift */; };
+		994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62D3273696F200BFBF36 /* Paging2Storyboard.storyboard */; };
+		994E62DC2736996A00BFBF36 /* BunsikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62DB2736996A00BFBF36 /* BunsikViewController.swift */; };
+		994E62DE2736997B00BFBF36 /* DonegasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62DD2736997B00BFBF36 /* DonegasViewController.swift */; };
+		994E62E02736998100BFBF36 /* BunsikStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62DF2736998100BFBF36 /* BunsikStoryboard.storyboard */; };
+		994E62E22736999000BFBF36 /* DonegasStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62E12736999000BFBF36 /* DonegasStoryboard.storyboard */; };
+		994E62E42736999B00BFBF36 /* ChickenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62E32736999B00BFBF36 /* ChickenStoryboard.storyboard */; };
+		994E62E6273699A500BFBF36 /* ChickenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62E5273699A500BFBF36 /* ChickenViewController.swift */; };
+		994E62E8273699B000BFBF36 /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62E7273699B000BFBF36 /* PizzaViewController.swift */; };
+		994E62EA273699C300BFBF36 /* PizzaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62E9273699C300BFBF36 /* PizzaStoryboard.storyboard */; };
+		994E62EC273699CF00BFBF36 /* AsianStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62EB273699CF00BFBF36 /* AsianStoryboard.storyboard */; };
+		994E62EE273699DB00BFBF36 /* ChinaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994E62ED273699DB00BFBF36 /* ChinaStoryboard.storyboard */; };
+		994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62EF273699E700BFBF36 /* AsianViewController.swift */; };
+		994E62F2273699F100BFBF36 /* ChinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62F1273699F100BFBF36 /* ChinaViewController.swift */; };
+		994E62F427369FDD00BFBF36 /* Menu2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E62F327369FDD00BFBF36 /* Menu2Cell.swift */; };
+		994E62F627369FEA00BFBF36 /* Menu2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994E62F527369FEA00BFBF36 /* Menu2Cell.xib */; };
 		995063572731118E002C43B8 /* thridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995063512731118D002C43B8 /* thridTableViewCell.swift */; };
 		995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995063522731118D002C43B8 /* secondTableViewCell.swift */; };
 		995063592731118E002C43B8 /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995063532731118E002C43B8 /* firstTableViewCell.xib */; };
@@ -27,7 +43,6 @@
 		99506363273111D4002C43B8 /* firstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950635F273111D4002C43B8 /* firstCollectionViewCell.xib */; };
 		99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99506360273111D4002C43B8 /* firstCollectionViewCell.swift */; };
 		9950636727311221002C43B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636627311221002C43B8 /* Model.swift */; };
-		995063692731171F002C43B8 /* 배민1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 995063682731171F002C43B8 /* 배민1.gif */; };
 		9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636A2731388D002C43B8 /* fourthTableViewCell.swift */; };
 		9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950636B2731388D002C43B8 /* fourthTableViewCell.xib */; };
 		99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */; };
@@ -137,6 +152,11 @@
 		99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437B2273413CC0076F023 /* GiftStoryboard.storyboard */; };
 		99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A437B4273413F50076F023 /* JeongukViewController.swift */; };
 		99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A437B6273413FE0076F023 /* JeongukStoryboard.storyboard */; };
+		99EEAA3C27366238003B5684 /* 배민1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 99EEAA3B27366238003B5684 /* 배민1.gif */; };
+		99EEAA3F27367397003B5684 /* OneinbunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EEAA3E27367397003B5684 /* OneinbunViewController.swift */; };
+		99EEAA41273673D8003B5684 /* OneinbunStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EEAA40273673D8003B5684 /* OneinbunStoryboard.storyboard */; };
+		99EEAA4327367409003B5684 /* KoreaFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EEAA4227367409003B5684 /* KoreaFoodViewController.swift */; };
+		99EEAA452736741B003B5684 /* KoreaFoodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EEAA442736741B003B5684 /* KoreaFoodStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -163,6 +183,22 @@
 		992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find1Storyboard.storyboard; sourceTree = "<group>"; };
 		992C59EB2734B4D70031AE68 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
 		992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find2Storyboard.storyboard; sourceTree = "<group>"; };
+		994E62D1273696E200BFBF36 /* Paging2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paging2ViewController.swift; sourceTree = "<group>"; };
+		994E62D3273696F200BFBF36 /* Paging2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paging2Storyboard.storyboard; sourceTree = "<group>"; };
+		994E62DB2736996A00BFBF36 /* BunsikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunsikViewController.swift; sourceTree = "<group>"; };
+		994E62DD2736997B00BFBF36 /* DonegasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonegasViewController.swift; sourceTree = "<group>"; };
+		994E62DF2736998100BFBF36 /* BunsikStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BunsikStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62E12736999000BFBF36 /* DonegasStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonegasStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62E32736999B00BFBF36 /* ChickenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChickenStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62E5273699A500BFBF36 /* ChickenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenViewController.swift; sourceTree = "<group>"; };
+		994E62E7273699B000BFBF36 /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
+		994E62E9273699C300BFBF36 /* PizzaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PizzaStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62EB273699CF00BFBF36 /* AsianStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AsianStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62ED273699DB00BFBF36 /* ChinaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChinaStoryboard.storyboard; sourceTree = "<group>"; };
+		994E62EF273699E700BFBF36 /* AsianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianViewController.swift; sourceTree = "<group>"; };
+		994E62F1273699F100BFBF36 /* ChinaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinaViewController.swift; sourceTree = "<group>"; };
+		994E62F327369FDD00BFBF36 /* Menu2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2Cell.swift; sourceTree = "<group>"; };
+		994E62F527369FEA00BFBF36 /* Menu2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu2Cell.xib; sourceTree = "<group>"; };
 		995063512731118D002C43B8 /* thridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thridTableViewCell.swift; sourceTree = "<group>"; };
 		995063522731118D002C43B8 /* secondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondTableViewCell.swift; sourceTree = "<group>"; };
 		995063532731118E002C43B8 /* firstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
@@ -174,7 +210,6 @@
 		9950635F273111D4002C43B8 /* firstCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstCollectionViewCell.xib; sourceTree = "<group>"; };
 		99506360273111D4002C43B8 /* firstCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstCollectionViewCell.swift; sourceTree = "<group>"; };
 		9950636627311221002C43B8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		995063682731171F002C43B8 /* 배민1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "배민1.gif"; sourceTree = "<group>"; };
 		9950636A2731388D002C43B8 /* fourthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthTableViewCell.swift; sourceTree = "<group>"; };
 		9950636B2731388D002C43B8 /* fourthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourthTableViewCell.xib; sourceTree = "<group>"; };
 		9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -295,6 +330,11 @@
 		99A437B2273413CC0076F023 /* GiftStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiftStoryboard.storyboard; sourceTree = "<group>"; };
 		99A437B4273413F50076F023 /* JeongukViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeongukViewController.swift; sourceTree = "<group>"; };
 		99A437B6273413FE0076F023 /* JeongukStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JeongukStoryboard.storyboard; sourceTree = "<group>"; };
+		99EEAA3B27366238003B5684 /* 배민1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "배민1.gif"; sourceTree = "<group>"; };
+		99EEAA3E27367397003B5684 /* OneinbunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneinbunViewController.swift; sourceTree = "<group>"; };
+		99EEAA40273673D8003B5684 /* OneinbunStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneinbunStoryboard.storyboard; sourceTree = "<group>"; };
+		99EEAA4227367409003B5684 /* KoreaFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreaFoodViewController.swift; sourceTree = "<group>"; };
+		99EEAA442736741B003B5684 /* KoreaFoodStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KoreaFoodStoryboard.storyboard; sourceTree = "<group>"; };
 		CDB1F3588D76FA54F737561D /* Pods-Baemin_Dante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.debug.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +399,71 @@
 				992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */,
 			);
 			path = FindPW;
+			sourceTree = "<group>";
+		};
+		994E62D02736968C00BFBF36 /* PagingKit2 */ = {
+			isa = PBXGroup;
+			children = (
+				994E62D1273696E200BFBF36 /* Paging2ViewController.swift */,
+				994E62D3273696F200BFBF36 /* Paging2Storyboard.storyboard */,
+				994E62F327369FDD00BFBF36 /* Menu2Cell.swift */,
+				994E62F527369FEA00BFBF36 /* Menu2Cell.xib */,
+			);
+			path = PagingKit2;
+			sourceTree = "<group>";
+		};
+		994E62D5273698AD00BFBF36 /* China */ = {
+			isa = PBXGroup;
+			children = (
+				994E62ED273699DB00BFBF36 /* ChinaStoryboard.storyboard */,
+				994E62F1273699F100BFBF36 /* ChinaViewController.swift */,
+			);
+			path = China;
+			sourceTree = "<group>";
+		};
+		994E62D6273698AF00BFBF36 /* Asian */ = {
+			isa = PBXGroup;
+			children = (
+				994E62EB273699CF00BFBF36 /* AsianStoryboard.storyboard */,
+				994E62EF273699E700BFBF36 /* AsianViewController.swift */,
+			);
+			path = Asian;
+			sourceTree = "<group>";
+		};
+		994E62D7273698B000BFBF36 /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+				994E62E7273699B000BFBF36 /* PizzaViewController.swift */,
+				994E62E9273699C300BFBF36 /* PizzaStoryboard.storyboard */,
+			);
+			path = Pizza;
+			sourceTree = "<group>";
+		};
+		994E62D8273698B100BFBF36 /* Chicken */ = {
+			isa = PBXGroup;
+			children = (
+				994E62E32736999B00BFBF36 /* ChickenStoryboard.storyboard */,
+				994E62E5273699A500BFBF36 /* ChickenViewController.swift */,
+			);
+			path = Chicken;
+			sourceTree = "<group>";
+		};
+		994E62D9273698DD00BFBF36 /* Donegas */ = {
+			isa = PBXGroup;
+			children = (
+				994E62DD2736997B00BFBF36 /* DonegasViewController.swift */,
+				994E62E12736999000BFBF36 /* DonegasStoryboard.storyboard */,
+			);
+			path = Donegas;
+			sourceTree = "<group>";
+		};
+		994E62DA273698DF00BFBF36 /* Bunsik */ = {
+			isa = PBXGroup;
+			children = (
+				994E62DB2736996A00BFBF36 /* BunsikViewController.swift */,
+				994E62DF2736998100BFBF36 /* BunsikStoryboard.storyboard */,
+			);
+			path = Bunsik;
 			sourceTree = "<group>";
 		};
 		9950634F27310F1F002C43B8 /* MainCollectionViewCell */ = {
@@ -462,7 +567,7 @@
 				999858D3272D5AB600D7B167 /* AppDelegate.swift */,
 				999858D5272D5AB600D7B167 /* SceneDelegate.swift */,
 				999858DC272D5AB800D7B167 /* Assets.xcassets */,
-				995063682731171F002C43B8 /* 배민1.gif */,
+				99EEAA3B27366238003B5684 /* 배민1.gif */,
 				999858DE272D5AB800D7B167 /* LaunchScreen.storyboard */,
 				999858E1272D5AB800D7B167 /* Info.plist */,
 			);
@@ -565,6 +670,7 @@
 				9950635027310F21002C43B8 /* MainTableViewCell */,
 				9950634F27310F1F002C43B8 /* MainCollectionViewCell */,
 				997EA6B7273569160034AD1B /* PagingKit */,
+				994E62D02736968C00BFBF36 /* PagingKit2 */,
 				99A4379F273412DC0076F023 /* Baedal */,
 				99A4379E273412D90076F023 /* Baemin1 */,
 				99A4379D273412D80076F023 /* Pojang */,
@@ -821,10 +927,44 @@
 			children = (
 				99A437A02734134C0076F023 /* BaedalViewController.swift */,
 				99A437A2273413550076F023 /* BaedalStoryboard.storyboard */,
+				99EEAA3D27367354003B5684 /* Baedalcategory */,
 				997EA6C0273578F80034AD1B /* TableViewCell */,
 				997EA6C227357A270034AD1B /* CollectionViewCell */,
 			);
 			path = Baedal;
+			sourceTree = "<group>";
+		};
+		99EEAA3D27367354003B5684 /* Baedalcategory */ = {
+			isa = PBXGroup;
+			children = (
+				99EEAA4727367430003B5684 /* Oneinbun */,
+				99EEAA4627367420003B5684 /* KoreaFood */,
+				994E62DA273698DF00BFBF36 /* Bunsik */,
+				994E62D9273698DD00BFBF36 /* Donegas */,
+				994E62D8273698B100BFBF36 /* Chicken */,
+				994E62D7273698B000BFBF36 /* Pizza */,
+				994E62D6273698AF00BFBF36 /* Asian */,
+				994E62D5273698AD00BFBF36 /* China */,
+			);
+			path = Baedalcategory;
+			sourceTree = "<group>";
+		};
+		99EEAA4627367420003B5684 /* KoreaFood */ = {
+			isa = PBXGroup;
+			children = (
+				99EEAA4227367409003B5684 /* KoreaFoodViewController.swift */,
+				99EEAA442736741B003B5684 /* KoreaFoodStoryboard.storyboard */,
+			);
+			path = KoreaFood;
+			sourceTree = "<group>";
+		};
+		99EEAA4727367430003B5684 /* Oneinbun */ = {
+			isa = PBXGroup;
+			children = (
+				99EEAA3E27367397003B5684 /* OneinbunViewController.swift */,
+				99EEAA40273673D8003B5684 /* OneinbunStoryboard.storyboard */,
+			);
+			path = Oneinbun;
 			sourceTree = "<group>";
 		};
 		A9018F600684155E411AF3C9 /* Frameworks */ = {
@@ -912,17 +1052,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EEAA41273673D8003B5684 /* OneinbunStoryboard.storyboard in Resources */,
 				99985D18272E308E00D7B167 /* shadow_balloon.png in Resources */,
 				99985D1E272E308E00D7B167 /* copyright.png in Resources */,
 				99506361273111D4002C43B8 /* secondCollectionViewCell.xib in Resources */,
 				99506363273111D4002C43B8 /* firstCollectionViewCell.xib in Resources */,
 				99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */,
+				99EEAA3C27366238003B5684 /* 배민1.gif in Resources */,
 				99985D2C272E308E00D7B167 /* map_present.png in Resources */,
 				9950635A2731118E002C43B8 /* thridTableViewCell.xib in Resources */,
 				99985D24272E308E00D7B167 /* map_pin_red.png in Resources */,
 				99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */,
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
 				99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */,
+				994E62EA273699C300BFBF36 /* PizzaStoryboard.storyboard in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */,
 				99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */,
@@ -932,12 +1075,14 @@
 				9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */,
 				997EA6D827357CA40034AD1B /* ButtonCollectionViewCell.xib in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
+				994E62F627369FEA00BFBF36 /* Menu2Cell.xib in Resources */,
 				99A437982733FAFD0076F023 /* SearchStoryboard.storyboard in Resources */,
 				99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */,
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
+				994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */,
 				997EA6D027357B8C0034AD1B /* TodayTableViewCell.xib in Resources */,
-				995063692731171F002C43B8 /* 배민1.gif in Resources */,
 				9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */,
+				994E62E22736999000BFBF36 /* DonegasStoryboard.storyboard in Resources */,
 				99985D22272E308E00D7B167 /* map_pin@3x.png in Resources */,
 				9998591A272D5C0B00D7B167 /* StartStoryboard.storyboard in Resources */,
 				997EA6C627357B5D0034AD1B /* BannerTableViewCell.xib in Resources */,
@@ -946,9 +1091,11 @@
 				9950635B2731118E002C43B8 /* secondTableViewCell.xib in Resources */,
 				99985D1F272E308E00D7B167 /* th_line.png in Resources */,
 				99985D2E272E308E00D7B167 /* map_present_background_update.png in Resources */,
+				994E62E42736999B00BFBF36 /* ChickenStoryboard.storyboard in Resources */,
 				997EA6CA27357B6D0034AD1B /* ButtonTableViewCell.xib in Resources */,
 				99985D25272E308E00D7B167 /* info_box.png in Resources */,
 				99506371273138B7002C43B8 /* fourthCollectionViewCell.xib in Resources */,
+				994E62E02736998100BFBF36 /* BunsikStoryboard.storyboard in Resources */,
 				99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */,
 				99985D27272E308E00D7B167 /* map_pinup_custom.png in Resources */,
 				99985D2D272E308E00D7B167 /* noimage.png in Resources */,
@@ -956,9 +1103,11 @@
 				99985D28272E308E00D7B167 /* info_box_tail.png in Resources */,
 				99985D2A272E308E00D7B167 /* map_present_direction.png in Resources */,
 				999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */,
+				994E62EC273699CF00BFBF36 /* AsianStoryboard.storyboard in Resources */,
 				999858DB272D5AB600D7B167 /* Main.storyboard in Resources */,
 				992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */,
 				99985D2B272E308E00D7B167 /* map_pin.png in Resources */,
+				99EEAA452736741B003B5684 /* KoreaFoodStoryboard.storyboard in Resources */,
 				99985D3D272E80C800D7B167 /* TotalSearviceStoryboard.storyboard in Resources */,
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
 				99985D1D272E308E00D7B167 /* map_pin_shadow@3x.png in Resources */,
@@ -967,6 +1116,7 @@
 				997EA6DC27357CB00034AD1B /* TodayCollectionViewCell.xib in Resources */,
 				99985D16272E308E00D7B167 /* map_pinup_custom@3x.png in Resources */,
 				99985D17272E308E00D7B167 /* map_pin_custom.png in Resources */,
+				994E62EE273699DB00BFBF36 /* ChinaStoryboard.storyboard in Resources */,
 				99A437AB273413940076F023 /* PojangStoryboard.storyboard in Resources */,
 				99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */,
 				99985D29272E308E00D7B167 /* noimage256.png in Resources */,
@@ -1030,6 +1180,7 @@
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
+				994E62F2273699F100BFBF36 /* ChinaViewController.swift in Sources */,
 				99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
 				99A4378E27339F900076F023 /* joinResponse.swift in Sources */,
@@ -1037,7 +1188,9 @@
 				99A437A12734134C0076F023 /* BaedalViewController.swift in Sources */,
 				99A437932733DECB0076F023 /* Constant.swift in Sources */,
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
+				994E62F427369FDD00BFBF36 /* Menu2Cell.swift in Sources */,
 				99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */,
+				994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				997EA6BF273569C40034AD1B /* MenuCell.swift in Sources */,
@@ -1045,6 +1198,7 @@
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
 				99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */,
 				992C59E82734B4BD0031AE68 /* FindIDViewController.swift in Sources */,
+				994E62E8273699B000BFBF36 /* PizzaViewController.swift in Sources */,
 				999858FC272D5B9900D7B167 /* String.swift in Sources */,
 				997EA6DB27357CB00034AD1B /* TodayCollectionViewCell.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
@@ -1057,14 +1211,18 @@
 				99277CEB2734BB2900CD665E /* EmailResponse.swift in Sources */,
 				997EA6C527357B5D0034AD1B /* BannerTableViewCell.swift in Sources */,
 				997EA6C927357B6D0034AD1B /* ButtonTableViewCell.swift in Sources */,
+				994E62E6273699A500BFBF36 /* ChickenViewController.swift in Sources */,
 				99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */,
 				9950635C2731118E002C43B8 /* firstTableViewCell.swift in Sources */,
 				9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */,
 				99A437B1273413BF0076F023 /* GiftViewController.swift in Sources */,
+				99EEAA3F27367397003B5684 /* OneinbunViewController.swift in Sources */,
 				999858FB272D5B9900D7B167 /* UIButton.swift in Sources */,
 				997EA6D327357C970034AD1B /* BannerCollectionViewCell.swift in Sources */,
+				994E62DC2736996A00BFBF36 /* BunsikViewController.swift in Sources */,
 				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
+				99EEAA4327367409003B5684 /* KoreaFoodViewController.swift in Sources */,
 				99985929272D71F200D7B167 /* nowLocationViewController.swift in Sources */,
 				9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */,
 				999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */,
@@ -1073,6 +1231,7 @@
 				99A437AD273413A40076F023 /* LiveViewController.swift in Sources */,
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				997EA6CF27357B8C0034AD1B /* TodayTableViewCell.swift in Sources */,
+				994E62DE2736997B00BFBF36 /* DonegasViewController.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				99277CE12734B83300CD665E /* LoginResponse.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
@@ -1083,6 +1242,7 @@
 				992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
 				999858F9272D5B9900D7B167 /* Color.swift in Sources */,
+				994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */,
 				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,
 			);
