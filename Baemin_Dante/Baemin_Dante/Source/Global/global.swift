@@ -83,3 +83,13 @@ struct PageCheck {
     static var page1Check = 0
     static var page2Check = 0
 }
+
+struct Page2 {
+    static var pageTitle1 = 0
+    static var pageTitle2 = 0
+}
+
+struct Page3 {
+    static var pageTitle1 = 0
+    static var pageTitle2 = 0
+}

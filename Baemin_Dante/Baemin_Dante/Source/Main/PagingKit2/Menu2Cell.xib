@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="ziC-e9-BQ5" customClass="Menu2Cell" customModule="Baemin_Dante" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="122" height="54"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="한식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22V-Cw-AeE">
@@ -22,14 +22,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ckw-Fn-N4Q">
-                    <rect key="frame" x="43" y="36" width="36" height="5"/>
+                    <rect key="frame" x="43" y="41" width="36" height="3"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="labelColor"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="20"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Sh4-iZ-axD"/>
@@ -39,7 +34,7 @@
                 <outlet property="myView" destination="Ckw-Fn-N4Q" id="V6S-ox-abK"/>
                 <outlet property="titleLabel" destination="22V-Cw-AeE" id="yaD-cs-52x"/>
             </connections>
-            <point key="canvasLocation" x="-378.75" y="-35"/>
+            <point key="canvasLocation" x="-422" y="-18"/>
         </view>
     </objects>
     <resources>

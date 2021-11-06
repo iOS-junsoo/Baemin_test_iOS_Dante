@@ -70,6 +70,22 @@
 		997EA6DC27357CB00034AD1B /* TodayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997EA6DA27357CB00034AD1B /* TodayCollectionViewCell.xib */; };
 		9984D61A273268A400387158 /* naviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D619273268A400387158 /* naviViewController.swift */; };
 		9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984D63D2732939D00387158 /* UIViewExtension.swift */; };
+		998DABA72736D3E0005EBF22 /* Menu3Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998DABA62736D3E0005EBF22 /* Menu3Cell.xib */; };
+		998DABA92736D3E9005EBF22 /* Menu3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABA82736D3E9005EBF22 /* Menu3Cell.swift */; };
+		998DABAC2736D5F5005EBF22 /* FastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABAB2736D5F5005EBF22 /* FastViewController.swift */; };
+		998DABB62736D673005EBF22 /* FastStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABB52736D673005EBF22 /* FastStoryboard.storyboard */; };
+		998DABB82736D696005EBF22 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABB72736D696005EBF22 /* TipViewController.swift */; };
+		998DABBA2736D6D5005EBF22 /* TipStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABB92736D6D5005EBF22 /* TipStoryboard.storyboard */; };
+		998DABBC2736D6E3005EBF22 /* BasicStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABBB2736D6E3005EBF22 /* BasicStoryboard.storyboard */; };
+		998DABBE2736D6EC005EBF22 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABBD2736D6EC005EBF22 /* OrderStoryboard.storyboard */; };
+		998DABC02736D6F4005EBF22 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABBF2736D6F4005EBF22 /* BasicViewController.swift */; };
+		998DABC22736D6FA005EBF22 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABC12736D6FA005EBF22 /* OrderViewController.swift */; };
+		998DABC42736D701005EBF22 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABC32736D701005EBF22 /* StarViewController.swift */; };
+		998DABC62736D70E005EBF22 /* ShortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABC52736D70E005EBF22 /* ShortViewController.swift */; };
+		998DABC82736D719005EBF22 /* JjimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABC72736D719005EBF22 /* JjimViewController.swift */; };
+		998DABCA2736D722005EBF22 /* StarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABC92736D722005EBF22 /* StarStoryboard.storyboard */; };
+		998DABCC2736D72B005EBF22 /* ShortStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABCB2736D72B005EBF22 /* ShortStoryboard.storyboard */; };
+		998DABCE2736D737005EBF22 /* JjimStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABCD2736D737005EBF22 /* JjimStoryboard.storyboard */; };
 		999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D3272D5AB600D7B167 /* AppDelegate.swift */; };
 		999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D5272D5AB600D7B167 /* SceneDelegate.swift */; };
 		999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D7272D5AB600D7B167 /* MainViewController.swift */; };
@@ -237,6 +253,22 @@
 		997EA6DA27357CB00034AD1B /* TodayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayCollectionViewCell.xib; sourceTree = "<group>"; };
 		9984D619273268A400387158 /* naviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naviViewController.swift; sourceTree = "<group>"; };
 		9984D63D2732939D00387158 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		998DABA62736D3E0005EBF22 /* Menu3Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu3Cell.xib; sourceTree = "<group>"; };
+		998DABA82736D3E9005EBF22 /* Menu3Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu3Cell.swift; sourceTree = "<group>"; };
+		998DABAB2736D5F5005EBF22 /* FastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastViewController.swift; sourceTree = "<group>"; };
+		998DABB52736D673005EBF22 /* FastStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FastStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABB72736D696005EBF22 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		998DABB92736D6D5005EBF22 /* TipStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TipStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABBB2736D6E3005EBF22 /* BasicStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABBD2736D6EC005EBF22 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABBF2736D6F4005EBF22 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		998DABC12736D6FA005EBF22 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		998DABC32736D701005EBF22 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		998DABC52736D70E005EBF22 /* ShortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortViewController.swift; sourceTree = "<group>"; };
+		998DABC72736D719005EBF22 /* JjimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JjimViewController.swift; sourceTree = "<group>"; };
+		998DABC92736D722005EBF22 /* StarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABCB2736D72B005EBF22 /* ShortStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShortStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABCD2736D737005EBF22 /* JjimStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JjimStoryboard.storyboard; sourceTree = "<group>"; };
 		999858D0272D5AB600D7B167 /* Baemin_Dante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin_Dante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999858D3272D5AB600D7B167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999858D5272D5AB600D7B167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -537,6 +569,83 @@
 				997EA6DA27357CB00034AD1B /* TodayCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		998DABAA2736D5D1005EBF22 /*  Sort */ = {
+			isa = PBXGroup;
+			children = (
+				998DABB42736D613005EBF22 /* Fast */,
+				998DABB32736D60F005EBF22 /* Tip */,
+				998DABB22736D60E005EBF22 /* Basic */,
+				998DABB02736D5FD005EBF22 /* Order */,
+				998DABAF2736D5FC005EBF22 /* Star */,
+				998DABAE2736D5FB005EBF22 /* Short */,
+				998DABAD2736D5FA005EBF22 /* Jjim */,
+			);
+			path = " Sort";
+			sourceTree = "<group>";
+		};
+		998DABAD2736D5FA005EBF22 /* Jjim */ = {
+			isa = PBXGroup;
+			children = (
+				998DABC72736D719005EBF22 /* JjimViewController.swift */,
+				998DABCD2736D737005EBF22 /* JjimStoryboard.storyboard */,
+			);
+			path = Jjim;
+			sourceTree = "<group>";
+		};
+		998DABAE2736D5FB005EBF22 /* Short */ = {
+			isa = PBXGroup;
+			children = (
+				998DABC52736D70E005EBF22 /* ShortViewController.swift */,
+				998DABCB2736D72B005EBF22 /* ShortStoryboard.storyboard */,
+			);
+			path = Short;
+			sourceTree = "<group>";
+		};
+		998DABAF2736D5FC005EBF22 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				998DABC32736D701005EBF22 /* StarViewController.swift */,
+				998DABC92736D722005EBF22 /* StarStoryboard.storyboard */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		998DABB02736D5FD005EBF22 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				998DABBD2736D6EC005EBF22 /* OrderStoryboard.storyboard */,
+				998DABC12736D6FA005EBF22 /* OrderViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		998DABB22736D60E005EBF22 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				998DABBB2736D6E3005EBF22 /* BasicStoryboard.storyboard */,
+				998DABBF2736D6F4005EBF22 /* BasicViewController.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		998DABB32736D60F005EBF22 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				998DABB72736D696005EBF22 /* TipViewController.swift */,
+				998DABB92736D6D5005EBF22 /* TipStoryboard.storyboard */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		998DABB42736D613005EBF22 /* Fast */ = {
+			isa = PBXGroup;
+			children = (
+				998DABAB2736D5F5005EBF22 /* FastViewController.swift */,
+				998DABB52736D673005EBF22 /* FastStoryboard.storyboard */,
+			);
+			path = Fast;
 			sourceTree = "<group>";
 		};
 		999858C7272D5AB600D7B167 = {
@@ -954,6 +1063,9 @@
 			children = (
 				99EEAA4227367409003B5684 /* KoreaFoodViewController.swift */,
 				99EEAA442736741B003B5684 /* KoreaFoodStoryboard.storyboard */,
+				998DABA62736D3E0005EBF22 /* Menu3Cell.xib */,
+				998DABA82736D3E9005EBF22 /* Menu3Cell.swift */,
+				998DABAA2736D5D1005EBF22 /*  Sort */,
 			);
 			path = KoreaFood;
 			sourceTree = "<group>";
@@ -1057,10 +1169,13 @@
 				99985D1E272E308E00D7B167 /* copyright.png in Resources */,
 				99506361273111D4002C43B8 /* secondCollectionViewCell.xib in Resources */,
 				99506363273111D4002C43B8 /* firstCollectionViewCell.xib in Resources */,
+				998DABCE2736D737005EBF22 /* JjimStoryboard.storyboard in Resources */,
 				99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */,
+				998DABBE2736D6EC005EBF22 /* OrderStoryboard.storyboard in Resources */,
 				99EEAA3C27366238003B5684 /* 배민1.gif in Resources */,
 				99985D2C272E308E00D7B167 /* map_present.png in Resources */,
 				9950635A2731118E002C43B8 /* thridTableViewCell.xib in Resources */,
+				998DABCC2736D72B005EBF22 /* ShortStoryboard.storyboard in Resources */,
 				99985D24272E308E00D7B167 /* map_pin_red.png in Resources */,
 				99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */,
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
@@ -1068,6 +1183,7 @@
 				994E62EA273699C300BFBF36 /* PizzaStoryboard.storyboard in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */,
+				998DABBC2736D6E3005EBF22 /* BasicStoryboard.storyboard in Resources */,
 				99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */,
 				997EA6D427357C970034AD1B /* BannerCollectionViewCell.xib in Resources */,
 				997EA6BB2735699F0034AD1B /* PagingStoryboard.storyboard in Resources */,
@@ -1081,6 +1197,7 @@
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
 				994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */,
 				997EA6D027357B8C0034AD1B /* TodayTableViewCell.xib in Resources */,
+				998DABCA2736D722005EBF22 /* StarStoryboard.storyboard in Resources */,
 				9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */,
 				994E62E22736999000BFBF36 /* DonegasStoryboard.storyboard in Resources */,
 				99985D22272E308E00D7B167 /* map_pin@3x.png in Resources */,
@@ -1103,6 +1220,7 @@
 				99985D28272E308E00D7B167 /* info_box_tail.png in Resources */,
 				99985D2A272E308E00D7B167 /* map_present_direction.png in Resources */,
 				999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */,
+				998DABBA2736D6D5005EBF22 /* TipStoryboard.storyboard in Resources */,
 				994E62EC273699CF00BFBF36 /* AsianStoryboard.storyboard in Resources */,
 				999858DB272D5AB600D7B167 /* Main.storyboard in Resources */,
 				992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */,
@@ -1112,8 +1230,10 @@
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
 				99985D1D272E308E00D7B167 /* map_pin_shadow@3x.png in Resources */,
 				99985D1B272E308E00D7B167 /* map_pin_custom@3x.png in Resources */,
+				998DABA72736D3E0005EBF22 /* Menu3Cell.xib in Resources */,
 				99A437A7273413700076F023 /* Baemin1Storyboard.storyboard in Resources */,
 				997EA6DC27357CB00034AD1B /* TodayCollectionViewCell.xib in Resources */,
+				998DABB62736D673005EBF22 /* FastStoryboard.storyboard in Resources */,
 				99985D16272E308E00D7B167 /* map_pinup_custom@3x.png in Resources */,
 				99985D17272E308E00D7B167 /* map_pin_custom.png in Resources */,
 				994E62EE273699DB00BFBF36 /* ChinaStoryboard.storyboard in Resources */,
@@ -1176,6 +1296,7 @@
 			files = (
 				99985902272D5BAA00D7B167 /* Device.swift in Sources */,
 				99A4379027339F9C0076F023 /* joinDataManager.swift in Sources */,
+				998DABA92736D3E9005EBF22 /* Menu3Cell.swift in Sources */,
 				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
@@ -1203,8 +1324,10 @@
 				997EA6DB27357CB00034AD1B /* TodayCollectionViewCell.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
+				998DABB82736D696005EBF22 /* TipViewController.swift in Sources */,
 				995063572731118E002C43B8 /* thridTableViewCell.swift in Sources */,
 				997EA6B9273569970034AD1B /* PagingViewController.swift in Sources */,
+				998DABC42736D701005EBF22 /* StarViewController.swift in Sources */,
 				99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */,
 				999858FD272D5B9900D7B167 /* UIViewController.swift in Sources */,
 				997EA6D727357CA40034AD1B /* ButtonCollectionViewCell.swift in Sources */,
@@ -1218,6 +1341,7 @@
 				99A437B1273413BF0076F023 /* GiftViewController.swift in Sources */,
 				99EEAA3F27367397003B5684 /* OneinbunViewController.swift in Sources */,
 				999858FB272D5B9900D7B167 /* UIButton.swift in Sources */,
+				998DABC02736D6F4005EBF22 /* BasicViewController.swift in Sources */,
 				997EA6D327357C970034AD1B /* BannerCollectionViewCell.swift in Sources */,
 				994E62DC2736996A00BFBF36 /* BunsikViewController.swift in Sources */,
 				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
@@ -1232,17 +1356,21 @@
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				997EA6CF27357B8C0034AD1B /* TodayTableViewCell.swift in Sources */,
 				994E62DE2736997B00BFBF36 /* DonegasViewController.swift in Sources */,
+				998DABAC2736D5F5005EBF22 /* FastViewController.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				99277CE12734B83300CD665E /* LoginResponse.swift in Sources */,
 				999858F0272D5B8200D7B167 /* JwtToken.swift in Sources */,
 				9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */,
 				99A437962733FAF20076F023 /* SearchViewController.swift in Sources */,
+				998DABC22736D6FA005EBF22 /* OrderViewController.swift in Sources */,
+				998DABC82736D719005EBF22 /* JjimViewController.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,
 				992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
 				999858F9272D5B9900D7B167 /* Color.swift in Sources */,
 				994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */,
+				998DABC62736D70E005EBF22 /* ShortViewController.swift in Sources */,
 				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,
 			);
