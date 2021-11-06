@@ -26,7 +26,7 @@ class MyBeaminViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     @IBAction func backBtn(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

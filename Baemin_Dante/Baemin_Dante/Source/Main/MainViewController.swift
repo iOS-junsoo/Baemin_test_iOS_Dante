@@ -48,26 +48,7 @@ class MainViewController: UIViewController {
         //MARK: - 바 버튼 아이템 간격조절
         //이미지 생성
 
-        func setUpTableView() {
-            models.append(Model(imageName: "광고1"))
-            models.append(Model(imageName: "광고2"))
-            models.append(Model(imageName: "광고3"))
-            
-            models2.append(Model2(imageName: "오늘광고1"))
-            models2.append(Model2(imageName: "오늘광고2"))
-            models2.append(Model2(imageName: "오늘광고3"))
-            
-            models3.append(Model3(imageName: "빠른광고1", baeminName: "천하원요리", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
-            models3.append(Model3(imageName: "빠른광고2", baeminName: "메가MGC커피 송도퍼스트파크점", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
-            models3.append(Model3(imageName: "빠른광고3", baeminName: "구구족 송도점", baeminStar: "4.9", baeminTip: "0원~3,000원", imageTime: "13-23분"))
-            
-            tableView.delegate = self
-            tableView.dataSource = self
-            tableView.register(UINib(nibName: "firstTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTableViewCell") //nib 파일 등록
-            tableView.register(UINib(nibName: "secondTableViewCell", bundle: nil), forCellReuseIdentifier: "secondTableViewCell") //nib 파일 등록
-            tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
-            tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
-        }
+        
         
         
         //MARK: - 네비게이션 바 버튼 관련
@@ -75,6 +56,28 @@ class MainViewController: UIViewController {
         locationBtn.setTitle(Location.titleLocation + " ", for: .normal)
  
     }
+    
+    func setUpTableView() {
+        models.append(Model(imageName: "광고1"))
+        models.append(Model(imageName: "광고2"))
+        models.append(Model(imageName: "광고3"))
+        
+        models2.append(Model2(imageName: "오늘광고1"))
+        models2.append(Model2(imageName: "오늘광고2"))
+        models2.append(Model2(imageName: "오늘광고3"))
+        
+        models3.append(Model3(imageName: "빠른광고1", baeminName: "천하원요리", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+        models3.append(Model3(imageName: "빠른광고2", baeminName: "메가MGC커피 송도퍼스트파크점", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+        models3.append(Model3(imageName: "빠른광고3", baeminName: "구구족 송도점", baeminStar: "4.9", baeminTip: "0원~3,000원", imageTime: "13-23분"))
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "firstTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "secondTableViewCell", bundle: nil), forCellReuseIdentifier: "secondTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
+    }
+    
     //MARK: - 네비게이션바 없애기
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)

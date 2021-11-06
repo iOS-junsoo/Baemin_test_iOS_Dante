@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonTableViewCell" id="KGk-i7-Jjw" customClass="ButtonTableViewCell" customModule="Baemin_Dante" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="290"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="배달시트" translatesAutoresizingMaskIntoConstraints="NO" id="H2H-XJ-uoe">
+                        <rect key="frame" x="0.0" y="-860" width="390" height="2008"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-d8-FyB">
+                        <rect key="frame" x="238.5" y="7" width="65" height="64"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="카페디저트"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnC-ns-Otx">
+                        <rect key="frame" x="24" y="150.5" width="45" height="59"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="야식"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-RE-4aL">
+                        <rect key="frame" x="18" y="212.5" width="54" height="74"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="맛집랭킹"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNr-y9-lU5">
+                        <rect key="frame" x="95" y="141" width="53" height="81"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="찜탕"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWN-9X-dgc">
+                        <rect key="frame" x="174" y="146.5" width="46" height="67"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="도시락"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-ny-NwE">
+                        <rect key="frame" x="315" y="146" width="61" height="65"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="브랜드관"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVE-d9-YCg">
+                        <rect key="frame" x="23" y="76" width="49" height="68"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="치킨"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoF-zn-DoX">
+                        <rect key="frame" x="100.5" y="79.5" width="42" height="61"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="피자"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMK-lV-O3v">
+                        <rect key="frame" x="160" y="77" width="70" height="68"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="아시안양식"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJE-aY-psU">
+                        <rect key="frame" x="249" y="77.5" width="45" height="63"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="중국집"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-gz-8PG">
+                        <rect key="frame" x="318" y="78.5" width="54" height="63"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="족발보쌈"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkT-bM-wwQ">
+                        <rect key="frame" x="240" y="140.5" width="63" height="78"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="패스트푸드"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvO-H2-oi6">
+                        <rect key="frame" x="22.5" y="5" width="45" height="69"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="1인분"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmK-uY-7yG">
+                        <rect key="frame" x="99.5" y="8" width="42" height="69"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="한식"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyZ-Nm-1W7">
+                        <rect key="frame" x="171.5" y="5.5" width="47" height="68"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="분식"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeP-9b-CW0">
+                        <rect key="frame" x="307.5" y="5" width="79" height="69"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="돈까스회일식"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cmK-uY-7yG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.617" id="1WB-LN-Jzw"/>
+                    <constraint firstItem="iyZ-Nm-1W7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1wy-7a-rxV"/>
+                    <constraint firstItem="FoF-zn-DoX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.757" id="2LW-Eo-7NK"/>
+                    <constraint firstItem="VWN-9X-dgc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.01" id="3Bh-ij-OnI"/>
+                    <constraint firstItem="mNr-y9-lU5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.624" id="3Dw-Qg-KqZ"/>
+                    <constraint firstItem="xGe-gz-8PG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.76" id="3XX-Uf-Vdc"/>
+                    <constraint firstItem="GVE-d9-YCg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.76" id="3aI-EY-56W"/>
+                    <constraint firstItem="yMK-lV-O3v" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3ii-6d-nQz"/>
+                    <constraint firstItem="yMK-lV-O3v" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.766" id="4DL-Sn-eBd"/>
+                    <constraint firstItem="mNr-y9-lU5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.25" id="5LX-4p-LRu"/>
+                    <constraint firstItem="VWN-9X-dgc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.24" id="7Qa-eR-2F8"/>
+                    <constraint firstItem="YJE-aY-psU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.75" id="7vZ-tt-VTF"/>
+                    <constraint firstItem="bkT-bM-wwQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.238" id="Hth-QX-puj"/>
+                    <constraint firstItem="ajX-RE-4aL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.23" id="MyB-Pb-tlu"/>
+                    <constraint firstItem="cnC-ns-Otx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.238" id="NRy-e0-ReI"/>
+                    <constraint firstItem="HvO-H2-oi6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.23" id="Nvr-Kp-sjg"/>
+                    <constraint firstItem="iyZ-Nm-1W7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.273" id="O6a-ze-J8V"/>
+                    <constraint firstItem="8Me-d8-FyB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.27" id="OGC-Ay-FFf"/>
+                    <constraint firstItem="ALh-ny-NwE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.771" id="QCa-H1-dit"/>
+                    <constraint firstItem="KeP-9b-CW0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.271" id="T9k-sc-PS8"/>
+                    <constraint firstItem="HvO-H2-oi6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.273" id="TAd-2W-IlN"/>
+                    <constraint firstItem="bkT-bM-wwQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.393" id="X4M-R4-eAj"/>
+                    <constraint firstItem="cmK-uY-7yG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.293" id="ZaY-Xd-vZu"/>
+                    <constraint firstItem="KeP-9b-CW0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.78" id="coI-go-ToT"/>
+                    <constraint firstItem="YJE-aY-psU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.393" id="iKn-o9-5WX"/>
+                    <constraint firstItem="8Me-d8-FyB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.39" id="ijp-HN-FlJ"/>
+                    <constraint firstItem="cnC-ns-Otx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.24" id="ijw-hx-66w"/>
+                    <constraint firstItem="GVE-d9-YCg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.244" id="vWY-ov-7np"/>
+                    <constraint firstItem="FoF-zn-DoX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.622" id="xdQ-Da-Btz"/>
+                    <constraint firstItem="ALh-ny-NwE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.23" id="xsn-ph-Yje"/>
+                    <constraint firstItem="ajX-RE-4aL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.72" id="zVh-oy-pxh"/>
+                    <constraint firstItem="xGe-gz-8PG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.77" id="zeT-oB-HY9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="KeP-9b-CW0" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.202564" id="7kA-rM-Idr"/>
+                <constraint firstItem="FoF-zn-DoX" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.210345" id="9fB-n3-hPh"/>
+                <constraint firstItem="VWN-9X-dgc" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.117949" id="Bvt-8d-tkJ"/>
+                <constraint firstItem="VWN-9X-dgc" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.231034" id="CMO-Rg-YGG"/>
+                <constraint firstItem="yMK-lV-O3v" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.179487" id="FsY-mg-AMc"/>
+                <constraint firstItem="bkT-bM-wwQ" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.268966" id="HKG-8F-hD5"/>
+                <constraint firstItem="cmK-uY-7yG" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.107692" id="JKr-m6-7Wy"/>
+                <constraint firstItem="GVE-d9-YCg" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.125641" id="KCS-ve-BIa"/>
+                <constraint firstItem="bkT-bM-wwQ" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.161538" id="L9l-6T-VAY"/>
+                <constraint firstItem="YJE-aY-psU" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.115385" id="M3e-xB-aYf"/>
+                <constraint firstItem="mNr-y9-lU5" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.27931" id="Ocj-HB-2xh"/>
+                <constraint firstItem="HvO-H2-oi6" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.115385" id="WOs-3N-wF7"/>
+                <constraint firstItem="mNr-y9-lU5" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.135897" id="XKo-LP-1eb"/>
+                <constraint firstItem="ALh-ny-NwE" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.15641" id="Xp0-Id-Ji6"/>
+                <constraint firstItem="FoF-zn-DoX" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.107692" id="Xrk-D8-l2i"/>
+                <constraint firstItem="ALh-ny-NwE" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.224138" id="a82-Po-5Xd"/>
+                <constraint firstItem="cnC-ns-Otx" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.203448" id="amD-fJ-Vf5"/>
+                <constraint firstItem="iyZ-Nm-1W7" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.234483" id="dI8-PW-bPv"/>
+                <constraint firstItem="iyZ-Nm-1W7" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.120513" id="gQn-oH-M71"/>
+                <constraint firstItem="xGe-gz-8PG" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.138462" id="nee-X1-4vg"/>
+                <constraint firstItem="8Me-d8-FyB" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.166667" id="oqz-Xa-m4p"/>
+                <constraint firstItem="cmK-uY-7yG" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.237931" id="pYU-go-wd4"/>
+                <constraint firstItem="ajX-RE-4aL" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.255172" id="ptG-p6-hNq"/>
+                <constraint firstItem="8Me-d8-FyB" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.22069" id="rE7-Ms-TLg"/>
+                <constraint firstItem="GVE-d9-YCg" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.234483" id="rMM-BN-xgZ"/>
+                <constraint firstItem="HvO-H2-oi6" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.237931" id="tay-yh-zmg"/>
+                <constraint firstItem="xGe-gz-8PG" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.217241" id="uCa-Ow-rfj"/>
+                <constraint firstItem="ajX-RE-4aL" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.138462" id="uDS-OS-WYu"/>
+                <constraint firstItem="yMK-lV-O3v" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.234483" id="xJ7-3t-Kr1"/>
+                <constraint firstItem="cnC-ns-Otx" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.115385" id="xKa-YE-4JT"/>
+                <constraint firstItem="KeP-9b-CW0" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.237931" id="xsb-qw-Kqu"/>
+                <constraint firstItem="YJE-aY-psU" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.217241" id="yZt-8L-ASR"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1인분" width="108" height="167"/>
+        <image name="도시락" width="138" height="201"/>
+        <image name="돈까스회일식" width="192" height="167"/>
+        <image name="맛집랭킹" width="168" height="232"/>
+        <image name="배달시트" width="1339" height="1000"/>
+        <image name="분식" width="165" height="222"/>
+        <image name="브랜드관" width="148" height="159"/>
+        <image name="아시안양식" width="171" height="164"/>
+        <image name="야식" width="126" height="180"/>
+        <image name="족발보쌈" width="187" height="215"/>
+        <image name="중국집" width="149" height="219"/>
+        <image name="찜탕" width="162" height="240"/>
+        <image name="치킨" width="113" height="164"/>
+        <image name="카페디저트" width="219" height="213"/>
+        <image name="패스트푸드" width="204" height="243"/>
+        <image name="피자" width="141" height="209"/>
+        <image name="한식" width="139" height="234"/>
+    </resources>
+</document>

@@ -10,6 +10,12 @@ import PagingKit
 
 class PagingViewController: UIViewController {
 
+    @IBOutlet var SearchBtn: UIButton!
+    @IBOutlet var jjimBtn: UIButton!
+    @IBOutlet var baeminBtn: UIButton!
+    @IBOutlet var myView: UIView!
+    @IBOutlet var jumunBtn: UIButton!
+    @IBOutlet var myBaeminBtn: UIButton!
     private var viewControllers: Array<UIViewController> = []
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
@@ -28,10 +34,36 @@ class PagingViewController: UIViewController {
     var array55 : [UIColor] = [.lightGray, .lightGray, .lightGray,  .lightGray, .white, .lightGray]
     var array66 : [UIColor] = [.lightGray, .lightGray, .lightGray,  .lightGray, .lightGray, .white]
     
+    var array011 : [UIFont] = [.systemFont(ofSize: 17, weight: .bold), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium)]
+    var array022 : [UIFont] = [.systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .bold), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium)]
+    var array033 : [UIFont] = [.systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .bold), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium)]
+    var array044 : [UIFont] = [.systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .bold), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium)]
+    var array055 : [UIFont] = [.systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .bold), .systemFont(ofSize: 17, weight: .medium)]
+    var array066 : [UIFont] = [.systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .medium), .systemFont(ofSize: 17, weight: .bold)]
+    
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //버튼 회색 이벤트 없애기
+        SearchBtn.adjustsImageWhenHighlighted = false
+        jjimBtn.adjustsImageWhenHighlighted = false
+        baeminBtn.adjustsImageWhenHighlighted = false
+        jumunBtn.adjustsImageWhenHighlighted = false
+        myBaeminBtn.adjustsImageWhenHighlighted = false
+        
+        
+        //하단 View 그림자.
+        
+        myView.layer.shadowColor = UIColor.black.cgColor // 색깔
+        myView.layer.masksToBounds = false  // 내부에 속한 요소들이 UIView 밖을 벗어날 때, 잘라낼 것인지. 그림자는 밖에 그려지는 것이므로 false 로 설정
+        myView.layer.shadowOffset = CGSize(width: 0, height: 4) // 위치조정
+        myView.layer.shadowRadius = 5 // 반경
+        myView.layer.shadowOpacity = 0.3 // alpha값
+        
+        
         self.navigationItem.setHidesBackButton(true, animated: true) //백버튼 숨김
         
         let vc1 = UIStoryboard.init(name: "BaedalStoryboard", bundle: nil).instantiateViewController(withIdentifier: "BaedalViewController") as! BaedalViewController
@@ -78,7 +110,24 @@ class PagingViewController: UIViewController {
             }
         }
     
-
+    @IBAction func SearchBtnTap(_ sender: UIButton) {
+        let seStoryboard = UIStoryboard(name: "SearchStoryboard", bundle: nil) //스토리보드 결정
+        let searchVC = seStoryboard.instantiateViewController(identifier: "SearchViewController")
+        self.navigationController?.pushViewController(searchVC, animated: true)
+        
+    }
+    
+    
+    
+    @IBAction func BaeminTabbarBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func myBaeminBtnTap(_ sender: UIButton) {
+        let myStoryboard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil) //스토리보드 결정
+        let myVC = myStoryboard.instantiateViewController(identifier: "MyBeaminViewController")
+        self.navigationController?.pushViewController(myVC, animated: true)
+    }
     
 
 }
@@ -120,6 +169,7 @@ extension PagingViewController: PagingMenuViewControllerDataSource {
             cell.myView.alpha = array1[index]
             cell.myView.frame.size.width = 60
             cell.titleLabel.textColor = array11[index]
+            cell.titleLabel.font = .systemFont(ofSize: 17, weight: .bold)
         case 1:
             cell.myView.alpha = array2[index]
             cell.myView.frame.size.width = 60

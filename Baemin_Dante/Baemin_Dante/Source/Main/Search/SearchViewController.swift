@@ -26,7 +26,8 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func backBtn(_ sender: UIButton) {
-            self.navigationController?.popToRootViewController(animated: true)
+//            self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
         }
 
 }

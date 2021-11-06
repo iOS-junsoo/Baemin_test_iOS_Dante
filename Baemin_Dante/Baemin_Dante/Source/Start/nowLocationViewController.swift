@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-public let DEFAULT_POSITION = MTMapPointGeo(latitude: 36.22473, longitude: 128.31230)
+public let DEFAULT_POSITION = MTMapPointGeo(latitude: UserInfo.latitude, longitude: UserInfo.longitude)
 class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocationManagerDelegate {
 
     var mapView: MTMapView?
@@ -110,7 +110,7 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
     @objc func handleTap(_ sender: UIButton) {
         print("currnt location")
         //현재 위치로 돌아가기
-        mapView?.setMapCenter(MTMapPoint(geoCoord: DEFAULT_POSITION), zoomLevel: -2, animated: true)
+        mapView?.setMapCenter(MTMapPoint(geoCoord: MTMapPointGeo(latitude: UserInfo.latitude, longitude: UserInfo.longitude)), zoomLevel: -2, animated: true)
         
     }
     

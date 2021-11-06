@@ -40,9 +40,11 @@ class secondTableViewCell: UITableViewCell {
         collectionView.reloadData()
     }
     var nowPage: Int = 0 //자동배너 변수
+    
     var models = [Model]()
     override func awakeFromNib() {
         super.awakeFromNib()
+        bannerTimer()
         gifImageView.animate(withGIFNamed: "배민1") {
             print("GIF 실행중")
         }
@@ -92,7 +94,7 @@ class secondTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        bannerTimer() //자동배너 함수
+         //자동배너 함수
         // Configure the view for the selected state
     }
     
@@ -100,7 +102,7 @@ class secondTableViewCell: UITableViewCell {
     func bannerTimer() {
             let _: Timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { (Timer) in
                 self.bannerMove()
-                
+                //print("현재 페이지: \(self.nowPage)")
             }
         }
         // 배너 움직이는 매서드
