@@ -47,6 +47,25 @@
 		9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950636B2731388D002C43B8 /* fourthTableViewCell.xib */; };
 		99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */; };
 		99506371273138B7002C43B8 /* fourthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9950636F273138B7002C43B8 /* fourthCollectionViewCell.xib */; };
+		995516BB2737C0CF0050A497 /* BasicNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995516BA2737C0CF0050A497 /* BasicNextViewController.swift */; };
+		995516BD2737C0DC0050A497 /* StarNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995516BC2737C0DC0050A497 /* StarNextViewController.swift */; };
+		995516BF2737C0F40050A497 /* BacisNextStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */; };
+		995516C12737C1010050A497 /* StarNextStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C02737C1010050A497 /* StarNextStoryboard.storyboard */; };
+		995516C42737CB000050A497 /* BaketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995516C32737CB000050A497 /* BaketViewController.swift */; };
+		995516C62737CB090050A497 /* BaketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C52737CB090050A497 /* BaketStoryboard.storyboard */; };
+		997219E62737EC60001624A0 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219E42737EC60001624A0 /* TitleTableViewCell.swift */; };
+		997219E72737EC60001624A0 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219E52737EC60001624A0 /* TitleTableViewCell.xib */; };
+		997219EA2737EC70001624A0 /* RadioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219E82737EC70001624A0 /* RadioTableViewCell.swift */; };
+		997219EB2737EC70001624A0 /* RadioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219E92737EC70001624A0 /* RadioTableViewCell.xib */; };
+		997219EE2737EC89001624A0 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219EC2737EC89001624A0 /* FoodTableViewCell.swift */; };
+		997219EF2737EC89001624A0 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219ED2737EC89001624A0 /* FoodTableViewCell.xib */; };
+		997219F22737EC9C001624A0 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219F02737EC9C001624A0 /* MoreTableViewCell.swift */; };
+		997219F32737EC9C001624A0 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219F12737EC9C001624A0 /* MoreTableViewCell.xib */; };
+		997219F62737ED1D001624A0 /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219F42737ED1D001624A0 /* TotalTableViewCell.swift */; };
+		997219F72737ED1D001624A0 /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219F52737ED1D001624A0 /* TotalTableViewCell.xib */; };
+		997219F92737FDC8001624A0 /* BaketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219F82737FDC8001624A0 /* BaketModel.swift */; };
+		997219FD27380BEA001624A0 /* OrderfoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219FC27380BEA001624A0 /* OrderfoodViewController.swift */; };
+		997219FF27380C01001624A0 /* OrderfoodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997219FE27380C01001624A0 /* OrderfoodStoryboard.storyboard */; };
 		9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2B272EA6F900A77C36 /* LoginViewController.swift */; };
 		9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */; };
 		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
@@ -86,6 +105,13 @@
 		998DABCA2736D722005EBF22 /* StarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABC92736D722005EBF22 /* StarStoryboard.storyboard */; };
 		998DABCC2736D72B005EBF22 /* ShortStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABCB2736D72B005EBF22 /* ShortStoryboard.storyboard */; };
 		998DABCE2736D737005EBF22 /* JjimStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DABCD2736D737005EBF22 /* JjimStoryboard.storyboard */; };
+		998DABD227377F6F005EBF22 /* FastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABD127377F6F005EBF22 /* FastModel.swift */; };
+		998DABD92737964B005EBF22 /* OpenListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABD72737964B005EBF22 /* OpenListTableViewCell.swift */; };
+		998DABDA2737964B005EBF22 /* OpenListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998DABD82737964B005EBF22 /* OpenListTableViewCell.xib */; };
+		998DABDD2737966A005EBF22 /* UltraCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABDB2737966A005EBF22 /* UltraCallTableViewCell.swift */; };
+		998DABDE2737966A005EBF22 /* UltraCallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998DABDC2737966A005EBF22 /* UltraCallTableViewCell.xib */; };
+		998DABE1273796F3005EBF22 /* advertisementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DABDF273796F3005EBF22 /* advertisementTableViewCell.swift */; };
+		998DABE2273796F3005EBF22 /* advertisementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998DABE0273796F3005EBF22 /* advertisementTableViewCell.xib */; };
 		999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D3272D5AB600D7B167 /* AppDelegate.swift */; };
 		999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D5272D5AB600D7B167 /* SceneDelegate.swift */; };
 		999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999858D7272D5AB600D7B167 /* MainViewController.swift */; };
@@ -230,6 +256,25 @@
 		9950636B2731388D002C43B8 /* fourthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourthTableViewCell.xib; sourceTree = "<group>"; };
 		9950636E273138B7002C43B8 /* fourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthCollectionViewCell.swift; sourceTree = "<group>"; };
 		9950636F273138B7002C43B8 /* fourthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourthCollectionViewCell.xib; sourceTree = "<group>"; };
+		995516BA2737C0CF0050A497 /* BasicNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNextViewController.swift; sourceTree = "<group>"; };
+		995516BC2737C0DC0050A497 /* StarNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarNextViewController.swift; sourceTree = "<group>"; };
+		995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BacisNextStoryboard.storyboard; sourceTree = "<group>"; };
+		995516C02737C1010050A497 /* StarNextStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarNextStoryboard.storyboard; sourceTree = "<group>"; };
+		995516C32737CB000050A497 /* BaketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaketViewController.swift; sourceTree = "<group>"; };
+		995516C52737CB090050A497 /* BaketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaketStoryboard.storyboard; sourceTree = "<group>"; };
+		997219E42737EC60001624A0 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		997219E52737EC60001624A0 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		997219E82737EC70001624A0 /* RadioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioTableViewCell.swift; sourceTree = "<group>"; };
+		997219E92737EC70001624A0 /* RadioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioTableViewCell.xib; sourceTree = "<group>"; };
+		997219EC2737EC89001624A0 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		997219ED2737EC89001624A0 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		997219F02737EC9C001624A0 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		997219F12737EC9C001624A0 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		997219F42737ED1D001624A0 /* TotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
+		997219F52737ED1D001624A0 /* TotalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
+		997219F82737FDC8001624A0 /* BaketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaketModel.swift; sourceTree = "<group>"; };
+		997219FC27380BEA001624A0 /* OrderfoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderfoodViewController.swift; sourceTree = "<group>"; };
+		997219FE27380C01001624A0 /* OrderfoodStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderfoodStoryboard.storyboard; sourceTree = "<group>"; };
 		9979BC2B272EA6F900A77C36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9979BC2D272EA70300A77C36 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +314,13 @@
 		998DABC92736D722005EBF22 /* StarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarStoryboard.storyboard; sourceTree = "<group>"; };
 		998DABCB2736D72B005EBF22 /* ShortStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShortStoryboard.storyboard; sourceTree = "<group>"; };
 		998DABCD2736D737005EBF22 /* JjimStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JjimStoryboard.storyboard; sourceTree = "<group>"; };
+		998DABD127377F6F005EBF22 /* FastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastModel.swift; sourceTree = "<group>"; };
+		998DABD72737964B005EBF22 /* OpenListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenListTableViewCell.swift; sourceTree = "<group>"; };
+		998DABD82737964B005EBF22 /* OpenListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenListTableViewCell.xib; sourceTree = "<group>"; };
+		998DABDB2737966A005EBF22 /* UltraCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraCallTableViewCell.swift; sourceTree = "<group>"; };
+		998DABDC2737966A005EBF22 /* UltraCallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UltraCallTableViewCell.xib; sourceTree = "<group>"; };
+		998DABDF273796F3005EBF22 /* advertisementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advertisementTableViewCell.swift; sourceTree = "<group>"; };
+		998DABE0273796F3005EBF22 /* advertisementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = advertisementTableViewCell.xib; sourceTree = "<group>"; };
 		999858D0272D5AB600D7B167 /* Baemin_Dante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baemin_Dante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999858D3272D5AB600D7B167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		999858D5272D5AB600D7B167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -534,6 +586,78 @@
 			path = TableViewEntity;
 			sourceTree = "<group>";
 		};
+		995516B72737BFC70050A497 /* cell-NextView */ = {
+			isa = PBXGroup;
+			children = (
+				995516B82737C0230050A497 /* BasicNextView */,
+				995516B92737C0500050A497 /* StarNextView */,
+			);
+			path = "cell-NextView";
+			sourceTree = "<group>";
+		};
+		995516B82737C0230050A497 /* BasicNextView */ = {
+			isa = PBXGroup;
+			children = (
+				995516BA2737C0CF0050A497 /* BasicNextViewController.swift */,
+				995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */,
+			);
+			path = BasicNextView;
+			sourceTree = "<group>";
+		};
+		995516B92737C0500050A497 /* StarNextView */ = {
+			isa = PBXGroup;
+			children = (
+				995516BC2737C0DC0050A497 /* StarNextViewController.swift */,
+				995516C02737C1010050A497 /* StarNextStoryboard.storyboard */,
+			);
+			path = StarNextView;
+			sourceTree = "<group>";
+		};
+		995516C22737CA950050A497 /* shoppingbasket */ = {
+			isa = PBXGroup;
+			children = (
+				997219F82737FDC8001624A0 /* BaketModel.swift */,
+				995516C32737CB000050A497 /* BaketViewController.swift */,
+				995516C52737CB090050A497 /* BaketStoryboard.storyboard */,
+				997219E32737EC38001624A0 /* TaleViewCell */,
+			);
+			path = shoppingbasket;
+			sourceTree = "<group>";
+		};
+		997219E32737EC38001624A0 /* TaleViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				997219E42737EC60001624A0 /* TitleTableViewCell.swift */,
+				997219E52737EC60001624A0 /* TitleTableViewCell.xib */,
+				997219E82737EC70001624A0 /* RadioTableViewCell.swift */,
+				997219E92737EC70001624A0 /* RadioTableViewCell.xib */,
+				997219EC2737EC89001624A0 /* FoodTableViewCell.swift */,
+				997219ED2737EC89001624A0 /* FoodTableViewCell.xib */,
+				997219F02737EC9C001624A0 /* MoreTableViewCell.swift */,
+				997219F12737EC9C001624A0 /* MoreTableViewCell.xib */,
+				997219F42737ED1D001624A0 /* TotalTableViewCell.swift */,
+				997219F52737ED1D001624A0 /* TotalTableViewCell.xib */,
+			);
+			path = TaleViewCell;
+			sourceTree = "<group>";
+		};
+		997219FA27380BC0001624A0 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				997219FB27380BCC001624A0 /* TableViewCell */,
+				997219FC27380BEA001624A0 /* OrderfoodViewController.swift */,
+				997219FE27380C01001624A0 /* OrderfoodStoryboard.storyboard */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		997219FB27380BCC001624A0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		997EA6B7273569160034AD1B /* PagingKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,8 +768,31 @@
 			children = (
 				998DABAB2736D5F5005EBF22 /* FastViewController.swift */,
 				998DABB52736D673005EBF22 /* FastStoryboard.storyboard */,
+				998DABD027377F4C005EBF22 /* FastTableViewCell */,
+				998DABCF27377F22005EBF22 /* FastModel */,
 			);
 			path = Fast;
+			sourceTree = "<group>";
+		};
+		998DABCF27377F22005EBF22 /* FastModel */ = {
+			isa = PBXGroup;
+			children = (
+				998DABD127377F6F005EBF22 /* FastModel.swift */,
+			);
+			path = FastModel;
+			sourceTree = "<group>";
+		};
+		998DABD027377F4C005EBF22 /* FastTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				998DABDF273796F3005EBF22 /* advertisementTableViewCell.swift */,
+				998DABE0273796F3005EBF22 /* advertisementTableViewCell.xib */,
+				998DABD72737964B005EBF22 /* OpenListTableViewCell.swift */,
+				998DABD82737964B005EBF22 /* OpenListTableViewCell.xib */,
+				998DABDB2737966A005EBF22 /* UltraCallTableViewCell.swift */,
+				998DABDC2737966A005EBF22 /* UltraCallTableViewCell.xib */,
+			);
+			path = FastTableViewCell;
 			sourceTree = "<group>";
 		};
 		999858C7272D5AB600D7B167 = {
@@ -686,6 +833,9 @@
 		999858E8272D5B0E00D7B167 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				997219FA27380BC0001624A0 /* Order */,
+				995516C22737CA950050A497 /* shoppingbasket */,
+				995516B72737BFC70050A497 /* cell-NextView */,
 				99985D34272E50B300D7B167 /* Global */,
 				99985916272D5BE000D7B167 /* Start */,
 				99985905272D5BCD00D7B167 /* Login */,
@@ -1061,11 +1211,11 @@
 		99EEAA4627367420003B5684 /* KoreaFood */ = {
 			isa = PBXGroup;
 			children = (
+				998DABAA2736D5D1005EBF22 /*  Sort */,
 				99EEAA4227367409003B5684 /* KoreaFoodViewController.swift */,
 				99EEAA442736741B003B5684 /* KoreaFoodStoryboard.storyboard */,
 				998DABA62736D3E0005EBF22 /* Menu3Cell.xib */,
 				998DABA82736D3E9005EBF22 /* Menu3Cell.swift */,
-				998DABAA2736D5D1005EBF22 /*  Sort */,
 			);
 			path = KoreaFood;
 			sourceTree = "<group>";
@@ -1178,20 +1328,27 @@
 				998DABCC2736D72B005EBF22 /* ShortStoryboard.storyboard in Resources */,
 				99985D24272E308E00D7B167 /* map_pin_red.png in Resources */,
 				99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */,
+				997219F72737ED1D001624A0 /* TotalTableViewCell.xib in Resources */,
 				99985D19272E308E00D7B167 /* map_pinup.png in Resources */,
 				99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */,
 				994E62EA273699C300BFBF36 /* PizzaStoryboard.storyboard in Resources */,
+				995516BF2737C0F40050A497 /* BacisNextStoryboard.storyboard in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */,
+				997219F32737EC9C001624A0 /* MoreTableViewCell.xib in Resources */,
+				997219E72737EC60001624A0 /* TitleTableViewCell.xib in Resources */,
 				998DABBC2736D6E3005EBF22 /* BasicStoryboard.storyboard in Resources */,
 				99A437A3273413550076F023 /* BaedalStoryboard.storyboard in Resources */,
 				997EA6D427357C970034AD1B /* BannerCollectionViewCell.xib in Resources */,
 				997EA6BB2735699F0034AD1B /* PagingStoryboard.storyboard in Resources */,
+				998DABE2273796F3005EBF22 /* advertisementTableViewCell.xib in Resources */,
 				99985D21272E308E00D7B167 /* daum_copyright.png in Resources */,
 				9950636D2731388D002C43B8 /* fourthTableViewCell.xib in Resources */,
 				997EA6D827357CA40034AD1B /* ButtonCollectionViewCell.xib in Resources */,
 				99985D23272E308E00D7B167 /* map_present_tracking.png in Resources */,
+				998DABDA2737964B005EBF22 /* OpenListTableViewCell.xib in Resources */,
 				994E62F627369FEA00BFBF36 /* Menu2Cell.xib in Resources */,
+				997219EF2737EC89001624A0 /* FoodTableViewCell.xib in Resources */,
 				99A437982733FAFD0076F023 /* SearchStoryboard.storyboard in Resources */,
 				99985D41272E80E600D7B167 /* MyBeaminStoryboard.storyboard in Resources */,
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
@@ -1205,6 +1362,7 @@
 				997EA6C627357B5D0034AD1B /* BannerTableViewCell.xib in Resources */,
 				995063592731118E002C43B8 /* firstTableViewCell.xib in Resources */,
 				99985D1A272E308E00D7B167 /* detail_button.png in Resources */,
+				997219FF27380C01001624A0 /* OrderfoodStoryboard.storyboard in Resources */,
 				9950635B2731118E002C43B8 /* secondTableViewCell.xib in Resources */,
 				99985D1F272E308E00D7B167 /* th_line.png in Resources */,
 				99985D2E272E308E00D7B167 /* map_present_background_update.png in Resources */,
@@ -1213,6 +1371,7 @@
 				99985D25272E308E00D7B167 /* info_box.png in Resources */,
 				99506371273138B7002C43B8 /* fourthCollectionViewCell.xib in Resources */,
 				994E62E02736998100BFBF36 /* BunsikStoryboard.storyboard in Resources */,
+				998DABDE2737966A005EBF22 /* UltraCallTableViewCell.xib in Resources */,
 				99985D45272E810000D7B167 /* AlarmStoryboard.storyboard in Resources */,
 				99985D27272E308E00D7B167 /* map_pinup_custom.png in Resources */,
 				99985D2D272E308E00D7B167 /* noimage.png in Resources */,
@@ -1221,6 +1380,7 @@
 				99985D2A272E308E00D7B167 /* map_present_direction.png in Resources */,
 				999858DD272D5AB800D7B167 /* Assets.xcassets in Resources */,
 				998DABBA2736D6D5005EBF22 /* TipStoryboard.storyboard in Resources */,
+				995516C62737CB090050A497 /* BaketStoryboard.storyboard in Resources */,
 				994E62EC273699CF00BFBF36 /* AsianStoryboard.storyboard in Resources */,
 				999858DB272D5AB600D7B167 /* Main.storyboard in Resources */,
 				992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */,
@@ -1236,6 +1396,8 @@
 				998DABB62736D673005EBF22 /* FastStoryboard.storyboard in Resources */,
 				99985D16272E308E00D7B167 /* map_pinup_custom@3x.png in Resources */,
 				99985D17272E308E00D7B167 /* map_pin_custom.png in Resources */,
+				995516C12737C1010050A497 /* StarNextStoryboard.storyboard in Resources */,
+				997219EB2737EC70001624A0 /* RadioTableViewCell.xib in Resources */,
 				994E62EE273699DB00BFBF36 /* ChinaStoryboard.storyboard in Resources */,
 				99A437AB273413940076F023 /* PojangStoryboard.storyboard in Resources */,
 				99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */,
@@ -1296,24 +1458,30 @@
 			files = (
 				99985902272D5BAA00D7B167 /* Device.swift in Sources */,
 				99A4379027339F9C0076F023 /* joinDataManager.swift in Sources */,
+				997219FD27380BEA001624A0 /* OrderfoodViewController.swift in Sources */,
 				998DABA92736D3E9005EBF22 /* Menu3Cell.swift in Sources */,
 				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
+				997219EE2737EC89001624A0 /* FoodTableViewCell.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
 				994E62F2273699F100BFBF36 /* ChinaViewController.swift in Sources */,
+				998DABE1273796F3005EBF22 /* advertisementTableViewCell.swift in Sources */,
 				99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
 				99A4378E27339F900076F023 /* joinResponse.swift in Sources */,
 				9984D61A273268A400387158 /* naviViewController.swift in Sources */,
 				99A437A12734134C0076F023 /* BaedalViewController.swift in Sources */,
+				997219F92737FDC8001624A0 /* BaketModel.swift in Sources */,
 				99A437932733DECB0076F023 /* Constant.swift in Sources */,
+				997219F22737EC9C001624A0 /* MoreTableViewCell.swift in Sources */,
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
 				994E62F427369FDD00BFBF36 /* Menu2Cell.swift in Sources */,
 				99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */,
 				994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
+				998DABDD2737966A005EBF22 /* UltraCallTableViewCell.swift in Sources */,
 				997EA6BF273569C40034AD1B /* MenuCell.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
@@ -1335,16 +1503,19 @@
 				997EA6C527357B5D0034AD1B /* BannerTableViewCell.swift in Sources */,
 				997EA6C927357B6D0034AD1B /* ButtonTableViewCell.swift in Sources */,
 				994E62E6273699A500BFBF36 /* ChickenViewController.swift in Sources */,
+				998DABD227377F6F005EBF22 /* FastModel.swift in Sources */,
 				99985D33272E4BB800D7B167 /* detailLocationViewController.swift in Sources */,
 				9950635C2731118E002C43B8 /* firstTableViewCell.swift in Sources */,
 				9979BC2C272EA6F900A77C36 /* LoginViewController.swift in Sources */,
 				99A437B1273413BF0076F023 /* GiftViewController.swift in Sources */,
+				995516BB2737C0CF0050A497 /* BasicNextViewController.swift in Sources */,
 				99EEAA3F27367397003B5684 /* OneinbunViewController.swift in Sources */,
 				999858FB272D5B9900D7B167 /* UIButton.swift in Sources */,
 				998DABC02736D6F4005EBF22 /* BasicViewController.swift in Sources */,
 				997EA6D327357C970034AD1B /* BannerCollectionViewCell.swift in Sources */,
 				994E62DC2736996A00BFBF36 /* BunsikViewController.swift in Sources */,
 				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
+				997219E62737EC60001624A0 /* TitleTableViewCell.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
 				99EEAA4327367409003B5684 /* KoreaFoodViewController.swift in Sources */,
 				99985929272D71F200D7B167 /* nowLocationViewController.swift in Sources */,
@@ -1353,9 +1524,11 @@
 				999858FA272D5B9900D7B167 /* UINavigationBar.swift in Sources */,
 				99985D3F272E80DD00D7B167 /* MyBeaminViewController.swift in Sources */,
 				99A437AD273413A40076F023 /* LiveViewController.swift in Sources */,
+				997219F62737ED1D001624A0 /* TotalTableViewCell.swift in Sources */,
 				99506364273111D4002C43B8 /* firstCollectionViewCell.swift in Sources */,
 				997EA6CF27357B8C0034AD1B /* TodayTableViewCell.swift in Sources */,
 				994E62DE2736997B00BFBF36 /* DonegasViewController.swift in Sources */,
+				995516C42737CB000050A497 /* BaketViewController.swift in Sources */,
 				998DABAC2736D5F5005EBF22 /* FastViewController.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				99277CE12734B83300CD665E /* LoginResponse.swift in Sources */,
@@ -1367,10 +1540,13 @@
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,
 				992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */,
+				995516BD2737C0DC0050A497 /* StarNextViewController.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
 				999858F9272D5B9900D7B167 /* Color.swift in Sources */,
 				994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */,
 				998DABC62736D70E005EBF22 /* ShortViewController.swift in Sources */,
+				998DABD92737964B005EBF22 /* OpenListTableViewCell.swift in Sources */,
+				997219EA2737EC70001624A0 /* RadioTableViewCell.swift in Sources */,
 				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,
 			);

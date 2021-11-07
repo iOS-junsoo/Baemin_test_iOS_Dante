@@ -77,7 +77,7 @@ class EmailViewController: UIViewController {
         print("중복")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
             print("3초")
-            if EmailSeverResponse.ResponseValue == true { //true가 로직상 맞는데 틀려서 false로 바꿈
+            if EmailSeverResponse.ResponseValue == true { 
                 print("허용")
                 self.emailCheck.image = UIImage(named: "초록체크") //응답이 true라면
                 self.emailErrorLabel.textColor = UIColor.white
