@@ -51,9 +51,9 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
         switch section {
         case 0:
-            return 3
+            return 4
         case 1:
-            return 3
+            return 4
         default:
             return 0
         }
@@ -62,8 +62,8 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
  
         let cellDataTitle = models1[indexPath.section]
-        let cellDataContent1 = models2[indexPath.row]
-        let cellDataContent2 = models3[indexPath.row]
+//        let cellDataContent1 = models2[indexPath.row-1]
+//        let cellDataContent2 = models3[indexPath.row-1]
         
         switch indexPath.section {
         case 0 :
@@ -74,6 +74,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 1{
+                let cellDataContent1 = models2[0]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OpenListTableViewCell") as! OpenListTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent1.imageName)
                 cell.title.text = cellDataContent1.title
@@ -86,6 +87,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 2{
+                let cellDataContent1 = models2[1]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OpenListTableViewCell") as! OpenListTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent1.imageName)
                 cell.title.text = cellDataContent1.title
@@ -98,6 +100,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 3{
+                let cellDataContent1 = models2[2]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OpenListTableViewCell") as! OpenListTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent1.imageName)
                 cell.title.text = cellDataContent1.title
@@ -129,6 +132,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 1{
+                let cellDataContent2 = models3[0]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "UltraCallTableViewCell") as! UltraCallTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent2.imageName)
                 cell.title.text = cellDataContent2.title
@@ -141,6 +145,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 2{
+                let cellDataContent2 = models3[1]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "UltraCallTableViewCell") as! UltraCallTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent2.imageName)
                 cell.title.text = cellDataContent2.title
@@ -153,6 +158,7 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.selectionStyle = .none
                 return cell
             } else if indexPath.row == 3{
+                let cellDataContent2 = models3[2]
                 let cell = tableView.dequeueReusableCell(withIdentifier: "UltraCallTableViewCell") as! UltraCallTableViewCell
                 cell.imagName.image = UIImage(named: cellDataContent2.imageName)
                 cell.title.text = cellDataContent2.title

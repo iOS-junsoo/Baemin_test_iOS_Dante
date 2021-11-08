@@ -10,7 +10,7 @@ import Foundation
 //tableView 모델
 struct BaketModel {
     var foodTitle: String
-    var foodPrice: String
+    var foodPrice: Int
     
 }
 
@@ -19,4 +19,9 @@ struct BaketGrobal {
     static var foodPrice = "0원"
     static var foodCount = "1개"
     static var totalPrice = "0원"
+}
+struct Baket {
+    static var foodPrice = 0
+    static var foodtotalPrice = 0
+    static var totalPrice = 0
 }

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5D0258610D3664EA6DFC2004 /* Pods_Baemin_Dante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */; };
+		99265CB9273904F5000538D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99265CB8273904F5000538D3 /* MenuViewController.swift */; };
+		99265CBB273904FF000538D3 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99265CBA273904FF000538D3 /* MenuStoryboard.storyboard */; };
+		99265CBD2739050C000538D3 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99265CBC2739050C000538D3 /* InformationViewController.swift */; };
+		99265CBF27390523000538D3 /* InformationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99265CBE27390523000538D3 /* InformationStoryboard.storyboard */; };
+		99265CC127390532000538D3 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99265CC027390532000538D3 /* ReviewViewController.swift */; };
+		99265CC327390541000538D3 /* ReviewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99265CC227390541000538D3 /* ReviewStoryboard.storyboard */; };
 		99277CE12734B83300CD665E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE02734B83300CD665E /* LoginResponse.swift */; };
 		99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE22734B83D00CD665E /* LoginDataManager.swift */; };
 		99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99277CE82734BB0F00CD665E /* EmailDataManager.swift */; };
@@ -53,6 +59,13 @@
 		995516C12737C1010050A497 /* StarNextStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C02737C1010050A497 /* StarNextStoryboard.storyboard */; };
 		995516C42737CB000050A497 /* BaketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995516C32737CB000050A497 /* BaketViewController.swift */; };
 		995516C62737CB090050A497 /* BaketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C52737CB090050A497 /* BaketStoryboard.storyboard */; };
+		9960505F2739446B00099779 /* BasicMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960505E2739446B00099779 /* BasicMenuCell.swift */; };
+		996050612739447500099779 /* BasicMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996050602739447500099779 /* BasicMenuCell.xib */; };
+		996B3FDC2738DE6500DC29CA /* firtstBNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3FDA2738DE6500DC29CA /* firtstBNTableViewCell.swift */; };
+		996B3FDD2738DE6500DC29CA /* firtstBNTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996B3FDB2738DE6500DC29CA /* firtstBNTableViewCell.xib */; };
+		996B3FE02738DE7D00DC29CA /* secondBNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3FDE2738DE7D00DC29CA /* secondBNTableViewCell.swift */; };
+		996B3FE12738DE7D00DC29CA /* secondBNTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996B3FDF2738DE7D00DC29CA /* secondBNTableViewCell.xib */; };
+		996B3FE42738EB0300DC29CA /* BNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3FE32738EB0300DC29CA /* BNModel.swift */; };
 		997219E62737EC60001624A0 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219E42737EC60001624A0 /* TitleTableViewCell.swift */; };
 		997219E72737EC60001624A0 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997219E52737EC60001624A0 /* TitleTableViewCell.xib */; };
 		997219EA2737EC70001624A0 /* RadioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997219E82737EC70001624A0 /* RadioTableViewCell.swift */; };
@@ -217,6 +230,12 @@
 /* Begin PBXFileReference section */
 		56A206DB1B2F0F9C72864841 /* Pods-Baemin_Dante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baemin_Dante.release.xcconfig"; path = "Target Support Files/Pods-Baemin_Dante/Pods-Baemin_Dante.release.xcconfig"; sourceTree = "<group>"; };
 		5A53EE017DEF2E458DAFE41C /* Pods_Baemin_Dante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Baemin_Dante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99265CB8273904F5000538D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		99265CBA273904FF000538D3 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		99265CBC2739050C000538D3 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		99265CBE27390523000538D3 /* InformationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InformationStoryboard.storyboard; sourceTree = "<group>"; };
+		99265CC027390532000538D3 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		99265CC227390541000538D3 /* ReviewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReviewStoryboard.storyboard; sourceTree = "<group>"; };
 		99277CE02734B83300CD665E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		99277CE22734B83D00CD665E /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
 		99277CE82734BB0F00CD665E /* EmailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDataManager.swift; sourceTree = "<group>"; };
@@ -262,6 +281,13 @@
 		995516C02737C1010050A497 /* StarNextStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarNextStoryboard.storyboard; sourceTree = "<group>"; };
 		995516C32737CB000050A497 /* BaketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaketViewController.swift; sourceTree = "<group>"; };
 		995516C52737CB090050A497 /* BaketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaketStoryboard.storyboard; sourceTree = "<group>"; };
+		9960505E2739446B00099779 /* BasicMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMenuCell.swift; sourceTree = "<group>"; };
+		996050602739447500099779 /* BasicMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicMenuCell.xib; sourceTree = "<group>"; };
+		996B3FDA2738DE6500DC29CA /* firtstBNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firtstBNTableViewCell.swift; sourceTree = "<group>"; };
+		996B3FDB2738DE6500DC29CA /* firtstBNTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firtstBNTableViewCell.xib; sourceTree = "<group>"; };
+		996B3FDE2738DE7D00DC29CA /* secondBNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondBNTableViewCell.swift; sourceTree = "<group>"; };
+		996B3FDF2738DE7D00DC29CA /* secondBNTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondBNTableViewCell.xib; sourceTree = "<group>"; };
+		996B3FE32738EB0300DC29CA /* BNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNModel.swift; sourceTree = "<group>"; };
 		997219E42737EC60001624A0 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		997219E52737EC60001624A0 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		997219E82737EC70001624A0 /* RadioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioTableViewCell.swift; sourceTree = "<group>"; };
@@ -442,6 +468,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99265CB127390486000538D3 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				99265CB8273904F5000538D3 /* MenuViewController.swift */,
+				99265CBA273904FF000538D3 /* MenuStoryboard.storyboard */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		99265CB227390494000538D3 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				99265CBC2739050C000538D3 /* InformationViewController.swift */,
+				99265CBE27390523000538D3 /* InformationStoryboard.storyboard */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		99265CB3273904AA000538D3 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				99265CC027390532000538D3 /* ReviewViewController.swift */,
+				99265CC227390541000538D3 /* ReviewStoryboard.storyboard */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		99277CE42734BAD500CD665E /* Emailjungbok */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +642,7 @@
 		995516B72737BFC70050A497 /* cell-NextView */ = {
 			isa = PBXGroup;
 			children = (
+				996B3FE22738EAEE00DC29CA /* Model */,
 				995516B82737C0230050A497 /* BasicNextView */,
 				995516B92737C0500050A497 /* StarNextView */,
 			);
@@ -598,8 +652,12 @@
 		995516B82737C0230050A497 /* BasicNextView */ = {
 			isa = PBXGroup;
 			children = (
+				99265CB127390486000538D3 /* menu */,
+				99265CB227390494000538D3 /* Information */,
+				99265CB3273904AA000538D3 /* Review */,
 				995516BA2737C0CF0050A497 /* BasicNextViewController.swift */,
 				995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */,
+				996B3FD92738DDFC00DC29CA /* MenuCell */,
 			);
 			path = BasicNextView;
 			sourceTree = "<group>";
@@ -616,12 +674,41 @@
 		995516C22737CA950050A497 /* shoppingbasket */ = {
 			isa = PBXGroup;
 			children = (
-				997219F82737FDC8001624A0 /* BaketModel.swift */,
+				996F0839273919BB00C51088 /* Model */,
 				995516C32737CB000050A497 /* BaketViewController.swift */,
 				995516C52737CB090050A497 /* BaketStoryboard.storyboard */,
 				997219E32737EC38001624A0 /* TaleViewCell */,
 			);
 			path = shoppingbasket;
+			sourceTree = "<group>";
+		};
+		996B3FD92738DDFC00DC29CA /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				996B3FDA2738DE6500DC29CA /* firtstBNTableViewCell.swift */,
+				996B3FDB2738DE6500DC29CA /* firtstBNTableViewCell.xib */,
+				996B3FDE2738DE7D00DC29CA /* secondBNTableViewCell.swift */,
+				996B3FDF2738DE7D00DC29CA /* secondBNTableViewCell.xib */,
+				9960505E2739446B00099779 /* BasicMenuCell.swift */,
+				996050602739447500099779 /* BasicMenuCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		996B3FE22738EAEE00DC29CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				996B3FE32738EB0300DC29CA /* BNModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		996F0839273919BB00C51088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				997219F82737FDC8001624A0 /* BaketModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		997219E32737EC38001624A0 /* TaleViewCell */ = {
@@ -1314,6 +1401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99265CC327390541000538D3 /* ReviewStoryboard.storyboard in Resources */,
 				99EEAA41273673D8003B5684 /* OneinbunStoryboard.storyboard in Resources */,
 				99985D18272E308E00D7B167 /* shadow_balloon.png in Resources */,
 				99985D1E272E308E00D7B167 /* copyright.png in Resources */,
@@ -1326,6 +1414,7 @@
 				99985D2C272E308E00D7B167 /* map_present.png in Resources */,
 				9950635A2731118E002C43B8 /* thridTableViewCell.xib in Resources */,
 				998DABCC2736D72B005EBF22 /* ShortStoryboard.storyboard in Resources */,
+				99265CBF27390523000538D3 /* InformationStoryboard.storyboard in Resources */,
 				99985D24272E308E00D7B167 /* map_pin_red.png in Resources */,
 				99985D30272E308E00D7B167 /* map_pin_shadow.png in Resources */,
 				997219F72737ED1D001624A0 /* TotalTableViewCell.xib in Resources */,
@@ -1333,6 +1422,7 @@
 				99A437AF273413B00076F023 /* LiveStoryboard.storyboard in Resources */,
 				994E62EA273699C300BFBF36 /* PizzaStoryboard.storyboard in Resources */,
 				995516BF2737C0F40050A497 /* BacisNextStoryboard.storyboard in Resources */,
+				996B3FDD2738DE6500DC29CA /* firtstBNTableViewCell.xib in Resources */,
 				99985D20272E308E00D7B167 /* map_pin_red@3x.png in Resources */,
 				997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */,
 				997219F32737EC9C001624A0 /* MoreTableViewCell.xib in Resources */,
@@ -1354,6 +1444,8 @@
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
 				994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */,
 				997EA6D027357B8C0034AD1B /* TodayTableViewCell.xib in Resources */,
+				99265CBB273904FF000538D3 /* MenuStoryboard.storyboard in Resources */,
+				996B3FE12738DE7D00DC29CA /* secondBNTableViewCell.xib in Resources */,
 				998DABCA2736D722005EBF22 /* StarStoryboard.storyboard in Resources */,
 				9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */,
 				994E62E22736999000BFBF36 /* DonegasStoryboard.storyboard in Resources */,
@@ -1398,6 +1490,7 @@
 				99985D17272E308E00D7B167 /* map_pin_custom.png in Resources */,
 				995516C12737C1010050A497 /* StarNextStoryboard.storyboard in Resources */,
 				997219EB2737EC70001624A0 /* RadioTableViewCell.xib in Resources */,
+				996050612739447500099779 /* BasicMenuCell.xib in Resources */,
 				994E62EE273699DB00BFBF36 /* ChinaStoryboard.storyboard in Resources */,
 				99A437AB273413940076F023 /* PojangStoryboard.storyboard in Resources */,
 				99A437B7273413FE0076F023 /* JeongukStoryboard.storyboard in Resources */,
@@ -1478,6 +1571,7 @@
 				9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */,
 				994E62F427369FDD00BFBF36 /* Menu2Cell.swift in Sources */,
 				99A437A5273413660076F023 /* Baemin1ViewController.swift in Sources */,
+				99265CB9273904F5000538D3 /* MenuViewController.swift in Sources */,
 				994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
@@ -1497,8 +1591,10 @@
 				997EA6B9273569970034AD1B /* PagingViewController.swift in Sources */,
 				998DABC42736D701005EBF22 /* StarViewController.swift in Sources */,
 				99985D3B272E80B700D7B167 /* TotalSearviceViewController.swift in Sources */,
+				996B3FE42738EB0300DC29CA /* BNModel.swift in Sources */,
 				999858FD272D5B9900D7B167 /* UIViewController.swift in Sources */,
 				997EA6D727357CA40034AD1B /* ButtonCollectionViewCell.swift in Sources */,
+				9960505F2739446B00099779 /* BasicMenuCell.swift in Sources */,
 				99277CEB2734BB2900CD665E /* EmailResponse.swift in Sources */,
 				997EA6C527357B5D0034AD1B /* BannerTableViewCell.swift in Sources */,
 				997EA6C927357B6D0034AD1B /* ButtonTableViewCell.swift in Sources */,
@@ -1516,9 +1612,12 @@
 				994E62DC2736996A00BFBF36 /* BunsikViewController.swift in Sources */,
 				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
 				997219E62737EC60001624A0 /* TitleTableViewCell.swift in Sources */,
+				99265CC127390532000538D3 /* ReviewViewController.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
 				99EEAA4327367409003B5684 /* KoreaFoodViewController.swift in Sources */,
 				99985929272D71F200D7B167 /* nowLocationViewController.swift in Sources */,
+				99265CBD2739050C000538D3 /* InformationViewController.swift in Sources */,
+				996B3FDC2738DE6500DC29CA /* firtstBNTableViewCell.swift in Sources */,
 				9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */,
 				999858D6272D5AB600D7B167 /* SceneDelegate.swift in Sources */,
 				999858FA272D5B9900D7B167 /* UINavigationBar.swift in Sources */,
@@ -1536,6 +1635,7 @@
 				9984D63E2732939D00387158 /* UIViewExtension.swift in Sources */,
 				99A437962733FAF20076F023 /* SearchViewController.swift in Sources */,
 				998DABC22736D6FA005EBF22 /* OrderViewController.swift in Sources */,
+				996B3FE02738DE7D00DC29CA /* secondBNTableViewCell.swift in Sources */,
 				998DABC82736D719005EBF22 /* JjimViewController.swift in Sources */,
 				99985901272D5BAA00D7B167 /* IndicatorView.swift in Sources */,
 				99506362273111D4002C43B8 /* secondCollectionViewCell.swift in Sources */,

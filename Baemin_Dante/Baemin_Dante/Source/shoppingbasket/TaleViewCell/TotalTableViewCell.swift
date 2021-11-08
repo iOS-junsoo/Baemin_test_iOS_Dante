@@ -12,7 +12,9 @@ class TotalTableViewCell: UITableViewCell {
     @IBOutlet var totalPrice: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        totalPrice.text = "\(Baket.totalPrice)원"
+        print(Baket.totalPrice)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

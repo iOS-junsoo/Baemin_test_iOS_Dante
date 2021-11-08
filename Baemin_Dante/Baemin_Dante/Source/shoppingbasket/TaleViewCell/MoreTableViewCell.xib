@@ -26,6 +26,9 @@
                             <color key="titleColor" red="0.1685845852" green="0.75686818359999997" blue="0.74117463829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                         </state>
+                        <connections>
+                            <action selector="backBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="w0S-y6-bOt"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>

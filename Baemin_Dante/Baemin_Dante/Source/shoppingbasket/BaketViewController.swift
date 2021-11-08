@@ -24,7 +24,7 @@ class BaketViewController: UIViewController {
     }
     
     func setUpTableView() {
-        models1.append(BaketModel(foodTitle: "모밀비빔", foodPrice: "7,000원"))
+        models1.append(BaketModel(foodTitle: "모밀비빔", foodPrice: 7000))
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TitleTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell") //nib 파일 등록
@@ -40,11 +40,13 @@ class BaketViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        tableView.reloadData()
         }
 
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
             self.navigationController?.setNavigationBarHidden(false, animated: animated)
+            tableView.reloadData()
         }
     
     @IBAction func foodOrderTap(_ sender: UIButton) {
@@ -53,6 +55,7 @@ class BaketViewController: UIViewController {
         self.navigationController?.pushViewController(alarmVC, animated: true)
     }
     @IBAction func allDelete(_ sender: UIButton) {
+        tableView.reloadData()
     }
     
     @IBAction func back(_ sender: UIButton) {
@@ -85,19 +88,23 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
             let cellData = models1[0]
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell") as! FoodTableViewCell
             cell.foodName.text = cellData.foodTitle
-            cell.foodPrice.text = cellData.foodPrice
+            cell.foodPrice.text = "\(cellData.foodPrice)원"
+            Baket.foodPrice = cellData.foodPrice
+            Baket.foodtotalPrice = cellData.foodPrice
             cell.foodCount.text = "1개" //+ - 버튼의 클릭에 따라서 전역변수에 해당 수를 저장해서 다시 이 변수에 저장 "\(전역변수)개" 형태로 저장
-            cell.foodTotalPrice.text = "7,000원" // "\(전역변수)개" 형태로 저장
+            cell.foodTotalPrice.text = "7000원" // "\(전역변수)개" 형태로 저장
             cell.selectionStyle = .none
+            cell.delegate = self
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell") as! MoreTableViewCell
             cell.selectionStyle = .none
+            cell.delegate = self
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalTableViewCell") as! TotalTableViewCell
-            cell.totalPrice.text = "7,000원"
-            orderButton.setTitle("7,000원", for: .normal)
+//            cell.totalPrice.text = "7,000원"
+            orderButton.setTitle("7,000원 주문하기", for: .normal)
             orderButton.setImage(UIImage(systemName: "1.circle.fill"), for: .normal)
             cell.selectionStyle = .none
             return cell
@@ -130,4 +137,43 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
   
     
     }
+}
+extension BaketViewController: CustomBaketDelegate {
+    func pastView() {
+        self.navigationController?.popViewController(animated: true)
+        print("VC")
+    }
+    func reloadView() {
+        print("reload")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TotalTableViewCell") as! TotalTableViewCell
+        cell.totalPrice.text = "\(Baket.totalPrice)원"
+        print(cell.totalPrice.text)
+    }
+}
+
+
+
+extension BaketViewController {
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
 }

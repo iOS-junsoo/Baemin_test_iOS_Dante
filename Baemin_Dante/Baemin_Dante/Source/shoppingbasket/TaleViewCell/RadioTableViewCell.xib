@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="17" width="82" height="36"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="tintColor" red="0.1685845852" green="0.75686818359999997" blue="0.74117463829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.16862745098039217" green="0.75686274509803919" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="배달">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,6 +43,9 @@
                                 <imageReference key="value" image="record.circle.fill" catalog="system" symbolScale="large"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="BaedalBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TfD-cH-oKJ"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-3B-fs3">
                         <rect key="frame" x="0.0" y="65" width="82" height="36"/>
@@ -54,6 +57,9 @@
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
                         </state>
+                        <connections>
+                            <action selector="PojangBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hdk-jq-huI"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="직접 가져가실 수 있게 준비됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQO-jO-R0Z">
                         <rect key="frame" x="43" y="93" width="150" height="14"/>
@@ -65,6 +71,10 @@
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PojangBtn" destination="ihw-3B-fs3" id="pb8-iC-nhS"/>
+                <outlet property="baedalBtn" destination="HDW-2a-dxm" id="to9-Ve-xWC"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="148.32589285714286"/>
         </tableViewCell>
     </objects>
