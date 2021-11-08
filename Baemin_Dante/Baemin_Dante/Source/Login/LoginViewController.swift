@@ -35,6 +35,16 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
+
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        }
+    
     override func viewDidAppear(_ animated: Bool) {
         if Check.dis == 1 {
             Check.dis = 0
@@ -73,7 +83,8 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func backButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        print("back")
     }
     
     //MARK: - 텍스트 필드 입력감지

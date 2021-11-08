@@ -21,6 +21,10 @@ class BasicNextViewController: UIViewController {
     @IBOutlet var paymentMethod: UILabel!
     @IBOutlet var deliveryTime: UILabel!
     @IBOutlet var deliveryTip: UILabel!
+    @IBOutlet var JjimBtn: UIButton!
+    var JjimCount = 0
+    var JjimCheck = 0
+    
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
     var dataSource = ["메뉴", "정보", "리뷰"]
@@ -94,6 +98,39 @@ class BasicNextViewController: UIViewController {
         
         //MARK: - 식당이름 전달
         restaurantNameLabel.text = "육부장"
+    }
+    
+    func setUpCard(){
+        restaurantName.text = ""
+        restaurantStar.text = ""
+        restaurantReview.text = ""
+        restaurantBossCommnet.text = ""
+        restaurantJjim.text = "\(JjimCount)"
+        orderPay.text = ""
+        paymentMethod.text = ""
+        deliveryTime.text = ""
+        deliveryTip.text = ""
+        
+    }
+    @IBAction func JjimBtnClick(_ sender: UIButton) {
+        JjimCheck += 1
+        if JjimCheck % 2 == 0 {
+            JjimCount += 1
+            restaurantJjim.text = "\(JjimCount)"
+            JjimBtn.tintColor = .red
+        } else {
+            if JjimCount == 0 {
+                restaurantJjim.text = "0"
+                JjimBtn.tintColor = .black
+            } else {
+                JjimCount -= 1
+                restaurantJjim.text = "\(JjimCount)"
+                JjimBtn.tintColor = .black
+            }
+            
+        }
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

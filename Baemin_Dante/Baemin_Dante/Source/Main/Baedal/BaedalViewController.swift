@@ -47,7 +47,7 @@ class BaedalViewController: UIViewController {
         tableView.register(UINib(nibName: "BannerTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "ButtonTableViewCell", bundle: nil), forCellReuseIdentifier: "ButtonTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "TodayTableViewCell", bundle: nil), forCellReuseIdentifier: "TodayTableViewCell") //nib 파일 등록
-//        tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell")
     }
     
     
@@ -66,7 +66,7 @@ class BaedalViewController: UIViewController {
 
 extension BaedalViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
@@ -87,14 +87,17 @@ extension BaedalViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             return cell
         case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+            
+
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell", for: indexPath) as! TodayTableViewCell
             cell.configure(with: models2)
 //            cell.delegate = self
             cell.selectionStyle = .none
             return cell
-
-//        case 3:
-            
 
         default:
             return UITableViewCell()
@@ -109,6 +112,8 @@ extension BaedalViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 290
         case 2:
+            return 10
+        case 3:
             return 235
 //        case 3:
 //            return 235

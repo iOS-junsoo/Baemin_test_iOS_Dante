@@ -76,6 +76,7 @@ class MainViewController: UIViewController {
         tableView.register(UINib(nibName: "secondTableViewCell", bundle: nil), forCellReuseIdentifier: "secondTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "thridTableViewCell", bundle: nil), forCellReuseIdentifier: "thridTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell") //nib 파일 등록
     }
     
     //MARK: - 네비게이션바 없애기
@@ -141,7 +142,7 @@ extension MainViewController {
 }
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
-        return 4
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
@@ -162,11 +163,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             return cell
         case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+            
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as! fourthTableViewCell
             cell.configure(with: models3)
             cell.selectionStyle = .none
             return cell
-        case 3:
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+            
+        case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "thridTableViewCell", for: indexPath) as! thridTableViewCell
             cell.configure(with: models2)
             cell.selectionStyle = .none
@@ -185,8 +197,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 755
         case 2:
-            return 320
+            return 10
         case 3:
+            return 320
+        case 4:
+            return 10
+        case 5:
             return 235
         default:
             return 100

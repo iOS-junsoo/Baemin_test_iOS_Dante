@@ -35,6 +35,7 @@ class FastViewController: UIViewController {
         tableView.register(UINib(nibName: "advertisementTableViewCell", bundle: nil), forCellReuseIdentifier: "advertisementTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "OpenListTableViewCell", bundle: nil), forCellReuseIdentifier: "OpenListTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "UltraCallTableViewCell", bundle: nil), forCellReuseIdentifier: "UltraCallTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell")
 
         
         
@@ -51,9 +52,9 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
         switch section {
         case 0:
-            return 4
+            return 5
         case 1:
-            return 4
+            return 5
         default:
             return 0
         }
@@ -110,6 +111,10 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.orderPay.text = cellDataContent1.OrderPay
                 cell.deliveryPay.text = cellDataContent1.deliveryPay
                 cell.orderTime.setTitle(cellDataContent1.deliveryTime, for: .normal)
+                cell.selectionStyle = .none
+                return cell
+            } else if indexPath.row == 4 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
                 cell.selectionStyle = .none
                 return cell
             } else {
@@ -170,7 +175,11 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.orderTime.setTitle(cellDataContent2.deliveryTime, for: .normal)
                 cell.selectionStyle = .none
                 return cell
-            } else {
+            }  else if indexPath.row == 4 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+                cell.selectionStyle = .none
+                return cell
+            }else {
 //                let cell = tableView.dequeueReusableCell(withIdentifier: "UltraCallTableViewCell") as! UltraCallTableViewCell
 //                cell.imagName.image = UIImage(named: cellDataContent1.imageName)
 //                cell.title.text = cellDataContent2.title
@@ -196,13 +205,17 @@ extension FastViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             if indexPath.row == 0 {
                 return 25
-            } else {
+            }else if indexPath.row == 4 {
+                return 10
+            }else {
                 return 125
             }
         case 1:
             if indexPath.row == 0 {
                 return 25
-            } else {
+            } else if indexPath.row == 4 {
+                return 10
+            }else {
                 return 125
             }
         default:

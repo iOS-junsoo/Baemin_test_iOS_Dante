@@ -162,6 +162,9 @@
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="bold"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="JjimBtnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ExR-BO-zU4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqo-kB-LSg">
                                                         <rect key="frame" x="274" y="161" width="53" height="21"/>
@@ -229,6 +232,11 @@
                                                     <segue destination="2dt-XK-AdN" kind="embed" id="lKd-97-HFA"/>
                                                 </connections>
                                             </containerView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5Y-Wz-9dW">
+                                                <rect key="frame" x="0.0" y="363" width="390" height="10"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -252,6 +260,7 @@
                     </view>
                     <size key="freeformSize" width="390" height="1500"/>
                     <connections>
+                        <outlet property="JjimBtn" destination="Vh8-FG-SE3" id="Koc-Kd-SRG"/>
                         <outlet property="deliveryTime" destination="x5T-q4-tgF" id="BRO-er-0cK"/>
                         <outlet property="deliveryTip" destination="xOd-48-9DW" id="bYb-wB-V0J"/>
                         <outlet property="myView" destination="bpx-e2-ixO" id="iHU-3o-ZYs"/>

@@ -32,6 +32,7 @@ class BaketViewController: UIViewController {
         tableView.register(UINib(nibName: "FoodTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "MoreTableViewCell", bundle: nil), forCellReuseIdentifier: "MoreTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "TotalTableViewCell", bundle: nil), forCellReuseIdentifier: "TotalTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell") //nib 파일 등록
 
         
         
@@ -55,7 +56,7 @@ class BaketViewController: UIViewController {
         self.navigationController?.pushViewController(alarmVC, animated: true)
     }
     @IBAction func allDelete(_ sender: UIButton) {
-        tableView.reloadData()
+       
     }
     
     @IBAction func back(_ sender: UIButton) {
@@ -68,7 +69,7 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
-        return 5
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
@@ -85,6 +86,10 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             return cell
         case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        case 3:
             let cellData = models1[0]
             let cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell") as! FoodTableViewCell
             cell.foodName.text = cellData.foodTitle
@@ -96,12 +101,16 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             cell.delegate = self
             return cell
-        case 3:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell") as! MoreTableViewCell
             cell.selectionStyle = .none
             cell.delegate = self
             return cell
-        case 4:
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalTableViewCell") as! TotalTableViewCell
 //            cell.totalPrice.text = "7,000원"
             orderButton.setTitle("7,000원 주문하기", for: .normal)
@@ -125,10 +134,14 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 125
         case 2:
-            return 155
+            return 10
         case 3:
-            return 50
+            return 155
         case 4:
+            return 50
+        case 5:
+            return 10
+        case 6:
             return 52
         default:
             return 0
