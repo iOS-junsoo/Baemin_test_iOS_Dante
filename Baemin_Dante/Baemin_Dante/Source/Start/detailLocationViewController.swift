@@ -22,6 +22,7 @@ class detailLocationViewController: UIViewController {
         
         jidoBtn.adjustsImageWhenHighlighted = false
         LocationLabel.text = Location.titleLocation
+        print("위치명:::\(Location.titleLocation)")
         self.detalilLocationTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged) //함수 연결
         //MARK: TextField
         detalilLocationTextField.delegate = self

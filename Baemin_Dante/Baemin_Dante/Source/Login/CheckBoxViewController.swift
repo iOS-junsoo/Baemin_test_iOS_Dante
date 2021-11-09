@@ -285,10 +285,32 @@ class CheckBoxViewController: UIViewController {
 
         }
         if fourteenCount % 2 == 0 { //사용자가 14세 이상을 선택하지 않고 다음으로 버튼을 누를 때
-            self.view.makeToast("14세 미만은 회원가입을 진행할 수 없습니다. ")
+            self.showToast(message: "14세 미만은 회원가입을 진행할 수 없습니다.")
         }
         
     }
+    
+    func showToast(message : String, font: UIFont = UIFont.systemFont(ofSize: 17.0)) {
+        let toastLabel = UILabel(frame: CGRect(x: 32, y: 401, width: 327, height: 43))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds = true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 3.0, delay: 0.1, options: .curveEaseOut, animations: { toastLabel.alpha = 0.0
+            
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+            
+        })
+        
+    }
+
+    
     //로그인 화면으로 다시 돌아감
     @IBAction func backBtn(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)

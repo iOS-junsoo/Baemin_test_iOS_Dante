@@ -26,7 +26,7 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="arrow.left" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="semibold"/>
                                         </state>
                                         <connections>
                                             <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pcw-H2-aQc"/>
@@ -43,10 +43,16 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dwr-A0-GoA">
-                                <rect key="frame" x="0.0" y="701" width="390" height="143"/>
+                                <rect key="frame" x="0.0" y="774" width="390" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xY8-Ow-fCF">
+                                <rect key="frame" x="0.0" y="92" width="390" height="682"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-33-pGd">
                                 <rect key="frame" x="10" y="750" width="370" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,6 +67,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="paymentBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v4q-y4-DEj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -69,15 +78,110 @@
                     <connections>
                         <outlet property="myView" destination="Dwr-A0-GoA" id="ivn-73-k2D"/>
                         <outlet property="myView2" destination="Ue7-46-QMo" id="74l-GY-621"/>
+                        <outlet property="tableView" destination="xY8-Ow-fCF" id="ZN8-3J-fhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10.769230769230768" y="133.64928909952607"/>
+            <point key="canvasLocation" x="-343" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xDG-IK-FS3">
+            <objects>
+                <viewController id="9YD-o7-H64" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rr6-S3-tEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="주문하기1" translatesAutoresizingMaskIntoConstraints="NO" id="Wrl-Mp-TF1">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xrj-Yf-HVs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhZ-Vj-nLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NYt-UJ-kio">
+            <objects>
+                <viewController id="mUE-Lu-926" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfh-Gn-Sul">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="주문하기2" translatesAutoresizingMaskIntoConstraints="NO" id="HFo-M4-oEP">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KWr-0z-n1w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koD-Ry-38e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1547.6923076923076" y="150.71090047393363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u4y-5n-ByQ">
+            <objects>
+                <viewController id="k8F-d4-Fxy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXe-3V-vhR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="주문하기3" translatesAutoresizingMaskIntoConstraints="NO" id="siJ-bQ-3On">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rJx-UJ-bfN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3F-AD-4N9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187.6923076923076" y="150.71090047393363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5XG-aR-aWa">
+            <objects>
+                <viewController id="6Cp-VZ-lNq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bpc-Uk-Oan">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="주문하기4" translatesAutoresizingMaskIntoConstraints="NO" id="0C6-89-T30">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spx-T7-dee">
+                                <rect key="frame" x="0.0" y="437" width="390" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OwP-nn-Ga0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNE-OA-e04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829.2307692307691" y="150.71090047393363"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="주문하기1" width="1170" height="2532"/>
+        <image name="주문하기2" width="1170" height="2532"/>
+        <image name="주문하기3" width="1170" height="2532"/>
+        <image name="주문하기4" width="1170" height="2532"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

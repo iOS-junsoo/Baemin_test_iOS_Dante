@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class EmailViewController: UIViewController {
 
@@ -150,6 +151,7 @@ class EmailViewController: UIViewController {
             print(JoinCheck.over14)
             Check.dis = 1
             LoginCheckModel.loginCheck = true
+            self.view.makeToast("회원가입이 완료되었습니다.", duration: 1.0, position: .center)
             dismiss(animated: true, completion: nil)
         }
     }
@@ -254,6 +256,7 @@ extension EmailViewController: UITextFieldDelegate {
         }
         if nicknameTextField.text?.count ?? 0 > 2 {
             nicknameErrorLabel.textColor = UIColor.red
+            print("레드레드")
         }
     }
 

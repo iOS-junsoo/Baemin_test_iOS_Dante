@@ -25,6 +25,9 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                 </state>
+                                <connections>
+                                    <action selector="LocaitonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GXT-OB-a5Z"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZP-Nb-bG1">
                                 <rect key="frame" x="0.0" y="88" width="390" height="60"/>
@@ -85,6 +88,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="주문내역탭바"/>
+                                        <connections>
+                                            <action selector="jumunBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YL2-Em-iI9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP9-im-t4o">
                                         <rect key="frame" x="323" y="2" width="50" height="54"/>
@@ -119,6 +125,7 @@
                         <outlet property="baeminBtn" destination="5N3-Fe-Obc" id="xdq-aF-Ydg"/>
                         <outlet property="jjimBtn" destination="I0O-NO-h8Z" id="VUR-Ul-dmc"/>
                         <outlet property="jumunBtn" destination="tBe-U8-Jbw" id="VLf-5R-uJc"/>
+                        <outlet property="locaBtn" destination="o1c-s4-4kO" id="T6A-ka-fb4"/>
                         <outlet property="myBaeminBtn" destination="UP9-im-t4o" id="nrC-S4-vLe"/>
                         <outlet property="myView" destination="rp2-du-EHe" id="wMc-1M-5IH"/>
                     </connections>
@@ -211,6 +218,13 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="배민탭바"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14세 미만은 회원가입을 진행할 수 없습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-Is-s10">
+                                <rect key="frame" x="32" y="401" width="327" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3iQ-pK-VlW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oW3-8P-x4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="119"/>
+            <point key="canvasLocation" x="4.615384615384615" y="118.72037914691943"/>
         </scene>
     </scenes>
     <resources>

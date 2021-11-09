@@ -7,6 +7,7 @@
 
 import UIKit
 import PagingKit
+import MaterialComponents.MaterialBottomSheet
 
 class PagingViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class PagingViewController: UIViewController {
     @IBOutlet var myView: UIView!
     @IBOutlet var jumunBtn: UIButton!
     @IBOutlet var myBaeminBtn: UIButton!
+    @IBOutlet var locaBtn: UIButton!
     private var viewControllers: Array<UIViewController> = []
     var menuViewController: PagingMenuViewController!
     var contentViewController: PagingContentViewController!
@@ -47,6 +49,7 @@ class PagingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locaBtn.setTitle(Location.titleLocation + " ", for: .normal)
         //버튼 회색 이벤트 없애기
         SearchBtn.adjustsImageWhenHighlighted = false
         jjimBtn.adjustsImageWhenHighlighted = false
@@ -118,7 +121,20 @@ class PagingViewController: UIViewController {
         
     }
     
-    
+    @IBAction func LocaitonTap(_ sender: UIButton) {
+        // 바텀 시트로 쓰일 뷰컨트롤러 생성
+        let alStoryboard = UIStoryboard(name: "Main", bundle: nil) //스토리보드 결정
+                let vc = alStoryboard.instantiateViewController(withIdentifier: "BottomViewController") as! BottomViewController
+                
+                // MDC 바텀 시트로 설정
+                let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
+        
+            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 330
+                
+                // 보여주기
+                present(bottomSheet, animated: true, completion: nil)
+        
+    }
     
     @IBAction func BaeminTabbarBtn(_ sender: UIButton) {
         self.navigationController?.popToRootViewController(animated: true)
@@ -127,6 +143,12 @@ class PagingViewController: UIViewController {
     @IBAction func myBaeminBtnTap(_ sender: UIButton) {
         let myStoryboard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil) //스토리보드 결정
         let myVC = myStoryboard.instantiateViewController(identifier: "MyBeaminViewController")
+        self.navigationController?.pushViewController(myVC, animated: true)
+    }
+    
+    @IBAction func jumunBtnTap(_ sender: UIButton) {
+        let myStoryboard = UIStoryboard(name: "OrderHistoryStoryboard", bundle: nil) //스토리보드 결정
+        let myVC = myStoryboard.instantiateViewController(identifier: "OrderHistoryViewController")
         self.navigationController?.pushViewController(myVC, animated: true)
     }
     

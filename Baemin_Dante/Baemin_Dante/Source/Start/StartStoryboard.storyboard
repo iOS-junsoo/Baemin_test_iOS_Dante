@@ -73,6 +73,9 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인바" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-vm-yFn">
+                                <rect key="frame" x="0.0" y="275" width="390" height="10"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="시작하기 배민이" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-eE-9C5">
                                 <rect key="frame" x="271" y="154" width="93" height="128.00000000000003"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,9 +108,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인바" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-vm-yFn">
-                                <rect key="frame" x="0.0" y="275.33333333333331" width="390" height="10"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,7 +124,7 @@
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.84" id="G5J-26-VpA"/>
                             <constraint firstItem="3kI-3T-a7F" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.953846" id="Hbs-NW-pYJ"/>
                             <constraint firstItem="hv6-iG-WtO" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.0615385" id="K7P-gd-dlE"/>
-                            <constraint firstItem="3HP-vm-yFn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.664" id="KbY-Ix-tBS"/>
+                            <constraint firstItem="3HP-vm-yFn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.6632" id="KbY-Ix-tBS"/>
                             <constraint firstItem="UiG-XN-CmK" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.0615385" id="MC7-4z-Mlh"/>
                             <constraint firstItem="Yqc-8P-mta" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.84" id="NLu-cz-idN"/>
                             <constraint firstItem="hv6-iG-WtO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" multiplier="0.14" id="NOB-Ee-NMr"/>

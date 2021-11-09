@@ -13,10 +13,21 @@ class TotalSearviceViewController: UIViewController {
         super.viewDidLoad()
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
-        // Do any additional setup after loading the view.
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
 
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        }
+
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

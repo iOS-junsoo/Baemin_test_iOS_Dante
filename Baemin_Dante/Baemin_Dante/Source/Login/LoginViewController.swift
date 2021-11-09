@@ -9,6 +9,7 @@ import UIKit
 import KakaoSDKCommon
 import KakaoSDKAuth
 import KakaoSDKUser
+import Toast_Swift
 
 class LoginViewController: UIViewController {
 
@@ -113,6 +114,7 @@ class LoginViewController: UIViewController {
                 self.loginErrorLabel.textColor = UIColor.white
                 LoginCheckModel.loginCheck = true
                 print("성공")
+                self.view.makeToast("로그인 되었습니다.", duration: 1.0, position: .center)
                 self.dismiss(animated: true, completion: nil)
             } else {
                 self.loginErrorCount -= 1

@@ -21,6 +21,8 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
     var locationManger = CLLocationManager() //현재위치 설정
         override func viewDidLoad() {
             super.viewDidLoad()
+            Location.titleLocation = "경북 구미시 선산대로 1220" //임의의 주소
+            
             //MARK: - navigationbar back button hide
             self.navigationItem.setHidesBackButton(true, animated: true)
          //MARK: - 현재 위치
@@ -135,10 +137,12 @@ class nowLocationViewController: UIViewController, MTMapViewDelegate, CLLocation
             jibunBtn.setTitle(" 지번으로 보기", for: .normal)
             Location.titleLocation = "경북 구미시 선산대로 1220"
             userLocationLabel.text = Location.titleLocation
+            print("위치명:::\(Location.titleLocation)")
         } else {
             jibunBtn.setTitle(" 도로명으로 보기", for: .normal)
             Location.titleLocation =  UserInfo.location
             userLocationLabel.text = Location.titleLocation
+            print("위치명:::\(Location.titleLocation)")
         }
     }
     

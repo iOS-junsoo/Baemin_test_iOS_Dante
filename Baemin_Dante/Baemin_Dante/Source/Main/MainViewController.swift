@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MaterialComponents.MaterialBottomSheet
 
 
 
@@ -89,6 +89,19 @@ class MainViewController: UIViewController {
             super.viewWillDisappear(animated)
             self.navigationController?.setNavigationBarHidden(false, animated: animated)
         }
+    @IBAction func LocaitonTap(_ sender: UIButton) {
+        // 바텀 시트로 쓰일 뷰컨트롤러 생성
+                let vc = storyboard?.instantiateViewController(withIdentifier: "BottomViewController") as! BottomViewController
+                
+                // MDC 바텀 시트로 설정
+                let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
+        
+            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 330
+                
+                // 보여주기
+                present(bottomSheet, animated: true, completion: nil)
+        
+    }
     
     @objc func clickOnButton() {
         print("click")
