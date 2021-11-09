@@ -83,7 +83,7 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func backButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
         print("back")
     }
     
@@ -108,10 +108,12 @@ class LoginViewController: UIViewController {
         LoginRequest().postData()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
             if LoginSeverResponse.ResponseValue == true {
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
                 //이후 사용자 정보를 마이배민 화면에서 나타내야함
                 self.loginErrorLabel.textColor = UIColor.white
+                LoginCheckModel.loginCheck = true
                 print("성공")
+                self.dismiss(animated: true, completion: nil)
             } else {
                 self.loginErrorCount -= 1
                 self.loginErrorLabel.text = "계정 정보가 일치하지 않습니다.(\(self.loginErrorCount)회 남음)"

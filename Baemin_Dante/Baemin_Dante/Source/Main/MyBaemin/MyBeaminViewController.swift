@@ -19,12 +19,17 @@ class MyBeaminViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.reloadData()
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     @IBAction func backBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -63,15 +68,30 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
 
         case 1:
             //로그인 하면 달라져야함.
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstTableViewCell", for: indexPath) as! MyFirstTableViewCell
-            cell.idLabel.text = ""
-            cell.loginLable.text = "로그인해주세요"
-            cell.selectionStyle = .none
-            return cell
+            if LoginCheckModel.loginCheck == true { //회원가입 또는 로그인 완료
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstTableViewCell", for: indexPath) as! MyFirstTableViewCell
+                cell.idLabel.text = "\(LoginSeverResponse.ResponseNickName)"//사용자 닉네임
+                cell.loginLable.text = "고마운분,"
+                cell.selectionStyle = .none
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstTableViewCell", for: indexPath) as! MyFirstTableViewCell
+                cell.idLabel.text = ""
+                cell.loginLable.text = "로그인해주세요"
+                cell.selectionStyle = .none
+                return cell
+            }
+            
+            
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MySecondTableViewCell", for: indexPath) as! MySecondTableViewCell
-            cell.selectionStyle = .none
-            return cell
+            if LoginCheckModel.loginCheck == true {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MySecondTableViewCell", for: indexPath) as! MySecondTableViewCell
+                cell.selectionStyle = .none
+                return cell
+            } else {
+                return UITableViewCell()
+            }
+            
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MyThirdTableViewCell", for: indexPath) as! MyThirdTableViewCell
             cell.selectionStyle = .none
@@ -150,7 +170,12 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 84
         case 2:
-            return 58
+            if LoginCheckModel.loginCheck == true {
+                return 58
+            } else {
+                return 0
+            }
+            
         case 3:
             return 160
         case 4:
@@ -189,9 +214,24 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == 1{ //추후 로그인을 했을 때 안했을 때 넘어가는 VC가 다르게 만들어야함
-        let alStoryboard = UIStoryboard(name: "LoginStoryboard", bundle: nil) //스토리보드 결정
-        let alarmVC = alStoryboard.instantiateViewController(identifier: "LoginViewController")
-        self.navigationController?.pushViewController(alarmVC, animated: true)
+            
+            if LoginCheckModel.loginCheck == true {
+                let alStoryboard = UIStoryboard(name: "EditMyStoryboard", bundle: nil) //스토리보드 결정
+                let alarmVC = alStoryboard.instantiateViewController(identifier: "EditMyViewController")
+                self.navigationController?.pushViewController(alarmVC, animated: true)
+
+                
+            } else {
+                let alStoryboard = UIStoryboard(name: "LoginStoryboard", bundle: nil) //스토리보드 결정
+                let alarmVC = alStoryboard.instantiateViewController(identifier: "LoginViewController")
+                alarmVC.modalPresentationStyle = .fullScreen
+                self.present(alarmVC, animated: true, completion: nil)
+                //                guard let naviVC = self.storyboard?.instantiateViewController(withIdentifier: "naviViewController") as? naviViewController else{ return }
+                //                naviVC.modalTransitionStyle = .coverVertical
+                //                naviVC.modalPresentationStyle = .formSheet
+                //                self.present(naviVC, animated: true, completion: nil)
+            }
+        
         }
     }
 }
@@ -221,3 +261,7 @@ extension MyBeaminViewController {
     }
 
 }
+
+//"id_email" : "tes12312t@naver.com",
+//"password" : "qweasdzxc1234"
+//}

@@ -59,6 +59,10 @@
 		995516C12737C1010050A497 /* StarNextStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C02737C1010050A497 /* StarNextStoryboard.storyboard */; };
 		995516C42737CB000050A497 /* BaketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995516C32737CB000050A497 /* BaketViewController.swift */; };
 		995516C62737CB090050A497 /* BaketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995516C52737CB090050A497 /* BaketStoryboard.storyboard */; };
+		99577E26273A298600F01D8C /* topTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E24273A298600F01D8C /* topTableViewCell.swift */; };
+		99577E27273A298600F01D8C /* topTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E25273A298600F01D8C /* topTableViewCell.xib */; };
+		99577E2A273A2AAF00F01D8C /* bottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */; };
+		99577E2B273A2AAF00F01D8C /* bottomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */; };
 		9960505F2739446B00099779 /* BasicMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960505E2739446B00099779 /* BasicMenuCell.swift */; };
 		996050612739447500099779 /* BasicMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996050602739447500099779 /* BasicMenuCell.xib */; };
 		99605065273966C900099779 /* contourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99605063273966C900099779 /* contourTableViewCell.swift */; };
@@ -75,6 +79,9 @@
 		9960507F273979B700099779 /* MyFifthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9960507D273979B700099779 /* MyFifthTableViewCell.xib */; };
 		99605082273979CA00099779 /* MySixthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99605080273979CA00099779 /* MySixthTableViewCell.swift */; };
 		99605083273979CA00099779 /* MySixthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99605081273979CA00099779 /* MySixthTableViewCell.xib */; };
+		99605085273A080A00099779 /* EditMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99605084273A080A00099779 /* EditMyViewController.swift */; };
+		99605087273A081900099779 /* EditMyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99605086273A081900099779 /* EditMyStoryboard.storyboard */; };
+		99605089273A0CDF00099779 /* LoginCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99605088273A0CDF00099779 /* LoginCheckModel.swift */; };
 		996B3FDC2738DE6500DC29CA /* firtstBNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3FDA2738DE6500DC29CA /* firtstBNTableViewCell.swift */; };
 		996B3FDD2738DE6500DC29CA /* firtstBNTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996B3FDB2738DE6500DC29CA /* firtstBNTableViewCell.xib */; };
 		996B3FE02738DE7D00DC29CA /* secondBNTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3FDE2738DE7D00DC29CA /* secondBNTableViewCell.swift */; };
@@ -295,6 +302,10 @@
 		995516C02737C1010050A497 /* StarNextStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StarNextStoryboard.storyboard; sourceTree = "<group>"; };
 		995516C32737CB000050A497 /* BaketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaketViewController.swift; sourceTree = "<group>"; };
 		995516C52737CB090050A497 /* BaketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaketStoryboard.storyboard; sourceTree = "<group>"; };
+		99577E24273A298600F01D8C /* topTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topTableViewCell.swift; sourceTree = "<group>"; };
+		99577E25273A298600F01D8C /* topTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = topTableViewCell.xib; sourceTree = "<group>"; };
+		99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomTableViewCell.swift; sourceTree = "<group>"; };
+		99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bottomTableViewCell.xib; sourceTree = "<group>"; };
 		9960505E2739446B00099779 /* BasicMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMenuCell.swift; sourceTree = "<group>"; };
 		996050602739447500099779 /* BasicMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicMenuCell.xib; sourceTree = "<group>"; };
 		99605063273966C900099779 /* contourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contourTableViewCell.swift; sourceTree = "<group>"; };
@@ -311,6 +322,9 @@
 		9960507D273979B700099779 /* MyFifthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFifthTableViewCell.xib; sourceTree = "<group>"; };
 		99605080273979CA00099779 /* MySixthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySixthTableViewCell.swift; sourceTree = "<group>"; };
 		99605081273979CA00099779 /* MySixthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySixthTableViewCell.xib; sourceTree = "<group>"; };
+		99605084273A080A00099779 /* EditMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyViewController.swift; sourceTree = "<group>"; };
+		99605086273A081900099779 /* EditMyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditMyStoryboard.storyboard; sourceTree = "<group>"; };
+		99605088273A0CDF00099779 /* LoginCheckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCheckModel.swift; sourceTree = "<group>"; };
 		996B3FDA2738DE6500DC29CA /* firtstBNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firtstBNTableViewCell.swift; sourceTree = "<group>"; };
 		996B3FDB2738DE6500DC29CA /* firtstBNTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firtstBNTableViewCell.xib; sourceTree = "<group>"; };
 		996B3FDE2738DE7D00DC29CA /* secondBNTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondBNTableViewCell.swift; sourceTree = "<group>"; };
@@ -501,6 +515,7 @@
 			children = (
 				99265CB8273904F5000538D3 /* MenuViewController.swift */,
 				99265CBA273904FF000538D3 /* MenuStoryboard.storyboard */,
+				99577E23273A296B00F01D8C /* TableViewCell */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -670,6 +685,8 @@
 		995516B72737BFC70050A497 /* cell-NextView */ = {
 			isa = PBXGroup;
 			children = (
+				995516BA2737C0CF0050A497 /* BasicNextViewController.swift */,
+				995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */,
 				996B3FE22738EAEE00DC29CA /* Model */,
 				995516B82737C0230050A497 /* BasicNextView */,
 				995516B92737C0500050A497 /* StarNextView */,
@@ -683,8 +700,6 @@
 				99265CB127390486000538D3 /* menu */,
 				99265CB227390494000538D3 /* Information */,
 				99265CB3273904AA000538D3 /* Review */,
-				995516BA2737C0CF0050A497 /* BasicNextViewController.swift */,
-				995516BE2737C0F40050A497 /* BacisNextStoryboard.storyboard */,
 				996B3FD92738DDFC00DC29CA /* MenuCell */,
 			);
 			path = BasicNextView;
@@ -708,6 +723,17 @@
 				997219E32737EC38001624A0 /* TaleViewCell */,
 			);
 			path = shoppingbasket;
+			sourceTree = "<group>";
+		};
+		99577E23273A296B00F01D8C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				99577E24273A298600F01D8C /* topTableViewCell.swift */,
+				99577E25273A298600F01D8C /* topTableViewCell.xib */,
+				99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */,
+				99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		99605062273966A700099779 /* contourCell */ = {
@@ -1258,7 +1284,10 @@
 			children = (
 				99985D3E272E80DD00D7B167 /* MyBeaminViewController.swift */,
 				99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */,
+				99605084273A080A00099779 /* EditMyViewController.swift */,
+				99605086273A081900099779 /* EditMyStoryboard.storyboard */,
 				99605067273976CB00099779 /* TableViewCell */,
+				99605088273A0CDF00099779 /* LoginCheckModel.swift */,
 			);
 			path = MyBaemin;
 			sourceTree = "<group>";
@@ -1460,6 +1489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99265CC327390541000538D3 /* ReviewStoryboard.storyboard in Resources */,
+				99577E27273A298600F01D8C /* topTableViewCell.xib in Resources */,
 				9960507F273979B700099779 /* MyFifthTableViewCell.xib in Resources */,
 				99EEAA41273673D8003B5684 /* OneinbunStoryboard.storyboard in Resources */,
 				99985D18272E308E00D7B167 /* shadow_balloon.png in Resources */,
@@ -1506,6 +1536,7 @@
 				994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */,
 				997EA6D027357B8C0034AD1B /* TodayTableViewCell.xib in Resources */,
 				99265CBB273904FF000538D3 /* MenuStoryboard.storyboard in Resources */,
+				99605087273A081900099779 /* EditMyStoryboard.storyboard in Resources */,
 				996B3FE12738DE7D00DC29CA /* secondBNTableViewCell.xib in Resources */,
 				998DABCA2736D722005EBF22 /* StarStoryboard.storyboard in Resources */,
 				9979BC2E272EA70300A77C36 /* LoginStoryboard.storyboard in Resources */,
@@ -1545,6 +1576,7 @@
 				99EEAA452736741B003B5684 /* KoreaFoodStoryboard.storyboard in Resources */,
 				99985D3D272E80C800D7B167 /* TotalSearviceStoryboard.storyboard in Resources */,
 				99985D1C272E308E00D7B167 /* map_pinup@3x.png in Resources */,
+				99577E2B273A2AAF00F01D8C /* bottomTableViewCell.xib in Resources */,
 				99985D1D272E308E00D7B167 /* map_pin_shadow@3x.png in Resources */,
 				99985D1B272E308E00D7B167 /* map_pin_custom@3x.png in Resources */,
 				998DABA72736D3E0005EBF22 /* Menu3Cell.xib in Resources */,
@@ -1622,6 +1654,8 @@
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				997219EE2737EC89001624A0 /* FoodTableViewCell.swift in Sources */,
+				99577E2A273A2AAF00F01D8C /* bottomTableViewCell.swift in Sources */,
+				99605085273A080A00099779 /* EditMyViewController.swift in Sources */,
 				999858F8272D5B9900D7B167 /* Data.swift in Sources */,
 				994E62F2273699F100BFBF36 /* ChinaViewController.swift in Sources */,
 				998DABE1273796F3005EBF22 /* advertisementTableViewCell.swift in Sources */,
@@ -1643,6 +1677,7 @@
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				99605065273966C900099779 /* contourTableViewCell.swift in Sources */,
 				998DABDD2737966A005EBF22 /* UltraCallTableViewCell.swift in Sources */,
+				99605089273A0CDF00099779 /* LoginCheckModel.swift in Sources */,
 				997EA6BF273569C40034AD1B /* MenuCell.swift in Sources */,
 				999858D4272D5AB600D7B167 /* AppDelegate.swift in Sources */,
 				99985D36272E50C500D7B167 /* global.swift in Sources */,
@@ -1717,6 +1752,7 @@
 				994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */,
 				998DABC62736D70E005EBF22 /* ShortViewController.swift in Sources */,
 				998DABD92737964B005EBF22 /* OpenListTableViewCell.swift in Sources */,
+				99577E26273A298600F01D8C /* topTableViewCell.swift in Sources */,
 				997219EA2737EC70001624A0 /* RadioTableViewCell.swift in Sources */,
 				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,

@@ -142,12 +142,14 @@ class EmailViewController: UIViewController {
             print(UserInfo.passWord)
             print(UserInfo.phoneNumber)
             print(UserInfo.nickName)
+            LoginSeverResponse.ResponseNickName = UserInfo.nickName
             print(JoinCheck.agreementCollection)
             print(JoinCheck.agreementProvision)
             print(JoinCheck.agreementMail)
             print(JoinCheck.agreementSMS)
             print(JoinCheck.over14)
             Check.dis = 1
+            LoginCheckModel.loginCheck = true
             dismiss(animated: true, completion: nil)
         }
     }
