@@ -63,6 +63,11 @@
 		99577E27273A298600F01D8C /* topTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E25273A298600F01D8C /* topTableViewCell.xib */; };
 		99577E2A273A2AAF00F01D8C /* bottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */; };
 		99577E2B273A2AAF00F01D8C /* bottomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */; };
+		99577E2E273A4B4600F01D8C /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E2C273A4B4600F01D8C /* SectionTableViewCell.swift */; };
+		99577E2F273A4B4600F01D8C /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E2D273A4B4600F01D8C /* SectionTableViewCell.xib */; };
+		99577E33273A567500F01D8C /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E31273A567500F01D8C /* ReviewTableViewCell.swift */; };
+		99577E34273A567500F01D8C /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99577E32273A567500F01D8C /* ReviewTableViewCell.xib */; };
+		99577E37273A5B5A00F01D8C /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99577E36273A5B5A00F01D8C /* ReviewModel.swift */; };
 		9960505F2739446B00099779 /* BasicMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9960505E2739446B00099779 /* BasicMenuCell.swift */; };
 		996050612739447500099779 /* BasicMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996050602739447500099779 /* BasicMenuCell.xib */; };
 		99605065273966C900099779 /* contourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99605063273966C900099779 /* contourTableViewCell.swift */; };
@@ -306,6 +311,11 @@
 		99577E25273A298600F01D8C /* topTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = topTableViewCell.xib; sourceTree = "<group>"; };
 		99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomTableViewCell.swift; sourceTree = "<group>"; };
 		99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bottomTableViewCell.xib; sourceTree = "<group>"; };
+		99577E2C273A4B4600F01D8C /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		99577E2D273A4B4600F01D8C /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
+		99577E31273A567500F01D8C /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		99577E32273A567500F01D8C /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		99577E36273A5B5A00F01D8C /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		9960505E2739446B00099779 /* BasicMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMenuCell.swift; sourceTree = "<group>"; };
 		996050602739447500099779 /* BasicMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicMenuCell.xib; sourceTree = "<group>"; };
 		99605063273966C900099779 /* contourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contourTableViewCell.swift; sourceTree = "<group>"; };
@@ -532,6 +542,8 @@
 		99265CB3273904AA000538D3 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				99577E35273A5B4900F01D8C /* ReviewModel */,
+				99577E30273A566000F01D8C /* TableViewCell */,
 				99265CC027390532000538D3 /* ReviewViewController.swift */,
 				99265CC227390541000538D3 /* ReviewStoryboard.storyboard */,
 			);
@@ -732,8 +744,27 @@
 				99577E25273A298600F01D8C /* topTableViewCell.xib */,
 				99577E28273A2AAF00F01D8C /* bottomTableViewCell.swift */,
 				99577E29273A2AAF00F01D8C /* bottomTableViewCell.xib */,
+				99577E2C273A4B4600F01D8C /* SectionTableViewCell.swift */,
+				99577E2D273A4B4600F01D8C /* SectionTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		99577E30273A566000F01D8C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				99577E31273A567500F01D8C /* ReviewTableViewCell.swift */,
+				99577E32273A567500F01D8C /* ReviewTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		99577E35273A5B4900F01D8C /* ReviewModel */ = {
+			isa = PBXGroup;
+			children = (
+				99577E36273A5B5A00F01D8C /* ReviewModel.swift */,
+			);
+			path = ReviewModel;
 			sourceTree = "<group>";
 		};
 		99605062273966A700099779 /* contourCell */ = {
@@ -1497,6 +1528,7 @@
 				99506361273111D4002C43B8 /* secondCollectionViewCell.xib in Resources */,
 				99506363273111D4002C43B8 /* firstCollectionViewCell.xib in Resources */,
 				998DABCE2736D737005EBF22 /* JjimStoryboard.storyboard in Resources */,
+				99577E34273A567500F01D8C /* ReviewTableViewCell.xib in Resources */,
 				99A437B3273413CC0076F023 /* GiftStoryboard.storyboard in Resources */,
 				998DABBE2736D6EC005EBF22 /* OrderStoryboard.storyboard in Resources */,
 				996050772739799600099779 /* MyThirdTableViewCell.xib in Resources */,
@@ -1535,6 +1567,7 @@
 				99985D2F272E308E00D7B167 /* daum_th_line.png in Resources */,
 				994E62D4273696F200BFBF36 /* Paging2Storyboard.storyboard in Resources */,
 				997EA6D027357B8C0034AD1B /* TodayTableViewCell.xib in Resources */,
+				99577E2F273A4B4600F01D8C /* SectionTableViewCell.xib in Resources */,
 				99265CBB273904FF000538D3 /* MenuStoryboard.storyboard in Resources */,
 				99605087273A081900099779 /* EditMyStoryboard.storyboard in Resources */,
 				996B3FE12738DE7D00DC29CA /* secondBNTableViewCell.xib in Resources */,
@@ -1651,6 +1684,7 @@
 				997219FD27380BEA001624A0 /* OrderfoodViewController.swift in Sources */,
 				998DABA92736D3E9005EBF22 /* Menu3Cell.swift in Sources */,
 				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
+				99577E37273A5B5A00F01D8C /* ReviewModel.swift in Sources */,
 				9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */,
 				99985D43272E80F800D7B167 /* AlarmViewController.swift in Sources */,
 				997219EE2737EC89001624A0 /* FoodTableViewCell.swift in Sources */,
@@ -1675,6 +1709,8 @@
 				994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
+				99577E33273A567500F01D8C /* ReviewTableViewCell.swift in Sources */,
+				99577E2E273A4B4600F01D8C /* SectionTableViewCell.swift in Sources */,
 				99605065273966C900099779 /* contourTableViewCell.swift in Sources */,
 				998DABDD2737966A005EBF22 /* UltraCallTableViewCell.swift in Sources */,
 				99605089273A0CDF00099779 /* LoginCheckModel.swift in Sources */,
