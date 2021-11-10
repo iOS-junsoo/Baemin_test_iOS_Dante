@@ -28,14 +28,16 @@ class TotalSearviceViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func Hansick(_ sender: Any) {
+        let alStoryboard = UIStoryboard(name: "Paging2Storyboard", bundle: nil) //스토리보드 결정
+                let alarmVC = alStoryboard.instantiateViewController(identifier: "Paging2ViewController")
+                self.navigationController?.pushViewController(alarmVC, animated: true)
     }
-    */
-
+    @IBAction func Home(_ sender: Any) {
+        let alStoryboard = UIStoryboard(name: "PagingStoryboard", bundle: nil) //스토리보드 결정
+                let alarmVC = alStoryboard.instantiateViewController(identifier: "PagingViewController")
+                self.navigationController?.pushViewController(alarmVC, animated: true)
+    }
+    
 }

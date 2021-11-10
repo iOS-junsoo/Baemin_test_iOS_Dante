@@ -150,7 +150,11 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView == bottomTableView {
+        if tableView == topTableView {
+            let alStoryboard = UIStoryboard(name: "MenuStoryboard", bundle: nil) //스토리보드 결정
+                    let alarmVC = alStoryboard.instantiateViewController(identifier: "InsideMenuViewController")
+                    self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if tableView == bottomTableView {
             sections[indexPath.section].isOpend = !sections[indexPath.section].isOpend
             bottomTableView.reloadSections([indexPath.section], with: .none)
         }

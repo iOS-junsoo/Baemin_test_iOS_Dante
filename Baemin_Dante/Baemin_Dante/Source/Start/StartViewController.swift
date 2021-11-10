@@ -29,6 +29,7 @@ class StartViewController: UIViewController {
         self.marketCheck.setImage(UIImage(named: "체크X"), for: .normal)
         self.startBtn.setImage(UIImage(named: "시작하기X"), for: .normal)
         self.startBtn.adjustsImageWhenHighlighted = false
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         //MARK: - 동의하기전 알림 허용

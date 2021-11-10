@@ -13,6 +13,7 @@ class LocalViewController: UIViewController {
     @IBOutlet weak var nowBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         //MARK: - 버튼클릭시 회색으로 변하는 거 없애기
         findBtn.adjustsImageWhenHighlighted = false

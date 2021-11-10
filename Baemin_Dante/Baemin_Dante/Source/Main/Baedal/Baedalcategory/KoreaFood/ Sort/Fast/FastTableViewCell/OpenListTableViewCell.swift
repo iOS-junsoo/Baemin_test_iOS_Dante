@@ -15,11 +15,12 @@ class OpenListTableViewCell: UITableViewCell {
     @IBOutlet var review: UILabel!
     @IBOutlet var menu: UILabel!
     @IBOutlet var orderPay: UILabel!
-    @IBOutlet var deliveryPay: UILabel!
+
     @IBOutlet var orderTime: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imagName.clipsToBounds = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -49,12 +49,19 @@ class Paging2ViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true) //백버튼 숨김
         
         let vc1 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
-        let vc2 = UIStoryboard.init(name: "BunsikStoryboard", bundle: nil).instantiateViewController(withIdentifier: "BunsikViewController") as! BunsikViewController
-        let vc3 = UIStoryboard.init(name: "DonegasStoryboard", bundle: nil).instantiateViewController(withIdentifier: "DonegasViewController") as! DonegasViewController
-        let vc4 = UIStoryboard.init(name: "ChickenStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ChickenViewController") as! ChickenViewController
-        let vc5 = UIStoryboard.init(name: "PizzaStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PizzaViewController") as! PizzaViewController
-        let vc6 = UIStoryboard.init(name: "AsianStoryboard", bundle: nil).instantiateViewController(withIdentifier: "AsianViewController") as! AsianViewController
-        let vc7 = UIStoryboard.init(name: "ChinaStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ChinaViewController") as! ChinaViewController
+        let vc2 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        let vc3 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        let vc4 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        let vc5 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        let vc6 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        let vc7 = UIStoryboard.init(name: "KoreaFoodStoryboard", bundle: nil).instantiateViewController(withIdentifier: "KoreaFoodViewController") as! KoreaFoodViewController
+        
+//        let vc2 = UIStoryboard.init(name: "BunsikStoryboard", bundle: nil).instantiateViewController(withIdentifier: "BunsikViewController") as! BunsikViewController
+//        let vc3 = UIStoryboard.init(name: "DonegasStoryboard", bundle: nil).instantiateViewController(withIdentifier: "DonegasViewController") as! DonegasViewController
+//        let vc4 = UIStoryboard.init(name: "ChickenStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ChickenViewController") as! ChickenViewController
+//        let vc5 = UIStoryboard.init(name: "PizzaStoryboard", bundle: nil).instantiateViewController(withIdentifier: "PizzaViewController") as! PizzaViewController
+//        let vc6 = UIStoryboard.init(name: "AsianStoryboard", bundle: nil).instantiateViewController(withIdentifier: "AsianViewController") as! AsianViewController
+//        let vc7 = UIStoryboard.init(name: "ChinaStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ChinaViewController") as! ChinaViewController
         
         
         viewControllers.append(vc1)

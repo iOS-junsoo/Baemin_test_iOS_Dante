@@ -71,7 +71,7 @@
                                 <color key="tintColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="-1" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="63,000원 포장 주문하기" image="10.circle.fill" catalog="system">
+                                <state key="normal" title="7,000원 포장 주문하기" image="10.circle.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>

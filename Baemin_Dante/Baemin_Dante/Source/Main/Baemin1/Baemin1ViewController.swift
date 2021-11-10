@@ -40,6 +40,9 @@ class Baemin1ViewController: UIViewController {
         models2.append(Model2(imageName: "오늘광고3"))
         models2.append(Model2(imageName: "오늘광고2"))
         models2.append(Model2(imageName: "오늘광고1"))
+        models3.append(Model3(imageName: "빠른광고1", baeminName: "천하원요리", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+        models3.append(Model3(imageName: "빠른광고2", baeminName: "메가MGC커피 송도퍼스트파크점", baeminStar: "4.7", baeminTip: "3,000원", imageTime: "15-25분"))
+        models3.append(Model3(imageName: "빠른광고3", baeminName: "구구족 송도점", baeminStar: "4.9", baeminTip: "0원~3,000원", imageTime: "13-23분"))
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,6 +50,7 @@ class Baemin1ViewController: UIViewController {
         tableView.register(UINib(nibName: "BBTableViewCell", bundle: nil), forCellReuseIdentifier: "BBTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "TodayTableViewCell", bundle: nil), forCellReuseIdentifier: "TodayTableViewCell") //nib 파일 등록
         tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell")
+        tableView.register(UINib(nibName: "fourthTableViewCell", bundle: nil), forCellReuseIdentifier: "fourthTableViewCell") //nib 파일 등록
     }
     
     
@@ -92,10 +96,8 @@ extension Baemin1ViewController: UITableViewDelegate, UITableViewDataSource {
             
 
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell", for: indexPath) as! TodayTableViewCell
-            cell.configure(with: models2)
-            cell.titleLabel.text = "배민1 할인"
-//            cell.delegate = self
+            let cell = tableView.dequeueReusableCell(withIdentifier: "fourthTableViewCell", for: indexPath) as! fourthTableViewCell
+            cell.configure(with: models3)
             cell.selectionStyle = .none
             return cell
 
@@ -114,7 +116,7 @@ extension Baemin1ViewController: UITableViewDelegate, UITableViewDataSource {
         case 2:
             return 10
         case 3:
-            return 235
+            return 320
 //        case 3:
 //            return 235
         default:
