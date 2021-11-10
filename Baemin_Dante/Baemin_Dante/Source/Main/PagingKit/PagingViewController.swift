@@ -86,6 +86,12 @@ class PagingViewController: UIViewController {
         menuViewController.reloadData()
         contentViewController.reloadData()
     }
+    @IBAction func jjjjjj(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "JJIMViewController") as? JJIMViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -96,6 +102,8 @@ class PagingViewController: UIViewController {
             super.viewWillDisappear(animated)
             self.navigationController?.setNavigationBarHidden(false, animated: animated)
         }
+    
+    
 
     @IBAction func backBtn(_ sender: UIButton) {
             self.navigationController?.popToRootViewController(animated: true)
@@ -120,6 +128,9 @@ class PagingViewController: UIViewController {
         self.navigationController?.pushViewController(searchVC, animated: true)
         
     }
+   
+   
+    
     
     @IBAction func LocaitonTap(_ sender: UIButton) {
         // 바텀 시트로 쓰일 뷰컨트롤러 생성
@@ -129,7 +140,8 @@ class PagingViewController: UIViewController {
                 // MDC 바텀 시트로 설정
                 let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
         
-            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 330
+            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 420
+        
                 
                 // 보여주기
                 present(bottomSheet, animated: true, completion: nil)

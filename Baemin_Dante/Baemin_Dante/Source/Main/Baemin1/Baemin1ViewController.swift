@@ -9,20 +9,46 @@ import UIKit
 
 class Baemin1ViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    //MARK: - 데이터 모델
+    var models = [Model]()
+    var models2 = [Model2]()
+    var models3 = [Model3]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
-        // Do any additional setup after loading the view.
+        setUpTableView()
     }
+    
 //    override func viewDidAppear(_ animated: Bool) {
-//        if PageCheck.page2Check == 0{
-//            Page.pageTitle2 = 1
-//            PageCheck.page2Check = 1
+//        if PageCheck.page1Check == 0{
+//            Page.pageTitle2 = 0
+//            PageCheck.page1Check = 1
+//            print(Page.pageTitle2)
 //        }
 //    }
+    
+    func setUpTableView() {
+        models.append(Model(imageName: "배달화면광고1"))
+        models.append(Model(imageName: "배달화면광고2"))
+        models.append(Model(imageName: "배달화면광고3"))
+        
+        models2.append(Model2(imageName: "오늘광고3"))
+        models2.append(Model2(imageName: "오늘광고2"))
+        models2.append(Model2(imageName: "오늘광고1"))
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "BannerTableViewCell", bundle: nil), forCellReuseIdentifier: "BannerTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "BBTableViewCell", bundle: nil), forCellReuseIdentifier: "BBTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "TodayTableViewCell", bundle: nil), forCellReuseIdentifier: "TodayTableViewCell") //nib 파일 등록
+        tableView.register(UINib(nibName: "contourTableViewCell", bundle: nil), forCellReuseIdentifier: "contourTableViewCell")
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -34,8 +60,76 @@ class Baemin1ViewController: UIViewController {
             self.navigationController?.setNavigationBarHidden(false, animated: animated)
         }
 
-    @IBAction func backBtn(_ sender: UIButton) {
-            self.navigationController?.popToRootViewController(animated: true)
-        }
-
+    
 }
+
+extension Baemin1ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
+        //firstTableViewCell
+        
+
+        switch indexPath.row {
+
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell", for: indexPath) as! BannerTableViewCell
+            cell.configure(with: models)
+//            cell.delegate = self
+            cell.selectionStyle = .none
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BBTableViewCell", for: indexPath) as! BBTableViewCell
+//            cell.delegate = self
+            cell.selectionStyle = .none
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
+            cell.selectionStyle = .none
+            return cell
+            
+
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell", for: indexPath) as! TodayTableViewCell
+            cell.configure(with: models2)
+            cell.titleLabel.text = "배민1 할인"
+//            cell.delegate = self
+            cell.selectionStyle = .none
+            return cell
+
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { //cell의 높이 설정
+                
+        switch indexPath.row {
+        case 0:
+            return 130
+        case 1:
+            return 220
+        case 2:
+            return 10
+        case 3:
+            return 235
+//        case 3:
+//            return 235
+        default:
+            return 100
+        }
+    }
+    
+    
+}
+
+//extension Baemin1ViewController: ButtonDelegate {
+//    func nextView() {
+//        let storyBoard = UIStoryboard(name: "Paging2Storyboard", bundle: nil)
+//        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "Paging2ViewController") as? Paging2ViewController {
+//            self.navigationController?.pushViewController(detailVC, animated: true)
+//        }
+//    }
+//}

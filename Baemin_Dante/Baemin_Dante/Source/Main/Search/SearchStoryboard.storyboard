@@ -33,6 +33,10 @@
                                     <action selector="backBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OWz-D8-LiK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_A833E30A3EA9-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jqe-CQ-h3f">
+                                <rect key="frame" x="0.0" y="99" width="390" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,6 +49,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_A833E30A3EA9-1" width="1170" height="1455"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

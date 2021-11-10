@@ -63,36 +63,54 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="마이배민포인트"/>
+                        <connections>
+                            <action selector="point:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jaq-df-eFB"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-6R-Yvk">
                         <rect key="frame" x="42" y="87" width="47" height="62"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="마이배민찜"/>
+                        <connections>
+                            <action selector="love:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qVI-G6-zqa"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9f-tj-G3P">
                         <rect key="frame" x="163" y="8" width="63" height="63"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="마이배민쿠폰함"/>
+                        <connections>
+                            <action selector="coupon:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j73-ED-Hlg"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6U-59-GfO">
                         <rect key="frame" x="162" y="87" width="65" height="45"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="마이배민주문내역"/>
+                        <connections>
+                            <action selector="order:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ajj-di-dXA"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-Gv-xef">
                         <rect key="frame" x="296" y="7" width="58" height="65"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="마이배민선물함"/>
+                        <connections>
+                            <action selector="gift:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l9B-G6-cqI"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Vn-QtU">
                         <rect key="frame" x="294" y="87" width="62" height="43"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="리뷰관리"/>
+                        <connections>
+                            <action selector="review:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bqd-j1-YMP"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>

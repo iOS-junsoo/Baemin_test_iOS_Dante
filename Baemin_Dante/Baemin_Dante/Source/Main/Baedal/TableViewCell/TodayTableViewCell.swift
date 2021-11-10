@@ -9,6 +9,7 @@ import UIKit
 
 class TodayTableViewCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     func configure(with models2: [Model2]){
         self.models2 = models2

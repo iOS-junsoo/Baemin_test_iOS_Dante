@@ -98,6 +98,12 @@ class EmailViewController: UIViewController {
     @objc func emailTextFieldDidChange(_ sender: Any?) {
         UserInfo.email = emailTextField.text!
         emailState = true
+        
+        if emailTextField.text?.count ?? 0 > 0{
+            jungbokBtn.titleLabel?.textColor = .black
+        } else {
+            jungbokBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#D7D7D7")
+        }
     }
     
     @objc func nicknameTextFieldDidChange(_ sender: Any?) {
@@ -241,6 +247,8 @@ extension EmailViewController: UITextFieldDelegate {
         }
         if nicknameTextField.text?.count ?? 0 < 2 {
             nicknameErrorLabel.textColor = UIColor.red
+        } else if nicknameTextField.text?.count ?? 0 > 11{
+            nicknameErrorLabel.textColor = UIColor.red
         }
         
         
@@ -254,10 +262,13 @@ extension EmailViewController: UITextFieldDelegate {
         if pwTextField.text?.count ?? 0 < 10 && pwTextField.text?.count ?? 0 > 0 {
             passwordErrorLabel.textColor = UIColor.red
         }
-        if nicknameTextField.text?.count ?? 0 > 2 {
+        if nicknameTextField.text?.count ?? 0 < 2 {
             nicknameErrorLabel.textColor = UIColor.red
             print("레드레드")
+        } else if nicknameTextField.text?.count ?? 0 > 11{
+            nicknameErrorLabel.textColor = UIColor.red
         }
     }
 
 }
+

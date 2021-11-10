@@ -96,7 +96,7 @@ class MainViewController: UIViewController {
                 // MDC 바텀 시트로 설정
                 let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
         
-            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 330
+            bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 420
                 
                 // 보여주기
                 present(bottomSheet, animated: true, completion: nil)
@@ -274,6 +274,34 @@ extension MainViewController: Custom1Delegate {
     func jeonguk() {
         let storyBoard = UIStoryboard(name: "JeongukStoryboard", bundle: nil)
         if let detailVC = storyBoard.instantiateViewController(withIdentifier: "JeongukViewController") as? JeongukViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    func P() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "PointViewController") as? PointViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    
+    func C() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "CouponViewController") as? CouponViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func S() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "GIFTViewController") as? GIFTViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func J() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "JJIMViewController") as? JJIMViewController {
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
     }

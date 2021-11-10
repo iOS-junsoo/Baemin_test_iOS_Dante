@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import Gifu
 
 class LiveViewController: UIViewController {
 
+    @IBOutlet var gifImageView: GIFImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        Page.pageTitle2 = 3
-        
+        gifImageView.animate(withGIFNamed: "라이브") {
+            print("It's animating!")
+        }
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.

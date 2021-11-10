@@ -187,6 +187,18 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="semibold"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMM-wp-bhs">
+                                <rect key="frame" x="0.0" y="357" width="260" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-23" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="경북 구미시 선산대로 1220" image="mappin" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="semibold"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WCr-3c-SGX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -194,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9I-l8-jH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="187"/>
+            <point key="canvasLocation" x="860" y="186.96682464454975"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZIf-jF-Ru5">
@@ -217,6 +229,7 @@
         <image name="building.2" catalog="system" width="128" height="106"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="홈_오른쪽버튼1" width="33.333332061767578" height="36"/>
         <image name="홈_오른쪽버튼2" width="40" height="36"/>

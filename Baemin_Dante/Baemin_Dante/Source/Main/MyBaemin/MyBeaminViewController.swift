@@ -94,6 +94,7 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
             
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MyThirdTableViewCell", for: indexPath) as! MyThirdTableViewCell
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
         case 4:
@@ -232,6 +233,54 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
                 //                self.present(naviVC, animated: true, completion: nil)
             }
         
+        } else if indexPath.row == 2{
+            let alStoryboard = UIStoryboard(name: "GradeStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "GradeViewController")
+            alarmVC.modalPresentationStyle = .fullScreen
+            self.present(alarmVC, animated: true, completion: nil)
+            
+        } else if indexPath.row == 5{
+            let alStoryboard = UIStoryboard(name: "GreenStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "GreenViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 6{
+            let alStoryboard = UIStoryboard(name: "PayStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "PayViewController")
+            alarmVC.modalPresentationStyle = .fullScreen
+            self.present(alarmVC, animated: true, completion: nil)
+        } else if indexPath.row == 8{
+            let alStoryboard = UIStoryboard(name: "FamilyStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "FamilyViewController")
+            alarmVC.modalPresentationStyle = .fullScreen
+            self.present(alarmVC, animated: true, completion: nil)
+        } else if indexPath.row == 9{
+            let alStoryboard = UIStoryboard(name: "NoticeStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "NoticeViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 10{
+            let alStoryboard = UIStoryboard(name: "BCStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "BCViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 11{
+            let alStoryboard = UIStoryboard(name: "EventStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "EventViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 12{
+            let alStoryboard = UIStoryboard(name: "SCStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "SCViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 13{
+            let alStoryboard = UIStoryboard(name: "SettingStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "SettingViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 14{
+            let alStoryboard = UIStoryboard(name: "AppointmentStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "AppointmentViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
+        } else if indexPath.row == 15{
+            let alStoryboard = UIStoryboard(name: "VersionStoryboard", bundle: nil) //스토리보드 결정
+            let alarmVC = alStoryboard.instantiateViewController(identifier: "VersionViewController")
+            self.navigationController?.pushViewController(alarmVC, animated: true)
         }
     }
 }
@@ -262,6 +311,46 @@ extension MyBeaminViewController {
 
 }
 
-//"id_email" : "tes12312t@naver.com",
-//"password" : "qweasdzxc1234"
-//}
+extension MyBeaminViewController: CustomMyBeaminDelegate {
+    func P() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "PointViewController") as? PointViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    
+    func C() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "CouponViewController") as? CouponViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func S() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "GIFTViewController") as? GIFTViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func J() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "JJIMViewController") as? JJIMViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    
+    func O() {
+        let storyBoard = UIStoryboard(name: "OrderHistoryStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "OrderHistoryViewController") as? OrderHistoryViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+    func R() {
+        let storyBoard = UIStoryboard(name: "MyBeaminStoryboard", bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "REVIEWViewController") as? REVIEWViewController {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
+}

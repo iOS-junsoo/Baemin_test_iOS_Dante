@@ -15,6 +15,10 @@ protocol Custom1Delegate: class {
     func live()
     func gift()
     func jeonguk()
+    func P()
+    func C()
+    func S()
+    func J()
 }
 
 
@@ -89,8 +93,20 @@ class secondTableViewCell: UITableViewCell {
     @IBAction func jeongukTap(_ sender: UIButton) {
         beadal()
     }
+    @IBAction func point(_ sender: Any) {
+        P()
+    }
     
+    @IBAction func coupon(_ sender: Any) {
+        C()
+    }
     
+    @IBAction func gift(_ sender: Any) {
+        S()
+    }
+    @IBAction func JJIM(_ sender: Any) {
+        J()
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -168,6 +184,21 @@ extension secondTableViewCell: Custom1Delegate {
         delegate?.jeonguk()
     }
     
+    func P() {
+        delegate?.P()
+    }
+    
+    func C() {
+        delegate?.C()
+    }
+    
+    func S() {
+        delegate?.S()
+    }
+    
+    func J() {
+        delegate?.J()
+    }
     
     
     
