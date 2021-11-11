@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct InfoDataModel {
+    static var Info = Info_detail()
+}

@@ -24,7 +24,7 @@ class BaketViewController: UIViewController {
     }
     
     func setUpTableView() {
-        models1.append(BaketModel(foodTitle: "모밀비빔", foodPrice: 7000))
+        models1.append(BaketModel(foodTitle: "찜꽁세트", foodPrice: 27900))
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TitleTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell") //nib 파일 등록
@@ -78,7 +78,7 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTableViewCell") as! TitleTableViewCell
-            cell.title.text = "청실홍실 송도신도시점" //식당리스트에서 해당 식당의 Cell을 클릭하면 그 식당의 이름이 전역변수에 저장되어 이 곳에서 Title을 넣는다
+            cell.title.text = "찜꽁찜닭" //식당리스트에서 해당 식당의 Cell을 클릭하면 그 식당의 이름이 전역변수에 저장되어 이 곳에서 Title을 넣는다
             cell.selectionStyle = .none
             return cell
         case 1:
@@ -97,7 +97,7 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
             Baket.foodPrice = cellData.foodPrice
             Baket.foodtotalPrice = cellData.foodPrice
             cell.foodCount.text = "1개" //+ - 버튼의 클릭에 따라서 전역변수에 해당 수를 저장해서 다시 이 변수에 저장 "\(전역변수)개" 형태로 저장
-            cell.foodTotalPrice.text = "7000원" // "\(전역변수)개" 형태로 저장
+            cell.foodTotalPrice.text = "27,900원" // "\(전역변수)개" 형태로 저장
             cell.selectionStyle = .none
             cell.delegate = self
             return cell
@@ -109,11 +109,13 @@ extension BaketViewController: UITableViewDelegate, UITableViewDataSource {
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
             cell.selectionStyle = .none
+            
             return cell
         case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TotalTableViewCell") as! TotalTableViewCell
 //            cell.totalPrice.text = "7,000원"
-            orderButton.setTitle("7,000원 주문하기", for: .normal)
+            cell.totalPrice.text = "27,900원"
+            orderButton.setTitle("27,900원 주문하기", for: .normal)
             orderButton.setImage(UIImage(systemName: "1.circle.fill"), for: .normal)
             cell.selectionStyle = .none
             return cell

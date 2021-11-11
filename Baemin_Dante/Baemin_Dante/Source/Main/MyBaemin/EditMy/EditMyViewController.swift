@@ -18,8 +18,11 @@ class EditMyViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         switch1.onTintColor = hexStringToUIColor(hex: "#2DC0BD")
         switch2.onTintColor = hexStringToUIColor(hex: "#2DC0BD")
-        nickNameTF.text = LoginSeverResponse.ResponseNickName
-        emailLabel.text = LoginSeverResponse.ResponseEmail
+        MBRequest().getData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            self.nickNameTF.text = MBDataModel.MBNickName
+            self.emailLabel.text = MBDataModel.MBEmail
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

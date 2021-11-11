@@ -33,6 +33,7 @@ class LoginRequest {
                 LoginSeverResponse.ResponsePhoneNumber = response.result?.phoneNumber ?? ""
                 LoginSeverResponse.ResponseNickName = response.result?.nickname ?? ""
                 LoginSeverResponse.ResponseGrade = response.result?.grade ?? ""
+                LoginSeverResponse.ResponseUserIdx = response.result?.userIdx ?? 0
                 
                 print("로그인 성공!: 사용자 정보 가져오기")
                 print(LoginSeverResponse.ResponseValue)

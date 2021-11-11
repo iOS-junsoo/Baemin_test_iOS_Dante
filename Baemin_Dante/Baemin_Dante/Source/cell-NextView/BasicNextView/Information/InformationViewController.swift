@@ -28,8 +28,13 @@ class InformationViewController: UIViewController {
 
     func info() {
         Jjim.text = "\(CNDataModel.restaurantJjim)"
-        
-        
+        name.text = InfoDataModel.Info.business_name
+        time.text = InfoDataModel.Info.operation_time
+        rest.text = InfoDataModel.Info.holiday
+        phone.text = InfoDataModel.Info.phone_number
+        Area.text = InfoDataModel.Info.delivery_area
+        review.text = "\(InfoDataModel.Info.recent_order_ten!)+"
+        order.text = "\(InfoDataModel.Info.total_review_ten!)+"
         
     }
 

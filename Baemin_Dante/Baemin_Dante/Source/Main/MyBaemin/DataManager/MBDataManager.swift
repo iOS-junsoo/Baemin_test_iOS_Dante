@@ -1,5 +1,5 @@
 //
-//  infoDataManager.swift
+//  MBDataModel.swift
 //  Baemin_Dante
 //
 //  Created by 준수김 on 2021/11/11.
@@ -8,9 +8,9 @@
 import Foundation
 import Alamofire
 
-class InfoRequest {
+class MBRequest {
     func getData() {
-        let url = "\(Constant.sever_URL)/app/stores/info/1"
+        let url = "\(Constant.sever_URL)/app/users/\(LoginSeverResponse.ResponseUserIdx)"
         
     
         AF.request(url,
@@ -20,13 +20,13 @@ class InfoRequest {
                    headers: nil,
                    interceptor: nil,
                    requestModifier: nil)
-            .responseDecodable(of: infoResponse.self) { response in
+            .responseDecodable(of: MBResponse.self) { response in
             
             switch response.result {
             case .success(let response):
                 print("DEBUG>> Success \(response) ")
-                InfoDataModel.Info = response.result!.info_detail ?? Info_detail()
-                print("DEBUG123>> Success \(InfoDataModel.Info) ")
+                MBDataModel.MBEmail = response.result?.email ?? ""
+                MBDataModel.MBNickName = response.result?.nickname ?? ""
                
             case .failure(let error):
                 print("DEBUG>> Error : \(error)")

@@ -30,7 +30,10 @@ class OrderfoodViewController: UIViewController {
         //MARK: - navigationbar back button hide
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Do any additional setup after loading the view.
-        setUpTableView()
+        OrderRequest().getData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+            self.setUpTableView()
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -67,7 +70,7 @@ extension OrderfoodViewController: UITableViewDelegate, UITableViewDataSource {
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //cell의 갯수 설정
-        return 14
+        return 15
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
@@ -77,10 +80,13 @@ extension OrderfoodViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
             cell.selectionStyle = .none
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "firstOrderTableViewCell") as! firstOrderTableViewCell
+            cell.phonNumber.text = OrederDataModel.orderPhone
             cell.selectionStyle = .none
+            
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "contourTableViewCell", for: indexPath) as! contourTableViewCell
@@ -133,7 +139,9 @@ extension OrderfoodViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 13:
             let cell = tableView.dequeueReusableCell(withIdentifier: "fifthOrderTableViewCell") as! fifthOrderTableViewCell
-            
+            cell.totalPrice.text = "30900원"
+            cell.deliveryPay.text = "\(OrederDataModel.orderDeliveryFee)원"
+            cell.orderPrice.text = "27900원"
             cell.selectionStyle = .none
             return cell
         case 14:

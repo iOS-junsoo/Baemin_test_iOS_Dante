@@ -72,6 +72,7 @@ struct LoginSeverResponse {
     static var ResponsePhoneNumber = ""
     static var ResponseNickName = ""
     static var ResponseGrade = ""
+    static var ResponseUserIdx = 0
 }
 
 struct Page {

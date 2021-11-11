@@ -22,6 +22,16 @@
 		992C59EA2734B4C50031AE68 /* Find1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */; };
 		992C59EC2734B4D70031AE68 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C59EB2734B4D70031AE68 /* FindPWViewController.swift */; };
 		992C59EE2734B4E20031AE68 /* Find2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */; };
+		9930341A273D0FEC00712147 /* MBDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303419273D0FEC00712147 /* MBDataManager.swift */; };
+		9930341D273D0FFE00712147 /* MBDEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930341C273D0FFE00712147 /* MBDEntity.swift */; };
+		9930341F273D135C00712147 /* MBDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930341E273D135C00712147 /* MBDataModel.swift */; };
+		99303424273D22C000712147 /* OrederDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303423273D22C000712147 /* OrederDataModel.swift */; };
+		99303426273D22D300712147 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303425273D22D300712147 /* OrderEntity.swift */; };
+		99303428273D22DE00712147 /* OrderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303427273D22DE00712147 /* OrderDataManager.swift */; };
+		9930342D273D282F00712147 /* BPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930342C273D282F00712147 /* BPModel.swift */; };
+		99303430273D284300712147 /* BPEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930342F273D284300712147 /* BPEntity.swift */; };
+		99303432273D284F00712147 /* BPDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303431273D284F00712147 /* BPDataManager.swift */; };
+		99303435273D31AB00712147 /* BPDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99303434273D31AB00712147 /* BPDetailViewController.swift */; };
 		993B674C273AC45F0020FB40 /* OrderHistoryMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993B674B273AC45F0020FB40 /* OrderHistoryMenuCell.swift */; };
 		993B674E273AC46F0020FB40 /* OrderHistoryMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993B674D273AC46F0020FB40 /* OrderHistoryMenuCell.xib */; };
 		993B6750273AC87F0020FB40 /* OHModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993B674F273AC87F0020FB40 /* OHModel.swift */; };
@@ -352,6 +362,16 @@
 		992C59E92734B4C50031AE68 /* Find1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find1Storyboard.storyboard; sourceTree = "<group>"; };
 		992C59EB2734B4D70031AE68 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
 		992C59ED2734B4E20031AE68 /* Find2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Find2Storyboard.storyboard; sourceTree = "<group>"; };
+		99303419273D0FEC00712147 /* MBDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDataManager.swift; sourceTree = "<group>"; };
+		9930341C273D0FFE00712147 /* MBDEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDEntity.swift; sourceTree = "<group>"; };
+		9930341E273D135C00712147 /* MBDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDataModel.swift; sourceTree = "<group>"; };
+		99303423273D22C000712147 /* OrederDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrederDataModel.swift; sourceTree = "<group>"; };
+		99303425273D22D300712147 /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
+		99303427273D22DE00712147 /* OrderDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataManager.swift; sourceTree = "<group>"; };
+		9930342C273D282F00712147 /* BPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPModel.swift; sourceTree = "<group>"; };
+		9930342F273D284300712147 /* BPEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPEntity.swift; sourceTree = "<group>"; };
+		99303431273D284F00712147 /* BPDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPDataManager.swift; sourceTree = "<group>"; };
+		99303434273D31AB00712147 /* BPDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPDetailViewController.swift; sourceTree = "<group>"; };
 		993B674B273AC45F0020FB40 /* OrderHistoryMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryMenuCell.swift; sourceTree = "<group>"; };
 		993B674D273AC46F0020FB40 /* OrderHistoryMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHistoryMenuCell.xib; sourceTree = "<group>"; };
 		993B674F273AC87F0020FB40 /* OHModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHModel.swift; sourceTree = "<group>"; };
@@ -762,6 +782,70 @@
 			path = FindPW;
 			sourceTree = "<group>";
 		};
+		99303418273D0FD700712147 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				99303419273D0FEC00712147 /* MBDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		9930341B273D0FEF00712147 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9930341C273D0FFE00712147 /* MBDEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		99303420273D229600712147 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				99303427273D22DE00712147 /* OrderDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		99303421273D22A200712147 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				99303425273D22D300712147 /* OrderEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		99303422273D22B000712147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99303423273D22C000712147 /* OrederDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99303429273D280D00712147 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				99303431273D284F00712147 /* BPDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		9930342A273D281700712147 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9930342F273D284300712147 /* BPEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9930342B273D282000712147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9930342C273D282F00712147 /* BPModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		993B6753273B72D90020FB40 /* EditMy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1133,9 +1217,13 @@
 		99577E51273A9EFB00F01D8C /* BaedalPojang */ = {
 			isa = PBXGroup;
 			children = (
-				9981A0F6273CB95200E37E67 /* TableViewCell */,
 				99577E63273A9FBF00F01D8C /* BPStoryboard.storyboard */,
 				99577E65273A9FD100F01D8C /* BPViewController.swift */,
+				9930342B273D282000712147 /* Model */,
+				9930342A273D281700712147 /* Entity */,
+				99303429273D280D00712147 /* DataManager */,
+				9981A0F6273CB95200E37E67 /* TableViewCell */,
+				99303434273D31AB00712147 /* BPDetailViewController.swift */,
 			);
 			path = BaedalPojang;
 			sourceTree = "<group>";
@@ -1252,6 +1340,9 @@
 		997219FA27380BC0001624A0 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				99303422273D22B000712147 /* Model */,
+				99303421273D22A200712147 /* Entity */,
+				99303420273D229600712147 /* DataManager */,
 				997219FC27380BEA001624A0 /* OrderfoodViewController.swift */,
 				997219FE27380C01001624A0 /* OrderfoodStoryboard.storyboard */,
 				997219FB27380BCC001624A0 /* TableViewCell */,
@@ -1782,6 +1873,9 @@
 		99985D38272E7FF400D7B167 /* MyBaemin */ = {
 			isa = PBXGroup;
 			children = (
+				9930341E273D135C00712147 /* MBDataModel.swift */,
+				9930341B273D0FEF00712147 /* Entity */,
+				99303418273D0FD700712147 /* DataManager */,
 				99985D3E272E80DD00D7B167 /* MyBeaminViewController.swift */,
 				99985D40272E80E600D7B167 /* MyBeaminStoryboard.storyboard */,
 				994C27E0273BA49700FCAE4F /* JJIMViewController.swift */,
@@ -2205,6 +2299,7 @@
 				997219FD27380BEA001624A0 /* OrderfoodViewController.swift in Sources */,
 				998DABA92736D3E9005EBF22 /* Menu3Cell.swift in Sources */,
 				999858D8272D5AB600D7B167 /* MainViewController.swift in Sources */,
+				9930341D273D0FFE00712147 /* MBDEntity.swift in Sources */,
 				994C27E9273BA89D00FCAE4F /* GIFTViewController.swift in Sources */,
 				993B677B273B751F0020FB40 /* EventViewController.swift in Sources */,
 				99577E37273A5B5A00F01D8C /* ReviewModel.swift in Sources */,
@@ -2225,6 +2320,8 @@
 				99277CE92734BB0F00CD665E /* EmailDataManager.swift in Sources */,
 				9950636C2731388D002C43B8 /* fourthTableViewCell.swift in Sources */,
 				99A4378E27339F900076F023 /* joinResponse.swift in Sources */,
+				9930341F273D135C00712147 /* MBDataModel.swift in Sources */,
+				99303426273D22D300712147 /* OrderEntity.swift in Sources */,
 				9984D61A273268A400387158 /* naviViewController.swift in Sources */,
 				99A437A12734134C0076F023 /* BaedalViewController.swift in Sources */,
 				997219F92737FDC8001624A0 /* BaketModel.swift in Sources */,
@@ -2242,6 +2339,7 @@
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				99577E33273A567500F01D8C /* ReviewTableViewCell.swift in Sources */,
 				99577E2E273A4B4600F01D8C /* SectionTableViewCell.swift in Sources */,
+				99303428273D22DE00712147 /* OrderDataManager.swift in Sources */,
 				99605065273966C900099779 /* contourTableViewCell.swift in Sources */,
 				998DABDD2737966A005EBF22 /* UltraCallTableViewCell.swift in Sources */,
 				993B674C273AC45F0020FB40 /* OrderHistoryMenuCell.swift in Sources */,
@@ -2256,6 +2354,7 @@
 				996050722739798600099779 /* MySecondTableViewCell.swift in Sources */,
 				99A437B5273413F50076F023 /* JeongukViewController.swift in Sources */,
 				992C59E82734B4BD0031AE68 /* FindIDViewController.swift in Sources */,
+				99303430273D284300712147 /* BPEntity.swift in Sources */,
 				994E62E8273699B000BFBF36 /* PizzaViewController.swift in Sources */,
 				999858FC272D5B9900D7B167 /* String.swift in Sources */,
 				99577E4A273A729C00F01D8C /* fifthOrderTableViewCell.swift in Sources */,
@@ -2308,6 +2407,7 @@
 				99605082273979CA00099779 /* MySixthTableViewCell.swift in Sources */,
 				9981A108273CF65C00E37E67 /* infoEntity.swift in Sources */,
 				9981A10A273CF66800E37E67 /* infoDataManager.swift in Sources */,
+				9930341A273D0FEC00712147 /* MBDataManager.swift in Sources */,
 				99265CC127390532000538D3 /* ReviewViewController.swift in Sources */,
 				999858FE272D5B9900D7B167 /* UIFont.swift in Sources */,
 				994C27FD273C0BEF00FCAE4F /* CNDataManager.swift in Sources */,
@@ -2333,6 +2433,7 @@
 				996050762739799600099779 /* MyThirdTableViewCell.swift in Sources */,
 				9981A10C273CF66F00E37E67 /* infoModel.swift in Sources */,
 				995516C42737CB000050A497 /* BaketViewController.swift in Sources */,
+				99303432273D284F00712147 /* BPDataManager.swift in Sources */,
 				998DABAC2736D5F5005EBF22 /* FastViewController.swift in Sources */,
 				9950636727311221002C43B8 /* Model.swift in Sources */,
 				99277CE12734B83300CD665E /* LoginResponse.swift in Sources */,
@@ -2348,7 +2449,9 @@
 				995516BD2737C0DC0050A497 /* StarNextViewController.swift in Sources */,
 				99985925272D632C00D7B167 /* LocalViewController.swift in Sources */,
 				999858F9272D5B9900D7B167 /* Color.swift in Sources */,
+				99303435273D31AB00712147 /* BPDetailViewController.swift in Sources */,
 				994E62D2273696E200BFBF36 /* Paging2ViewController.swift in Sources */,
+				99303424273D22C000712147 /* OrederDataModel.swift in Sources */,
 				994C27E5273BA87900FCAE4F /* PointViewController.swift in Sources */,
 				994C27ED273BB9B400FCAE4F /* BBTableViewCell.swift in Sources */,
 				99577E3E273A726700F01D8C /* secondOrderTableViewCell.swift in Sources */,
@@ -2357,6 +2460,7 @@
 				99577E26273A298600F01D8C /* topTableViewCell.swift in Sources */,
 				994C2802273C0D1F00FCAE4F /* CNModel.swift in Sources */,
 				997219EA2737EC70001624A0 /* RadioTableViewCell.swift in Sources */,
+				9930342D273D282F00712147 /* BPModel.swift in Sources */,
 				99277CE32734B83D00CD665E /* LoginDataManager.swift in Sources */,
 				99985927272D71E600D7B167 /* findLocationViewController.swift in Sources */,
 				994C27F6273BEE5700FCAE4F /* FastEntity.swift in Sources */,

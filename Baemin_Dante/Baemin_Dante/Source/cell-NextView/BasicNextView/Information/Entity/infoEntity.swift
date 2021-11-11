@@ -17,7 +17,7 @@ struct infoResponse: Decodable {
 struct InfoMenu: Decodable {
     var info_basic: Info_basic?
     var info_detail: Info_detail?
-    var info_delivery: Info_delivery?
+    var info_delivery: [Info_delivery]
 }
 
 struct Info_basic: Decodable {

@@ -24,7 +24,7 @@ class CNRequest {
             
             switch response.result {
             case .success(let response):
-//                print("DEBUG>> Success \(response) ")
+                print("DEBUG>> Success \(response) ")
                 //로그인한 사용자 정보 가져오기
 //                print(response.result?.menus[0].name)
                 CNDataModel.restaurantName = response.result?.info_basic?.name ?? ""
