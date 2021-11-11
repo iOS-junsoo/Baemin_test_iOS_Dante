@@ -14,19 +14,14 @@ class ReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setUpTableView()
+        ReviewRequest().getData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            self.setUpTableView()
+        }
     }
     
     func setUpTableView() {
-        models.append(ReviewModel(nickName: "단테", day: "어제", review: "반찬도 맛있어요", menu: "구이세트 A번"))
-        models.append(ReviewModel(nickName: "준수", day: "3일 전", review: "배불리 잘 먹었습니다!", menu: "구이세트 A번"))
-        models.append(ReviewModel(nickName: "상현", day: "지난 달", review: "맛있어요", menu: "구이세트 B번"))
-        models.append(ReviewModel(nickName: "진홍", day: "3개월 전", review: "존맛탱", menu: "구이세트 1인"))
-        models.append(ReviewModel(nickName: "길현", day: "6개월 전", review: "맛있네 이집", menu: "볶음세트 C번"))
-        models.append(ReviewModel(nickName: "승찬", day: "7개월 전", review: "이집 잘하네", menu: "구이세트 A번"))
-        models.append(ReviewModel(nickName: "온주", day: "10개월 전", review: "맛집이네", menu: "볶음세트 A번"))
-        models.append(ReviewModel(nickName: "상치", day: "1년 전", review: "존맛", menu: "구이세트 D번"))
+//        models.append(ReviewModel(nickName: "단테", day: "어제", review: "반찬도 맛있어요", menu: "구이세트 A번"))
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -45,14 +40,14 @@ extension ReviewViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { //cell의 데이터 구성
-        let cellDataContent = models[indexPath.row]
-        
+//        let cellDataContent = models[indexPath.row]
+        let cellDataContent = ReViewDataModel.ReviewModel[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableViewCell") as! ReviewTableViewCell
         
-        cell.userNickname.setTitle(cellDataContent.nickName, for: .normal)
-        cell.userday.text = cellDataContent.day
-        cell.userReview.text = cellDataContent.review
-        cell.userMenu.setTitle(cellDataContent.menu, for: .normal)
+        cell.userNickname.setTitle(cellDataContent.nickname, for: .normal)
+        cell.userday.text = cellDataContent.created_at
+        cell.userReview.text = cellDataContent.contents
+//        cell.userMenu.setTitle(cellDataContent.menu, for: .normal)
         cell.selectionStyle = .none
         return cell
     }

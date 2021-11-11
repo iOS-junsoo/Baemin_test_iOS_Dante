@@ -20,8 +20,17 @@ class EditMyViewController: UIViewController {
         switch2.onTintColor = hexStringToUIColor(hex: "#2DC0BD")
         MBRequest().getData()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
-            self.nickNameTF.text = MBDataModel.MBNickName
-            self.emailLabel.text = MBDataModel.MBEmail
+            
+            if KakaoVSLocal.check == 2 {
+                self.nickNameTF.text = "\(MBDataModel.MBNickName)"//사용자 닉네임
+                self.emailLabel.text = MBDataModel.MBEmail
+            } else if KakaoVSLocal.check == 1 {
+                self.nickNameTF.text = "\(KakaoLogin.userName)"//사용자 닉네임
+                self.emailLabel.text = KakaoLogin.userEmail
+            }
+            
+//            self.nickNameTF.text = MBDataModel.MBNickName
+//            self.emailLabel.text = MBDataModel.MBEmail
         }
     }
     
@@ -42,6 +51,9 @@ class EditMyViewController: UIViewController {
     @IBAction func logoutBtnTap(_ sender: UIButton) {
         LoginCheckModel.loginCheck = false
         self.navigationController?.popViewController(animated: true)
+        
+        
+        
     }
     
 }

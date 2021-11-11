@@ -10,7 +10,7 @@ import Alamofire
 
 class FastRequest {
     func getData() {
-        let url = "\(Constant.sever_URL)/app/stores"
+        let url = "\(Constant.sever_URL)/app/stores/"
         
         let params = [ "category" : "한식"]
     

@@ -72,8 +72,13 @@ class LoginViewController: UIViewController {
 //                       let url = user?.kakaoAccount?.profile?.profileImageUrl
 //                       let data = try? Data(contentsOf: url!)
 //                       self.userImage.image = UIImage(data: data!)
-                       self.nextCheckBox() //약관동의 화면으로 넘어감
+//                       self.nextCheckBox() //약관동의 화면으로 넘어감
+                       self.dismiss(animated: true, completion: nil)
+                       KakaoVSLocal.check = 1
+                       print(KakaoVSLocal.check)
+                       LoginCheckModel.loginCheck = true
                        _ = user
+                       
                    }
                }
                print("loginWithKakaoAccount() success.")
@@ -107,7 +112,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func LoginBtn(_ sender: UIButton) {
         LoginRequest().postData()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             if LoginSeverResponse.ResponseValue == true {
                 self.navigationController?.popViewController(animated: true)
                 //이후 사용자 정보를 마이배민 화면에서 나타내야함
@@ -116,6 +121,7 @@ class LoginViewController: UIViewController {
                 print("성공")
                 self.view.makeToast("로그인 되었습니다.", duration: 1.0, position: .center)
                 self.dismiss(animated: true, completion: nil)
+                KakaoVSLocal.check = 2
             } else {
                 self.loginErrorCount -= 1
                 self.loginErrorLabel.text = "계정 정보가 일치하지 않습니다.(\(self.loginErrorCount)회 남음)"

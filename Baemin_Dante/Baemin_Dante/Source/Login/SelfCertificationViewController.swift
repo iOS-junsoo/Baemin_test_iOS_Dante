@@ -85,6 +85,8 @@ class SelfCertificationViewController: UIViewController {
             getSetTime()
             reInjeingBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
             
+            pRequest().postData()
+            
         }
     }
     
@@ -121,7 +123,7 @@ class SelfCertificationViewController: UIViewController {
     //휴대전화 함수
     @objc func phoneTextFieldDidChange(_ sender: Any?) {
         UserInfo.phoneNumber = phoneTextField.text ?? ""
-        if phoneTextField.text?.count == 13 { //글자수가 10이면 초록색 체크로
+        if phoneTextField.text?.count == 11 { //글자수가 10이면 초록색 체크로
             pheneCheckImage.image = UIImage(named: "초록체크")
             phoneBtn.tintColor = UIColor.black //버튼 색 변경
             
@@ -131,12 +133,12 @@ class SelfCertificationViewController: UIViewController {
             phoneBtn.tintColor = hexStringToUIColor(hex: "#D7D7D7")
         }
         
-        //MAKR: 자동 하이픈 입력기능
-        if phoneTextField.text?.count == 3{
-            phoneTextField.text! += "-"
-        } else if phoneTextField.text?.count == 8{
-            phoneTextField.text! += "-"
-        } 
+//        //MAKR: 자동 하이픈 입력기능
+//        if phoneTextField.text?.count == 3{
+//            phoneTextField.text! += "-"
+//        } else if phoneTextField.text?.count == 8{
+//            phoneTextField.text! += "-"
+//        }
             
         checkMaxLength(textField: phoneTextField, maxLength: 13)
         UserInfo.phoneNumber = phoneTextField.text! //사용자의 전화번호를 전역변수에 저장

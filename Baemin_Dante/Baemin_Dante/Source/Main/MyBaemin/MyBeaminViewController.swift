@@ -70,7 +70,15 @@ extension MyBeaminViewController: UITableViewDelegate, UITableViewDataSource {
             //로그인 하면 달라져야함.
             if LoginCheckModel.loginCheck == true { //회원가입 또는 로그인 완료
                 let cell = tableView.dequeueReusableCell(withIdentifier: "MyFirstTableViewCell", for: indexPath) as! MyFirstTableViewCell
-                cell.idLabel.text = "\(LoginSeverResponse.ResponseNickName)"//사용자 닉네임
+                if KakaoVSLocal.check == 2 {
+                    cell.idLabel.text = "\(LoginSeverResponse.ResponseNickName)"//사용자 닉네임
+                    print("dho??????")
+                } else if KakaoVSLocal.check == 1 {
+                    cell.idLabel.text = "\(KakaoLogin.userName)"//사용자 닉네임
+                    print("dho??????asdad")
+                }
+                    
+                
                 cell.loginLable.text = "고마운분,"
                 cell.selectionStyle = .none
                 return cell

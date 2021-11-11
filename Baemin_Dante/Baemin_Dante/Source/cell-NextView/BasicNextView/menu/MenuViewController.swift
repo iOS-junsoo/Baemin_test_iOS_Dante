@@ -32,6 +32,7 @@ class MenuViewController: UIViewController {
     private var sections = [Section]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
             self.sections = [Section(title: "사이드메뉴", menu: ["감자 튀김", "김말이튀김"], price: ["3500원", "3000원"]),
                         Section(title: "음료", menu: ["사이다", "콜라"], price: ["1500원", "1500원"])]

@@ -94,3 +94,7 @@ struct Page3 {
     static var pageTitle1 = 0
     static var pageTitle2 = 0
 }
+
+struct KakaoVSLocal {
+    static var check = 0
+}

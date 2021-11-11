@@ -46,6 +46,8 @@ class OrderfoodViewController: UIViewController {
         }
     @IBAction func paymentBtnTap(_ sender: UIButton) {
         self.view.makeToast("결제가 완료되었습니다.", duration: 1.0, position: .center)
+        
+        OrederPostRequest().postData()
 
     }
     

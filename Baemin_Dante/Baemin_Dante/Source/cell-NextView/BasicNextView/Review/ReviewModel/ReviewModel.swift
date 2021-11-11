@@ -23,3 +23,6 @@ struct ReviewModel {
     }
 }
 
+struct ReViewDataModel {
+    static var ReviewModel = [ReViews]()
+}

@@ -56,7 +56,7 @@ extension BPViewController: UITableViewDelegate, UITableViewDataSource {
             let data = try? Data(contentsOf: url!)
             cell.imageName.image = UIImage(data: data!)
             cell.titleLabel.text = BPDataModel.storeName
-            cell.deliveryComplete.text = "1시간전·배달완료"
+            cell.deliveryComplete.text = "1일전·배달완료"
             cell.detailLabel.text = "\(BPDataModel.menuName!) 외 \(BPDataModel.otherMenusCount!)개 \(BPDataModel.totalPrice!)원"
             return cell
         case 2:
@@ -70,7 +70,7 @@ extension BPViewController: UITableViewDelegate, UITableViewDataSource {
             let data = try? Data(contentsOf: url!)
             cell.imageName.image = UIImage(data: data!)
             cell.titleLabel.text = BPDataModel1.storeName
-            cell.deliveryComplete.text = "18시간전·배달완료"
+            cell.deliveryComplete.text = "4일전·배달완료"
             cell.detailLabel.text = "\(BPDataModel1.menuName!) 외 \(BPDataModel1.otherMenusCount!)개 \(BPDataModel1.totalPrice!)원"
             return cell
         case 4:
@@ -118,12 +118,15 @@ extension BPViewController: UITableViewDelegate, UITableViewDataSource {
             return 0
         }
     
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            // 한 가게만 구현하기 때문에 따로 indexPath.row에 따라서 나누어 주진 않았다.
-            let alStoryboard = UIStoryboard(name: "BPStoryboard", bundle: nil) //스토리보드 결정
-            let alarmVC = alStoryboard.instantiateViewController(identifier: "BPDetailViewController")
-            self.navigationController?.pushViewController(alarmVC, animated: true)
-        }
+        
     
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 한 가게만 구현하기 때문에 따로 indexPath.row에 따라서 나누어 주진 않았다.
+        let alStoryboard = UIStoryboard(name: "BPStoryboard", bundle: nil) //스토리보드 결정
+        let alarmVC = alStoryboard.instantiateViewController(identifier: "BPDetailViewController")
+        self.navigationController?.pushViewController(alarmVC, animated: true)
+        print("zmfflrzm")
     }
 }
