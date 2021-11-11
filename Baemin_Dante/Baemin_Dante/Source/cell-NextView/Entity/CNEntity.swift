@@ -8,14 +8,14 @@
 import Foundation
 
 struct CNResponse: Decodable {
-    var isSuccess : Bool
-    var code: Int
-    var message: String
-    var result: [Menu]
+    var isSuccess : Bool?
+    var code: Int?
+    var message: String?
+    var result: Menu?
 }
 
 struct Menu: Decodable {
-    var info_basic: [info]
+    var info_basic: info?
     var menus: [menu]
 }
 
@@ -29,7 +29,7 @@ struct info: Decodable {
     var ad_type: String?
     var min_order_price: Int?
     var min_delivery_fee: Int?
-    var tag_delivery_time: Int?
+    var tag_delivery_time: String?
     var two_menus: String?
     var review_cnt: String?
     var tag_coupon: Bool?

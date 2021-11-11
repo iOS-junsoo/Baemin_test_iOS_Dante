@@ -59,7 +59,12 @@ class BasicNextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        CNRequest().getData()
+        CNRequest().getData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            self.setUpCard()
+            
+        }
+        
         myView.layer.shadowColor = UIColor.black.cgColor // 색깔
         myView.layer.masksToBounds = false  // 내부에 속한 요소들이 UIView 밖을 벗어날 때, 잘라낼 것인지. 그림자는 밖에 그려지는 것이므로 false 로 설정
         myView.layer.shadowOffset = CGSize(width: 0, height: 4) // 위치조정
@@ -97,35 +102,35 @@ class BasicNextViewController: UIViewController {
         button.layer.shadowOpacity = 0.3 // alpha값
         self.view.addSubview(button)
         
-        //MARK: - 식당이름 전달
-        restaurantNameLabel.text = "육부장"
+        
     }
     
     func setUpCard(){
-        restaurantName.text = ""
-        restaurantStar.text = ""
-        restaurantReview.text = ""
-        restaurantBossCommnet.text = ""
-        restaurantJjim.text = "\(JjimCount)"
-        orderPay.text = ""
-        paymentMethod.text = ""
-        deliveryTime.text = ""
-        deliveryTip.text = ""
+        restaurantNameLabel.text = CNDataModel.restaurantName
+        restaurantName.text = CNDataModel.restaurantName
+        restaurantStar.text = "\(CNDataModel.restaurantStar)"
+        restaurantReview.text = "\(CNDataModel.restaurantReview)"
+        restaurantBossCommnet.text = "\(CNDataModel.restaurantBossComment)"
+        restaurantJjim.text = "\(CNDataModel.restaurantJjim + JjimCount)"
+        orderPay.text = "\(CNDataModel.restaurantOrderPay)원"
+        paymentMethod.text = "바로 결제, 만나서 결제, 예약가능"
+        deliveryTime.text = CNDataModel.restaurantDeliveryTime
+        deliveryTip.text = "\(CNDataModel.restaurantDeliveryPay)원"
         
     }
     @IBAction func JjimBtnClick(_ sender: UIButton) {
         JjimCheck += 1
-        if JjimCheck % 2 == 0 {
+        if JjimCheck % 2 == 1 { //0에서 1로 바꿈
             JjimCount += 1
-            restaurantJjim.text = "\(JjimCount)"
+            restaurantJjim.text = "\(CNDataModel.restaurantJjim + JjimCount)"
             JjimBtn.tintColor = .red
         } else {
-            if JjimCount == 0 {
+            if CNDataModel.restaurantJjim - JjimCount == 0 {
                 restaurantJjim.text = "0"
                 JjimBtn.tintColor = .black
             } else {
                 JjimCount -= 1
-                restaurantJjim.text = "\(JjimCount)"
+                restaurantJjim.text = "\(CNDataModel.restaurantJjim - JjimCount)"
                 JjimBtn.tintColor = .black
             }
             

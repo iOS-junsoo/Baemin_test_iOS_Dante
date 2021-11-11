@@ -9,21 +9,28 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
+    @IBOutlet var name: UILabel!
+    @IBOutlet var time: UILabel!
+    @IBOutlet var rest: UILabel!
+    @IBOutlet var phone: UILabel!
+    @IBOutlet var Area: UILabel!
+    @IBOutlet var order: UILabel!
+    @IBOutlet var review: UILabel!
+    @IBOutlet var Jjim: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        InfoRequest().getData()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            self.info()
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func info() {
+        Jjim.text = "\(CNDataModel.restaurantJjim)"
+        
+        
+        
     }
-    */
 
 }

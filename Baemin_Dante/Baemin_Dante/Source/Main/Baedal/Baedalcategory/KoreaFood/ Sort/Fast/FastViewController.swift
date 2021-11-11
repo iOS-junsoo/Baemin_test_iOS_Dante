@@ -17,11 +17,19 @@ class FastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         FastRequest().getData()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             
             self.setUpTableView()
+            self.tableView.reloadData()
         }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        print("1")
     }
     func setUpTableView() {
         models1.append(FastTieleModel(advertisementTitle: "오픈리스트"))

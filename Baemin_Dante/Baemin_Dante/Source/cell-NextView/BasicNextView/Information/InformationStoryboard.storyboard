@@ -202,6 +202,16 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Area" destination="tPd-4C-jlx" id="ydv-nG-hFP"/>
+                        <outlet property="Jjim" destination="e7Y-Mu-OOV" id="lhr-Rc-9Lj"/>
+                        <outlet property="name" destination="Gqd-uz-joP" id="zZC-Ab-d4B"/>
+                        <outlet property="order" destination="KQo-xF-kbG" id="FzY-he-nRn"/>
+                        <outlet property="phone" destination="D2P-yy-fOs" id="NKQ-0W-O36"/>
+                        <outlet property="rest" destination="EpL-1q-zKy" id="BP6-93-UWb"/>
+                        <outlet property="review" destination="UWZ-Vx-RZp" id="0Hf-3K-CVU"/>
+                        <outlet property="time" destination="WDM-7i-8K7" id="gGg-Xe-C7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
