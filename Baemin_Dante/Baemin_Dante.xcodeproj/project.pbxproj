@@ -211,6 +211,9 @@
 		9979BC30272EAE6000A77C36 /* CheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */; };
 		9979BC32272EBCE200A77C36 /* SelfCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */; };
 		9979BC36272FA16C00A77C36 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979BC35272FA16C00A77C36 /* EmailViewController.swift */; };
+		997C8F69273DDC9C000725C9 /* selfDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997C8F68273DDC9C000725C9 /* selfDataManager.swift */; };
+		997C8F6B273DDCA7000725C9 /* selfEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997C8F6A273DDCA7000725C9 /* selfEntity.swift */; };
+		997C8F6D273DDD47000725C9 /* sModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997C8F6C273DDD47000725C9 /* sModel.swift */; };
 		997EA6B9273569970034AD1B /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EA6B8273569970034AD1B /* PagingViewController.swift */; };
 		997EA6BB2735699F0034AD1B /* PagingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997EA6BA2735699F0034AD1B /* PagingStoryboard.storyboard */; };
 		997EA6BE273569C40034AD1B /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997EA6BC273569C40034AD1B /* MenuCell.xib */; };
@@ -570,6 +573,9 @@
 		9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxViewController.swift; sourceTree = "<group>"; };
 		9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfCertificationViewController.swift; sourceTree = "<group>"; };
 		9979BC35272FA16C00A77C36 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		997C8F68273DDC9C000725C9 /* selfDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfDataManager.swift; sourceTree = "<group>"; };
+		997C8F6A273DDCA7000725C9 /* selfEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfEntity.swift; sourceTree = "<group>"; };
+		997C8F6C273DDD47000725C9 /* sModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sModel.swift; sourceTree = "<group>"; };
 		997EA6B8273569970034AD1B /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		997EA6BA2735699F0034AD1B /* PagingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PagingStoryboard.storyboard; sourceTree = "<group>"; };
 		997EA6BC273569C40034AD1B /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
@@ -1507,6 +1513,23 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		997C8F66273DDC72000725C9 /* selfEntity */ = {
+			isa = PBXGroup;
+			children = (
+				997C8F6A273DDCA7000725C9 /* selfEntity.swift */,
+			);
+			path = selfEntity;
+			sourceTree = "<group>";
+		};
+		997C8F67273DDC74000725C9 /* selfDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				997C8F68273DDC9C000725C9 /* selfDataManager.swift */,
+				997C8F6C273DDD47000725C9 /* sModel.swift */,
+			);
+			path = selfDataManager;
+			sourceTree = "<group>";
+		};
 		997EA6B7273569160034AD1B /* PagingKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1813,6 +1836,8 @@
 				9979BC2B272EA6F900A77C36 /* LoginViewController.swift */,
 				9979BC2F272EAE6000A77C36 /* CheckBoxViewController.swift */,
 				9979BC31272EBCE200A77C36 /* SelfCertificationViewController.swift */,
+				997C8F67273DDC74000725C9 /* selfDataManager */,
+				997C8F66273DDC72000725C9 /* selfEntity */,
 				992C59E52734B4690031AE68 /* FindID */,
 				992C59E62734B4A10031AE68 /* FindPW */,
 				9998591D272D619E00D7B167 /* Local */,
@@ -2487,6 +2512,7 @@
 				99265CB9273904F5000538D3 /* MenuViewController.swift in Sources */,
 				994E62F0273699E700BFBF36 /* AsianViewController.swift in Sources */,
 				99506370273138B7002C43B8 /* fourthCollectionViewCell.swift in Sources */,
+				997C8F6B273DDCA7000725C9 /* selfEntity.swift in Sources */,
 				995598F5273DAC2C00F45FF5 /* ReviewEntity.swift in Sources */,
 				995063582731118E002C43B8 /* secondTableViewCell.swift in Sources */,
 				99577E33273A567500F01D8C /* ReviewTableViewCell.swift in Sources */,
@@ -2514,6 +2540,7 @@
 				99577E4A273A729C00F01D8C /* fifthOrderTableViewCell.swift in Sources */,
 				997EA6DB27357CB00034AD1B /* TodayCollectionViewCell.swift in Sources */,
 				99985918272D5BFF00D7B167 /* StartViewController.swift in Sources */,
+				997C8F6D273DDD47000725C9 /* sModel.swift in Sources */,
 				993B6769273B74B70020FB40 /* PayViewController.swift in Sources */,
 				99985904272D5BB500D7B167 /* BaseViewController.swift in Sources */,
 				993B6750273AC87F0020FB40 /* OHModel.swift in Sources */,
@@ -2561,6 +2588,7 @@
 				99688CED273DC1B100408A3C /* pEntity.swift in Sources */,
 				993B6783273B75520020FB40 /* SettingViewController.swift in Sources */,
 				993B678F273B87E50020FB40 /* NoticeTableViewCell.swift in Sources */,
+				997C8F69273DDC9C000725C9 /* selfDataManager.swift in Sources */,
 				99A437A9273413890076F023 /* PojangViewController.swift in Sources */,
 				997219E62737EC60001624A0 /* TitleTableViewCell.swift in Sources */,
 				99605082273979CA00099779 /* MySixthTableViewCell.swift in Sources */,

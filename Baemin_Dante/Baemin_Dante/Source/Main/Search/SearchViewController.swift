@@ -189,7 +189,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     //cell을 클릭했는지 확인해주는 메소드
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 한 가게만 구현하기 때문에 따로 indexPath.row에 따라서 나누어 주진 않았다.
-        let alStoryboard = UIStoryboard(name: "BasicNextStoryboard", bundle: nil) //스토리보드 결정
+        let alStoryboard = UIStoryboard(name: "BacisNextStoryboard", bundle: nil) //스토리보드 결정
         let alarmVC = alStoryboard.instantiateViewController(identifier: "BasicNextViewController")
         self.navigationController?.pushViewController(alarmVC, animated: true)
     }

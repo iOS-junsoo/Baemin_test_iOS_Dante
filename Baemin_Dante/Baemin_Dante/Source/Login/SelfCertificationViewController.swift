@@ -145,18 +145,24 @@ class SelfCertificationViewController: UIViewController {
         }
     //인증번호 함수
     @objc func numberTextFieldDidChange(_ sender: Any?) {
-            
+        UserInfo.inje = numberTextField.text ?? ""
+        print(UserInfo.inje)
         if numberTextField.text?.count == 4 { //글자수가 4이상이면 초록색 체크로
-                numberCheckImage.image = UIImage(named: "초록체크")
-                nextBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#00BEC1")
-            ingeErrorLabel.textColor = UIColor.white
-            //화면전환
-            numbarState = true
-            } else {
-                numberCheckImage.image = UIImage(named: "회색체크")
-                nextBtn.titleLabel?.textColor = hexStringToUIColor(hex: "#D7D7D7")
-                ingeErrorLabel.textColor = UIColor.red
-            }
+            self.numberCheckImage.image = UIImage(named: "초록체크")
+            self.nextBtn.titleLabel?.textColor = self.hexStringToUIColor(hex: "#00BEC1")
+            self.ingeErrorLabel.textColor = UIColor.white
+        //화면전환
+            self.numbarState = true
+            
+                    
+                }else {
+                    self.numberCheckImage.image = UIImage(named: "회색체크")
+                    self.nextBtn.titleLabel?.textColor = self.hexStringToUIColor(hex: "#D7D7D7")
+                    self.ingeErrorLabel.textColor = UIColor.red
+                }
+            
+            
+            
         checkMaxLength(textField: numberTextField, maxLength: 4) //텍스트 필드 글자수 제한
         }
     //MARK: - 텍스트 필드 글자수 제한 함수 

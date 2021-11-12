@@ -24,7 +24,7 @@ class ReviewRequest {
             
             switch response.result {
             case .success(let response):
-                print("DEBUG>> Success \(response) ")
+                print("DEBUG11>> Success \(response) ")
                 ReViewDataModel.ReviewModel = response.result[0].reviews
                
             case .failure(let error):

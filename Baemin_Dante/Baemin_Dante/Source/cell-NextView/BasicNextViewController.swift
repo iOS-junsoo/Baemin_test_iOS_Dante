@@ -60,7 +60,7 @@ class BasicNextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CNRequest().getData()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3) {
             self.setUpCard()
             
         }

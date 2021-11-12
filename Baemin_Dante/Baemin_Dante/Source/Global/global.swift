@@ -27,6 +27,7 @@ struct UserInfo {
     static var latitude = 0.000000
     static var longitude = 0.000000
     static var location = ""
+    static var inje = ""
 }
 
 //로그인 확인
