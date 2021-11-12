@@ -146,6 +146,9 @@ class EmailViewController: UIViewController {
             completeBtn.isEnabled = true
             JoinRequest().postData()
             print(UserInfo.email)
+            LoginSeverResponse.ResponseNickName = UserInfo.nickName
+            MBDataModel.MBNickName = UserInfo.nickName
+            MBDataModel.MBEmail = UserInfo.email
             print(UserInfo.passWord)
             print(UserInfo.phoneNumber)
             print(UserInfo.nickName)
@@ -155,9 +158,9 @@ class EmailViewController: UIViewController {
             print(JoinCheck.agreementMail)
             print(JoinCheck.agreementSMS)
             print(JoinCheck.over14)
-            Check.dis = 1
+            
             LoginCheckModel.loginCheck = true
-            self.view.makeToast("회원가입이 완료되었습니다.", duration: 1.0, position: .center)
+            self.view.makeToast("회원가입이 완료되었습니다.", duration: 2.0, position: .center)
             dismiss(animated: true, completion: nil)
         }
     }
